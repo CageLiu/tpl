@@ -272,7 +272,8 @@
 .m_icon,
 .attention_icon,
 .collect_icon,
-.like_icon{
+.like_icon,
+.link_me{
 	background-image:url(../img/icon.png);
 	background-repeat:no-repeat;
 	display:inline-block;
@@ -385,6 +386,9 @@
 .model_item p.hor_item{
 	margin-left:-6px;
 }
+.model_item dd{
+	margin-bottom:7px;
+}
 .vip_grade{
 	background-image:url(../img/vip_grade.png);
 	background-repeat:no-repeat;
@@ -449,5 +453,30 @@
 	padding:0 8px;
 }
 .report_icon{
+	background-position:0 -620px;
+	padding-left:11px;
+}
+.m_icon{
+	background-position:0 -645px;
+	padding-left:17px;
+}
+.attention_icon{
+	background-position:0 -669px;
+	padding-left:16px;
+}
+.collect_icon{
+	background-position:0 -688px;
+	padding-left:15px;
+}
+.like_icon{
+	background-position:0 -712px;
+	padding-left:14px;
+}
+.link_me{
+	background-position:0 -734px;
+	font-size:0;
+	width:64px;
+	height:16px;
+	vertical-align:top;
 }
 /*p2 style end*/

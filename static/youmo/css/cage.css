@@ -898,3 +898,14 @@ body{
 	top:-12px;
 	_border-style:dashed dashed solid;
 }
+
+/* all models */
+#all_models{
+	margin-left:-12px;
+}
+#all_models .admire_pic_list{
+	margin-left:0;
+}
+#all_models .admire_pic_list li{
+	margin-left:12px;
+}

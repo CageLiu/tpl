@@ -2,6 +2,14 @@
 .vip_num{
 	color:#ef3132;
 }
+.all_color{
+	color:#ff746b;
+}
+.box .review_tit{
+	font-size:18px;
+	color:#505050;
+	padding-left:20px;
+}
 /*btn style start*/
 .btn em{
 	font-family:"宋体";
@@ -513,5 +521,23 @@ a.moder{
 	width:82px;
 	display:inline-block;
 	text-align:right;
+}
+.box .vip_review_tit{
+	padding-bottom:10px;
+}
+.model_skill_list{
+	padding:47px 0 41px 58px;
+}
+.vip_review_ct{
+	margin:8px 0 22px 0;
+}
+.vip_ct{
+	line-height:0;
+}
+.vip_ct textarea{
+	border:1px solid #cbcbcb;
+	overflow-y:scroll;
+	height:44px;
+	width:176px;
 }
 /*p2 style end*/

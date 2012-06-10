@@ -374,13 +374,13 @@
 	color:#232323;
 }
 .model_item p.hor_item{
-	margin-right:-6px;
+	margin-left:-6px;
 }
 .vip_grade{
 	background-image:url(../img/vip_grade.png);
 	background-repeat:no-repeat;
 	display:inline-block;
-	margin-right:6px;
+	margin-left:6px;
 	height:21px;
 	width:64px;
 	font-size:0;

@@ -25,8 +25,7 @@
 .btn18,
 .btn20,
 .btn22,
-.btn23,
-.moder{
+.btn23{
 	color:#fff;
 }
 .btn1{
@@ -450,10 +449,12 @@
 }
 .reserve_model a{
 	color:#ff675e;
+	margin-right:5px;
 }
-.moder{
+a.moder{
 	background-color:#ff675e;
 	padding:0 8px;
+	color:#fff;
 }
 .report_icon{
 	background-position:0 -620px;

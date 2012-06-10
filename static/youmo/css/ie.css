@@ -23,12 +23,12 @@
 	_margin-right:1px;
 }
 .box .radius div{
-	height:11px;
 	padding-right:20px;
 	text-indent:-9999em;
 }
 .box .radius,
 .box .radius div{
+	height:11px;
 	background-image:url(../img/radius.png);
 	background-repeat:no-repeat;
 }

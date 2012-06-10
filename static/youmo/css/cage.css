@@ -217,6 +217,10 @@ body{
 	border:none 0;
 	cursor:pointer;
 }
+.ft{
+	margin-top:100px;
+	zoom:1;
+}
 .ft,
 .ft_inner{
 	background:url(../img/rx.png) repeat-x 0 -112px;
@@ -232,6 +236,7 @@ body{
 	height:140px;
 	padding-top:1px;
 	background:url(../img/bg.png) no-repeat right -209px;
+	display:block;
 }
 .ft .logo{
 	display:block;
@@ -270,7 +275,14 @@ body{
 	margin-top:20px;
 }
 .column{
-	margin-bottom:12px;
+	margin-bottom:18px;
+}
+.main{
+	width:764px;
+}
+.side{
+	width:208px;
+	margin-left:10px;
 }
 /* header style start */
 
@@ -360,7 +372,7 @@ body{
 .tab2{
 	overflow:hidden;
 	position:relative;
-	zoom:1;
+	/*zoom:1;*/
 }
 .tab2 li{
 	border-left:1px solid #7B7B7B;
@@ -737,3 +749,46 @@ body{
 	padding:0 10px;
 }
 /* page style end */
+
+/*  */
+.tg1{
+	margin-left:-16px;
+	margin-bottom:0px;
+}
+.tg1 .tab_group{
+	width:482px;
+	margin-left:16px;
+	margin-bottom:15px;
+}
+.tg1 .tab_group .tab3{
+	margin-left:20px;
+}
+
+/* slider */
+.slider img{
+	vertical-align:bottom;
+}
+.slider{
+	width:742px;
+	height:294px;
+	margin:0 auto;
+	position:relative;
+	overflow:hidden;
+}
+.slider .toggle{
+	position:absolute;
+	right:15px;
+	bottom:15px;
+}
+.slider .toggle i{
+	width:15px;
+	height:15px;
+	display:inline-block;
+	overflow:hidden;
+	font-size:0;
+	cursor:pointer;
+	background:url(../img/icon.png) no-repeat -25px -349px;
+}
+.slider .toggle .current{
+	background-position:4px -349px;
+}

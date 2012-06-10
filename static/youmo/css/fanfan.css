@@ -24,7 +24,9 @@
 .btn17,
 .btn18,
 .btn20,
-.btn22{
+.btn22,
+.btn23,
+.moder{
 	color:#fff;
 }
 .btn1{
@@ -73,7 +75,9 @@
 .btn19,
 .btn19 span,
 .btn21,
-.btn21 span{
+.btn21 span,
+.btn23,
+.btn23 span{
 	background-image:url(../img/btn_bg.png);
 	background-repeat:no-repeat;
 	background-color:#fff;
@@ -263,14 +267,19 @@
 }
 .vip_icon1,
 .vip_icon2,
-.vip_icon3{
+.vip_icon3,
+.report_icon,
+.m_icon,
+.attention_icon,
+.collect_icon,
+.like_icon{
 	background-image:url(../img/icon.png);
 	background-repeat:no-repeat;
+	display:inline-block;
 }
 .vip_icon1,
 .vip_icon2,
 .vip_icon3{
-	display:inline-block;
 	padding-left:37px;
 }
 .vip_icon1{
@@ -413,4 +422,32 @@
 	background-position:-567px 0;
 }
 /*media5 style end*/
+.vip_apply_form input{
+	width:222px;
+	height:21px;
+	line-height:21px;
+	padding-left:8px;
+	background-color:#f4f4f4;
+	color:#767676;
+	border:1px solid #dfdfdf;
+	margin-right:5px;
+}
+.btn23{
+	background-position:left -807px;
+	padding-left:9px;
+	height:23px;
+	line-height:23px;
+	vertical-align:bottom;
+	font-weight:700;
+}
+.btn23 span{
+	background-position:right -807px;
+	padding-right:9px;
+}
+.moder{
+	background-color:#ff675e;
+	padding:0 8px;
+}
+.report_icon{
+}
 /*p2 style end*/

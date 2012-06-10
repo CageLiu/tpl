@@ -387,7 +387,7 @@
 	margin-left:-6px;
 }
 .model_item dd{
-	margin-bottom:7px;
+	margin-top:8px;
 }
 .vip_grade{
 	background-image:url(../img/vip_grade.png);
@@ -447,6 +447,9 @@
 .btn23 span{
 	background-position:right -807px;
 	padding-right:9px;
+}
+.reserve_model a{
+	color:#ff675e;
 }
 .moder{
 	background-color:#ff675e;

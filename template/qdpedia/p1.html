@@ -1,0 +1,93 @@
+<{include file='qdpedia/header.html' title="p1_index"}>
+<script type="text/javascript">
+	monkey.changeStyle();
+	$(window).bind("resize",monkey.changeStyle);
+</script>
+<div class="wp">
+	<{include file='qdpedia/side.html'}>
+	<div class="ct">
+		<div class="inner clearfix" id="modlist">
+			<div class="item">
+				<div class="above">
+					<div class="thumbnail">
+						<img src="static/qdpedia/img/mod1.jpg" alt="" />
+						<img class="space" src="static/qdpedia/img/mod1.jpg" alt="" />
+					</div>
+					<h3>纯Css实现的tab选项卡</h3>
+					<span class="mod_star">
+						<em class="s1">mod_star</em>
+					</span>
+				</div>
+				<div class="under">
+					<h3>纯Css实现的tab选项卡</h3>
+					<span class="mod_star">
+						<em class="s2">mod_star</em>
+					</span>
+					<div class="face gray_bg">
+						<a href="#">
+							<img src="static/qdpedia/img/face.jpg" alt="" />
+						</a>
+						<a href="#" class="name male">Cage(刘锋)</a>
+						<span class="office">初生牛犊</span>
+					</div>
+					<p class="summary clear">
+						这是一段对这个模块的简单介绍，由模块的上传者进行填写，如果没有，则此处显示”暂无简介”.最多能显示三行的字数，这里的高度是定死的，超过就隐藏，并显示这是一段对这个模块的简单介绍，由模块的上传者进行填写，如果没有，则此处显示”暂无简介”.最多能显示三行的字数，这里的高度是定死的，超过就隐藏，并显示…
+					</p>
+					<a class="btn black_btn" href="javascript:;">
+						<span>查看详情</span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="scrollbar vertical">
+			<div class="slider">
+				scroll slider
+			</div>
+		</div>
+	</div>
+
+	<div class="layer">
+		<div class="dialog" id="mod_view">
+			<span class="close" title="关闭">close</span>
+			<div class="info">
+				<h3>纯Css实现的tab选项卡</h3>
+				<span class="mod_star">
+					<em class="s2">mod_star</em>
+				</span>
+				<div class="face gray_bg">
+					<a href="#">
+						<img src="static/qdpedia/img/face.jpg" alt="" />
+					</a>
+					<a href="#" class="name male">Cage(刘锋)</a>
+					<span class="office">初生牛犊</span>
+				</div>
+			</div>
+			<div class="options">
+				<a href="#" class="btn current"><span>预览</span></a>
+				<a href="#" class="btn"><span>获取代码</span></a>
+				<a href="#" class="btn"><span>评分</span></a>
+				<a href="#" class="btn"><span>发现问题</span></a>
+			</div>
+			<div class="cont view" id="view">
+				<div class="col left">
+					<div id="left_ct" style="width:1500px;height:1500px;"></div>
+					<div class="scrollbar vertical"><div class="slider" id="lvslider">scroll slider</div></div>
+					<div class="scrollbar horizontal"><div class="slider" id="lhslider">scroll slider</div></div>
+				</div>
+				<div class="col right">
+					<h4 class="tit">介绍</h4>
+					<p class="summary">这是由纯CSS创建的Tab选项卡，兼容FF、Chrome、IE6、7、8、OperaSafari等主流浏览器。</p>
+					<div class="scrollbar vertical">
+						<div class="slider">
+							scroll slider
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="mask">
+			遮罩
+		</div>
+	</div>
+</div>
+<{include file='qdpedia/footer.html'}>

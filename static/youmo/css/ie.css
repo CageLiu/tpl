@@ -1,0 +1,50 @@
+/* only for ie */
+.clearfix,
+#tab2{
+	*zoom:1;
+}
+.hor_item,
+.hor_list li{
+	*display:inline;
+	*zoom:1;
+}
+.box{
+	padding:0\9;
+	background:url(../img/body_bg.png) repeat 0 0\9;
+}
+.box .radius{
+	display:block\9;
+}
+.box .radius{
+	font-size:0;
+	overflow:hidden;
+	padding-left:18px;
+	margin-right:0\9;
+	_margin-right:1px;
+}
+.box .radius div{
+	height:11px;
+	padding-right:20px;
+	text-indent:-9999em;
+}
+.box .radius,
+.box .radius div{
+	background-image:url(../img/radius.png);
+	background-repeat:no-repeat;
+}
+.box .radius_top{
+	background-position:left 0;
+}
+.box .radius_top div{
+	background-position:right 0;
+}
+.box .radius_btm{
+	background-position:left -11px;
+}
+.box .radius_btm div{
+	background-position:right -11px;
+}
+.box .box_inner{
+	background:url(../img/box_border.png) repeat-y right 0 #fff\9;
+	_margin-right:1px;
+}

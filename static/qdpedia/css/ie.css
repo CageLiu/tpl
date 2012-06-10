@@ -1,0 +1,220 @@
+html{
+	_padding:40px 0 30px;
+}
+.ie6_min_width{
+	text-indent:0;
+	height:0;
+	overflow:hidden;
+	font-size:0;
+	line-height:0;
+	width:990px;
+}
+.hd{
+	background:url(../img/rx_bg.png) repeat-x 0 0;
+}
+.wp{
+	_height:100%;
+}
+.clearfix,.face{
+    zoom:1;
+}
+.face,.signature,
+.face img,
+.ft .share li,
+.level span,
+.item{
+	_display:inline;
+}
+.item{
+	position:relative;
+	overflow:hidden;
+	z-index:2;
+}
+.under{
+	border-top:1px solid #c6c6c6;
+}
+/*
+ *.item:hover{
+ *    z-index:1;
+ *}
+ */
+.topbar .home a{
+	zoom:1;
+	_background-position:0 -151px;
+	display:inline-block;
+	position:relative;
+	top:-1px\9;
+	*top:1px;
+	_top:0;
+}
+a.btn input{
+	_height:100px;
+	filter:alpha(opacity=0);
+}
+.topbar .btn span{
+	cursor:pointer;
+	line-height:21px\9;
+	*line-height:19px;
+	_line-height:17px;
+}
+.topbar .login,
+.topbar .reg{
+	_position:relative;
+}
+.level span{
+	cursor:pointer;
+}
+.black_btn,.black_btn span,
+.blue_btn,.blue_btn span{
+	background-image:url(../img/ie_btn_bg.png);
+	background-repeat:no-repeat;
+}
+.blue_btn{
+	background-position:0 -190px;
+	border-bottom:none;
+	padding-left:10px;
+	margin-left:-5px;
+}
+.blue_btn span{
+	height:40px;
+	background-position:right -190px;
+	padding-right:10px;
+	line-height:40px;
+}
+.sb .btn,.sb .btn span{ 
+	height:27px;
+}
+.sb .btn{
+	background-position:left -32px;
+}
+.sb .btn span{
+	background-position:right -32px;
+	line-height:28px\9;
+	*line-height:27px;
+	_line-height:25px;
+}
+.under .black_btn,
+.add_module .black_btn{
+	width:124px;
+	padding-left:6px;
+	background-position:left 0;
+}
+.under .black_btn span,
+.add_module .black_btn span{
+	width:118px;
+	height:32px;
+	padding-right:6px;
+	background-position:right 0;
+	line-height:33px\9;
+	*line-height:31px;
+	_line-height:29px;
+}
+.add_module .black_btn{
+	width:74px;
+}
+.add_module .black_btn span{
+	width:68px;
+}
+.nav a{
+	height:40px;
+	overflow:hidden;
+	line-height:39px;
+	background:url(../img/ie_nav_bg.png) repeat-x 0 0;
+	margin-bottom:0;
+}
+.nav .current a{
+	background-position:0 -40px;
+}
+.nav .current a:hover{
+	background-position:0 -40px;
+}
+.nav a:hover{
+	background-position:0 -80px;
+	text-indent:2em;
+}
+.page .next{
+	filter:FlipH;
+}
+.page .page_num,
+.page strong,
+.page em{
+	background-image:url(../img/ie_btn_bg.png);
+    background-repeat:no-repeat;
+	background-color:transparent;
+}
+.page .page_num{
+	padding-left:5px;
+	background-position:0 -87px;
+}
+.page strong{
+	padding-left:5px;
+	line-height:27px;
+	padding-right:15px;
+	background-position:right -59px;
+}
+.page em{
+	background-position:right -87px;
+}
+.page input{
+	*position:relative;
+	top:-2px;
+}
+.location .guide{
+	_margin-top:8px
+}
+.location .tips{
+	line-height:37px\9;
+	*line-height:38px;
+}
+.location .assort{
+	margin-top:-21px\9;
+	*margin-top:-19px;
+}
+.mask{
+	filter:alpha(opacity=50);
+}
+.dialog .col,
+.select{
+	*display:inline;
+	*zoom:1;
+}
+.form{
+	*zoom:1;
+	*position:relative;
+}
+.form img{
+	*margin-top:-4px;
+}
+.form .text{
+	*margin-top:-1px;
+	*margin-bottom:-1px;
+}
+.form .tips{
+	*top:-3px;
+}
+.reg .select ul{
+	zoom:1;
+	/*width:100px;*/
+}
+/*
+ *.reg .select li{
+ *    *margin-left:-16px;
+ *}
+ */
+.reply,.reply .items{
+	_zoom:1;
+}
+.reply .user,.reply .rc{
+	*display:inline;
+	*zoom:1;
+}
+.replybar a{
+	*background-position:0 -468px;
+	_background-position:0 -466px;
+}
+.add_module .tarea{
+	*display:inline
+}
+.horizontal{
+	_width:100%;
+}

@@ -1,0 +1,53 @@
+@charset "utf-8";
+/* CSS reset start */
+html{overflow-x:auto;overflow-y:scroll}
+html,body,div,span,ul,ol,li,dl,dt,dd,img,strong,em,label,p,form,input,label,h1,h2,h3,h4,h5,h6,td{margin:0;padding:0}
+body{font-size:12px;line-height:21px}
+ol, ul{list-style:none;list-style-position:outside}
+li{list-style-position:outside}
+a:hover{text-decoration:underline;color:#992329}
+img{border:none}
+em{font-style:normal}
+table{border-collapse:collapse;border-spacing:0}
+.pr{position:absolute;right:2%}
+.clearFix{zoom:1}
+.clearFix:after{content:"";display:block;height:0;clear:both;visibility:hidden;overflow:hidden;line-height:0}
+.clear{clear:both}
+
+.moudle_wrap{width:970px;margin:0 auto;position:relative;z-index:99999}
+
+.moudle_nav,.moudle_title,.html_code_box{font-family:"微软雅黑","宋体",Arial,Helvetica,sans-serif}
+.moudle_nav{width:150px;position:fixed;top:2%;text-shadow:2px 2px 2px #aaa;-moz-box-shadow:3px 3px 6px #ccc;-webkit-box-shadow:3px 3px 6px #ccc;_position:absolute}
+#left_moudle_nav{left:1%}
+#right_moudle_nav{right:1%}
+.moudle_nav li{width:150px;text-indent:5px;line-height:36px;font-weight:bold;border:1px solid #ddd;border-bottom:1px solid #ccc;height:36px;background:url(../image/nav_bg.png) repeat-x left top}
+.moudle_nav li a{display:block;width:100%;height:100%;font-size:22px;font-family:Candara;color:#2f2f2f}
+.moudle_nav li.current a,.moudle_nav li:hover a{background:url(../image/current.png) no-repeat right center;color:#ff4040}
+.moudle_nav li span{font-size:14px;font-family:"微软雅黑","宋体",Arial,Helvetica,sans-serif}
+p.moudle_anchor{height:0;font-size:0;line-height:0;overflow:hidden;visibility:hidden}
+.moudle_title{text-align:center;font-weight:bold;font-size:14px;margin-bottom:5px;cursor:pointer;-moz-border-radius:5px;-khtml-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;text-shadow:2px 2px 2px #888;border:1px solid #ddd;border-bottom:1px solid #ccc;height:36px;line-height:36px;background:url(../image/nav_bg.png) repeat-x left top;-moz-box-shadow:0 1px 10px #ccc;-webkit-box-shadow:0 1px 10px #ccc;box-shadow:0 1px 10px #ccc;color:#2f2f2f;zoom:1;position:relative}
+.moudle_title em{position:absolute;left:5px;font-size:12px;font-weight:400;top:0}
+
+input.text{border:none;background:none;width:150px;height:21px;position:absolute;right:5px;top:8px;text-align:right;font-size:16px;font-family:Candara;color:#333;display:none}
+.highlight{border-color:#ff4040;border-style:dashed;color:#ff4040}
+.moudle_number,#moudle_number{font-family:Candara;font-size:16px}
+.html_code_box{left:16.5%;width:67%;height:90%;top:5%;background:#000;position:fixed;z-index:999999;-moz-border-radius:12px;-khtml-border-radius:11px;-webkit-border-radius:11px;border-radius:11px;border:1px solid #888;-moz-box-shadow:3px 3px 6px #333;-webkit-box-shadow:3px 3px 6px #333;display:none;_position:absolute}
+.html_code_box h3{position:relative;height:32px;line-height:29px;padding-left:5px;background:url(../image/nav_bg.png) repeat-x left bottom;border-top:1px solid #ddd;-moz-border-radius-topleft:11px;-moz-border-radius-topright:11px;-webkit-border-top-right-radius:11px;-webkit-border-top-left-radius:11px;border-top-left-radius:11px;border-top-right-radius:11px;text-shadow:1px 1px 1px #ccc;font-size:14px}
+.html_code_box span.close_moudle{display:block;width:32px;height:32px;text-indent:-999em;background:url(../image/Stop.png) no-repeat center center;overflow:hidden;top:-2px;cursor:pointer}
+.html_code_box span#moudle_type,.html_code_box span#moudle_number{margin-right:15px}
+.moudle_box{margin-bottom:5px}
+#moudle_code{width:98.5%;margin:0.5% auto;background:#fff;border:none;height:90%;display:block;-moz-border-radius-bottomleft:11px;-moz-border-radius-bottomright:11px;-webkit-border-bottom-right-radius:11px;-webkit-border-bottom-left-radius:11px;border-bottom-left-radius:11px;border-bottom-right-radius:11px;font-size:14px;color:#000}
+
+.moudle_con{min-height:150px;_height:150px}
+
+#moudle_nav_box{display:none}
+#moudle_css{display:none}
+#moudle_buffer{display:none;width:970px;visibility:hidden;height:0;overflow:hidden}
+html body.loading_moudle{background:url(../image/loading.gif) no-repeat center center fixed}
+html body.null{background:url(../image/null.png) no-repeat center center fixed}
+.moudle_nav li.disabled a{color:#aaa}
+.moudle_nav li.disabled:hover a{color:#aaa;text-decoration:none;background:none}
+
+
+
+

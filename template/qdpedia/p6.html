@@ -1,0 +1,65 @@
+<{include file='qdpedia/header.html' title="p6_login"}>
+<div class="wp">
+	<{include file='qdpedia/side.html'}>
+	<div class="location">
+		<div class="guide">
+			<a href="http://ldev/tpl/index.php?page=qdpedia/p1">首页</a>
+			<em class="rsaquo">&rsaquo;</em>
+			<span>用户登录</span>
+		</div>
+		<div class="extend">
+			<div class="tips">
+				还没有帐号？
+				<a href="#">马上注册</a>
+			</div>
+		</div>
+	</div>
+	<div class="ct">
+		<div class="section reg">
+			<form action="" method="">
+				<ul class="form">
+					<li>
+						<p>用户名：</p>
+						<span class="option focus"><input type="text" class="text" /></span>
+						<span class="tips yes">
+							<em>yes</em>
+							可以使用
+						</span>
+					</li>
+					<li>
+						<p>密码：</p>
+						<span class="option"><input type="password" class="text pwd" /></span>
+						<span class="tips no">
+							<em>no</em>
+							密码错误
+						</span>
+					</li>
+					<li>
+						<p>性别：</p>
+						<div class="select" id="sex">
+							<span class="width140">男</span>
+							<em class="arrow">arrow</em>
+							<ul class="width147">
+								<li value="0" style="background:blue"><a href="#" class="checked">男</a></li>
+								<li value="1"><a href="#">女</a></li>
+							</ul>
+							<input type="hidden" value="0" />
+						</div>
+					</li>
+					<li class="form_btn">
+						<a href="javascript:;" class="btn blue_btn" hidefocus="true">
+							<span class="width78">登录</span>
+							<input type="submit" value="注册" />
+						</a>
+					</li>
+				</ul>
+			</form>
+		</div>
+		<div class="scrollbar vertical">
+			<div class="slider">
+				scroll slider
+			</div>
+		</div>
+	</div>
+</div>
+<{include file='qdpedia/footer.html'}>

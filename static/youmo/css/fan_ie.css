@@ -1,0 +1,105 @@
+.btn{
+	padding-right:0;
+	background-color:transparent;
+}
+.btn span{
+	padding-left:0;
+}
+.btn1,
+.btn1 span,
+.btn2,
+.btn2 span,
+.btn3,
+.btn3 span,
+.btn4,
+.btn4 span,
+.btn10,
+.btn10 span,
+.btn11,
+.btn11 span,
+.btn12,
+.btn12 span,
+.btn20,
+.btn20 span,
+.btn22{
+	background-image:url(../img/btn_bg.png);
+	background-repeat:no-repeat;
+	background-color:#fff;
+}
+.btn1{
+	padding-left:10px;
+	background-position:left 0;
+}
+.btn1 span{
+	height:25px;
+	padding-right:10px;
+	background-position:right 0;
+}
+.btn2{
+	padding-left:9px;
+	background-position:left -30px;
+}
+.btn2 span{
+	height:17px;
+	padding-right:8px;
+	background-position:right -30px;
+}
+.btn3,
+.btn4{
+	padding-left:4px;
+	*line-height:17px;
+}
+.btn3 span,
+.btn4 span{
+	padding-right:4px;
+}
+.btn3{
+	background-position:left -52px;
+}
+.btn3 span{
+	background-position:right -52px;
+}
+.btn4{
+	background-position:left -73px;
+}
+.btn4 span{
+	background-position:right -73px;
+}
+.btn8,
+.btn9{
+	padding-right:7px;
+}
+.btn10,
+.btn11{
+	background-position:left -357px;
+}
+.btn10 span,
+.btn11 span{
+	background-position:right -357px;
+	padding-right:15px;
+}
+.btn12{
+	background-position:left -413px;
+}
+.btn12 span{
+	background-position:right -413px;
+	padding-right:5px;
+	height:14px;
+	background-color:#fff;
+	overflow:hidden;
+}
+.btn20{
+	background-position:left -577px;
+	padding-left:8px;
+	height:23px;
+	background-color:#fff;
+}
+.btn20 span{
+	background-position:right -577px;
+	padding-right:8px;
+}
+.btn22{
+	background-position:0 -700px;
+	zoom:1;
+}
+

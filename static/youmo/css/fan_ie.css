@@ -41,17 +41,19 @@
 }
 .btn2 span{
 	height:17px;
+	line-height:15px;
 	padding-right:8px;
 	background-position:right -30px;
 }
 .btn3,
 .btn4{
 	padding-left:4px;
-	*line-height:17px;
 }
 .btn3 span,
 .btn4 span{
 	padding-right:4px;
+	height:17px;
+	line-height:15px;
 }
 .btn3{
 	background-position:left -52px;
@@ -102,4 +104,6 @@
 	background-position:0 -700px;
 	zoom:1;
 }
-
+.model_concern{
+	right:-33px;
+}

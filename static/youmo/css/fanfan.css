@@ -10,8 +10,13 @@
 	color:#505050;
 	padding-left:20px;
 }
+.vip_apply_form input,
+.they_said_form input{
+	border:1px solid #dfdfdf;
+}
 /*btn style start*/
-.btn em{
+.btn em,
+.view_more em{
 	font-family:"宋体";
 }
 .btn1,
@@ -450,7 +455,6 @@
 	padding-left:8px;
 	background-color:#f4f4f4;
 	color:#767676;
-	border:1px solid #dfdfdf;
 	margin-right:5px;
 }
 .btn23{
@@ -529,7 +533,7 @@ a.moder{
 	padding:47px 0 41px 58px;
 }
 .vip_review_ct{
-	margin:8px 0 22px 0;
+	padding:8px 0 7px 13px;
 }
 .vip_ct{
 	line-height:0;
@@ -539,5 +543,58 @@ a.moder{
 	overflow-y:scroll;
 	height:44px;
 	width:176px;
+}
+.vip_tags_box{
+	padding-top:13px;
+}
+.vip_concern_me{
+	padding:8px 0 1px 21px;
+}
+.vip_concern_me .pic_list2{
+	margin-right:-33px;
+}
+.vip_concern_me .pic_list2 li{
+	margin-right:33px;
+}
+.vip_concern_me .pic_txt{
+	padding-top:4px;
+	padding-bottom:5px;
+}
+.they_said_ct{
+	padding-top:15px;
+}
+.said_list_box{
+	padding:9px 23px 0 5px;
+}
+.said_list{
+	overflow:hidden;
+	zoom:1;
+}
+.said_list_box li{
+	border-top:1px dashed #dedede;
+	margin-top:-1px;
+	padding:14px 0 18px 0;
+}
+.they_said_form{
+	text-align:center;
+	padding-bottom:57px;
+}
+.they_said_form input{
+	width:502px;
+	height:25px;
+	line-height:25px;
+	margin-right:4px;
+}
+.they_said_form .btn5{
+	vertical-align:bottom;
+}
+.view_more{
+	background:url(../img/view_more_bg.png) no-repeat center top;
+	text-align:center;
+	padding-bottom:20px;
+	zoom:1;
+}
+.view_more p{
+	padding-top:15px;
 }
 /*p2 style end*/

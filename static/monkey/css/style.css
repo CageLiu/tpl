@@ -56,10 +56,13 @@ em{
 body{
     font:12px/1.5 "微软雅黑",Tahoma,simsun,'宋体',Helvetica,simsun,sans-serif;
     color:#222;
-	background-color:#fff;
+	background-color:#E0E0E0;
 }
 .layout{
 	background-color:#E0E0E0;
+	width:100%;
+	overflow-x:hidden;
+	min-width:900px;
 }
 /* reset style end */
 
@@ -118,11 +121,6 @@ body{
 /* base style end */
 
 /* header style */
-.layout{
-	width:100%;
-	overflow-x:hidden;
-	min-width:900px;
-}
 .hd,
 .ft{
 	position:fixed;
@@ -135,17 +133,21 @@ body{
 	border-bottom-width:1px;
 }
 .hd{
-	border-bottom-color:#bbb;
+	border-bottom-color:#fff;
 	top:0;
 }
 .hd .nav{
 	height:36px;
-	border-bottom-color:#E0E0E0;
+	border-bottom-color:#2C4270;
 	padding-right:300px;
-	background-color:#fff;
+	background-color:#3B5998;
+	box-shadow:0 -1px 1px #2C4270 inset;
 }
 .hd .nav a{
 	font-size:14px;
+	color:#fff;
+	line-height:36px;
+	padding:0 10px;
 }
 .wp{
 	margin-top:48px;

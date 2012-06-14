@@ -532,7 +532,8 @@ a.moder{
 	display:inline-block;
 	text-align:right;
 }
-.box .vip_review_tit{
+.box .vip_review_tit,
+.attention_center{
 	padding-bottom:10px;
 }
 .model_skill_list{
@@ -688,4 +689,10 @@ a.moder{
 	color:#FFF;
 }
 /*p5 style end*/
+/*p6 style start*/
+.attention_center h3{
+	margin-left:-20px;
+	text-align:center;
+}
+/*p6 style end*/
 

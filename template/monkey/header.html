@@ -4,14 +4,25 @@
 		<meta charset="utf-8" />
 		<title><{$title}></title>
 		<link type="text/css" rel="stylesheet" href="static/monkey/css/style.css" />
+		<script type="text/javascript" src="static/monkey/js/cobra.js"></script>
 	</head>
 
 	<body>
 		<div class="layout" id="layout">
 			<div class="hd" id="hd">
+				<h1 class="logo">
+					<a href="#">Monkey</a>
+				</h1>
 				<ul class="hor_list nav">
 					<li><a href="#">主页</a></li>
 					<li><a href="#">我的工作台</a></li>
 					<li><a href="#">项目</a></li>
 				</ul>
+				<form action="">
+					<div class="search">
+						<input type="text" id="search" name="s" class="txt">
+						<span class="btn">&nbsp;</span>
+						<input type="submit" id="searchbtn" value="搜索" class="btn">
+					</div>
+				</form>
 			</div>

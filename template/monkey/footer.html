@@ -16,20 +16,22 @@
 		</div>
 	</body>
 	<script type="text/javascript">
-		var oLayout = document.getElementById("layout");
-		var oSide = document.getElementById("side");
-		var oWp = document.getElementById("wp");
-		if(typeof oLayout.style.minWidth === "undefined"){
-			$(window).ready(function(){
-				var windowWidth = document.documentElement.clientWidth;
-				windowWidth < 900 ? oLayout.style.width = "900px" : oLayout.style.width = "auto";
-			});
-			$(window).addEvent("resize",function(){
-				$.throttle(function(){
+		(function(){
+			var oLayout = document.getElementById("layout");
+			var oSide = document.getElementById("side");
+			var oWp = document.getElementById("wp");
+			if(typeof oLayout.style.minWidth === "undefined"){
+				$(window).ready(function(){
 					var windowWidth = document.documentElement.clientWidth;
 					windowWidth < 900 ? oLayout.style.width = "900px" : oLayout.style.width = "auto";
 				});
-			});
-		}
+				$(window).addEvent("resize",function(){
+					$.throttle(function(){
+						var windowWidth = document.documentElement.clientWidth;
+						windowWidth < 900 ? oLayout.style.width = "900px" : oLayout.style.width = "auto";
+					});
+				});
+			}
+		}());
 	</script>
 </html>

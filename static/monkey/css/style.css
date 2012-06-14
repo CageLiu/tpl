@@ -135,6 +135,7 @@ body{
 	width:100%;
 	left:0;
 	min-width:900px;
+	z-index:9999;
 }
 .hd,
 .hd .nav{
@@ -145,6 +146,7 @@ body{
 	border-bottom-color:#fff;
 	background-color:#3B5998;
 	top:0;
+	_position:relative;
 }
 .hd .logo{
 	position:absolute;
@@ -271,7 +273,8 @@ body{
 .form .txt,
 .form .radio,
 .form .checkbox,
-.form .field{
+.form .field,
+.form .select{
 	vertical-align:middle;
 }
 .form .txt{
@@ -325,6 +328,29 @@ body{
 .form .item{
 	margin-bottom:12px;
 	padding-left:100px;
+	position:relative;
+	zoom:1;
+}
+.form .select{
+	display:inline-block;
+	height:30px;
+	border:1px solid #ccc;
+	position:relative;
+	cursor:pointer;
+	*display:inline;
+	*zoom:1;
+}
+.form .select ol{
+	position:absolute;
+	left:0;
+	top:30px;
+	z-index:999;
+	background-color:#fff;
+	border:1px solid #ccc;
+	margin:0 -1px;
+}
+.form .cur_option{
+	line-height:30px;
 }
 .form .w100{width:100px;}
 .form .w150{width:150px;}
@@ -333,3 +359,25 @@ body{
 .form .w300{width:300px;}
 .form .w350{width:350px;}
 .form .w400{width:400px;}
+
+/* table */
+.table{
+	width:100%;
+	text-align:center;
+}
+.table th{
+	font-size:14px;
+	height:30px;
+	background-color:#F0F0F0;
+}
+.table td,
+.table th{
+	border:1px solid #ccc;
+}
+.table td{
+	padding-top:10px;
+	padding-bottom:10px;
+}
+.table .even{
+	background-color:#F8F8F8;
+}

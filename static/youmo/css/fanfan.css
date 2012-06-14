@@ -564,8 +564,8 @@ a.moder{
 	margin-right:33px;
 }
 .vip_concern_me .pic_txt{
-	padding-top:4px;
-	padding-bottom:5px;
+	margin-top:4px;
+	margin-bottom:5px;
 }
 .they_said_ct{
 	padding-top:15px;
@@ -693,6 +693,47 @@ a.moder{
 .attention_center h3{
 	margin-left:-20px;
 	text-align:center;
+}
+.bg_color a:hover span{
+	background-color:#ff7068;
+	color:#fff;
+}
+.divi_rank_list{
+	margin-bottom:-13px;
+}
+.divi_rank_list li{
+	padding-bottom:19px;
+}
+.divi_rank_list .pic{
+	margin-right:14px;
+	zoom:1;
+}
+.divi_rank_list .tit a{
+	color:#ff746c;
+}
+.vip_mov_list{
+	padding-right:18px;
+	overflow:hidden;
+	zoom:1;
+}
+.vip_mov_list li{
+	border-top:1px dashed #ebebeb;
+	padding-top:5px;
+	margin-top:-1px;
+	padding-bottom:8px;
+}
+.vip_mov_list .pic{
+	margin-right:13px;
+	zoom:1;
+	margin-top:4px;
+}
+.vip_mov_list .summary{
+	line-height:1.8;
+	overflow:hidden;
+	zoom:1;
+}
+.vip_mov_list .name{
+	color:#ff7068;
 }
 /*p6 style end*/
 

@@ -14,6 +14,12 @@
 .they_said_form input{
 	border:1px solid #dfdfdf;
 }
+.lt,
+.gt{
+	font-family:"宋体";
+	font-size:16px;
+	font-weight:700;
+}
 /*btn style start*/
 .btn em,
 .view_more em{
@@ -639,4 +645,47 @@ a.moder{
 	line-height:2.5;
 }
 /*p3 style end*/
+/*p4 style start*/
+.content{
+	padding:32px 3px 0 4px;
+	zoom:1;
+}
+.content .media{
+	margin-right:-36px;
+	margin-bottom:-17px;
+}
+.content .media li{
+	padding-right:36px;
+}
+.content .media .txt{
+	padding:15px 0 17px 0;
+}
+.content .media img{
+	border:1px solid #b9b9b9;
+	vertical-align:middle;
+}
+.content_me{
+	padding-bottom:53px;
+}
+.pr{
+	position:relative;
+}
+.extra_my_contented{
+	position:absolute;
+	bottom:11px;
+	right:0;
+}
+/*p4 style end*/
+/*p5 style start*/
+.page1_form{
+	padding-top:7px;
+	padding-bottom:23px;
+	zoom:1;
+}
+.page1 a:hover,
+.page1 .current{
+	background-color:#ff7366;
+	color:#FFF;
+}
+/*p5 style end*/
 

@@ -230,12 +230,13 @@ body{
 	margin-left:-100%;
 }
 .ft{
-	background-color:#333;
+	background-color:rgba(0,0,0,0.7);
 	font-size:14px;
 	padding-top:6px;
 	padding-bottom:4px;
 	color:#888;
 	bottom:0;
+	filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#B3000000', endColorstr='#B3000000');
 }
 .ft p{
 	padding-left:12px;
@@ -245,8 +246,15 @@ body{
 	color:#fff;
 }
 .ft a:hover{
-	background-color:#333;
+	background-color:transparent;
 	text-decoration:underline;
+}
+.ft .crumbs{
+	position:absolute;
+	width:100%;
+	text-align:center;
+	font-family:"宋体";
+	color:#fff;
 }
 .box{
 	background-color:#FFF;

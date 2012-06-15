@@ -700,6 +700,7 @@ a.moder{
 }
 .divi_rank_list{
 	margin-bottom:-13px;
+	zoom:1;
 }
 .divi_rank_list li{
 	padding-bottom:19px;
@@ -735,5 +736,24 @@ a.moder{
 .vip_mov_list .name{
 	color:#ff7068;
 }
+.new_review_list{
+	margin-right:-57px;
+	overflow:hidden;
+	zoom:1;
+}
+.new_review_list li{
+	margin-right:57px;
+	background-image:url(../img/rx.png);
+	background-repeat:repeat-x;
+	background-position:0 -334px;
+	margin-top:-1px;
+	padding:11px 0;
+	width:328px;
+}
+.new_review_list .pic{
+	margin-right:17px;
+	zoom:1;
+}
+
 /*p6 style end*/
 

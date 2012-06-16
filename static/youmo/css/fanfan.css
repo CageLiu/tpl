@@ -1,4 +1,7 @@
 /*resect*/
+.mb15{
+	margin-bottom:15px;
+}
 .f14{
 	font-size:14px;
 }
@@ -920,6 +923,64 @@ a.moder{
 }
 .brand_tit .brand_num{
 	font-size:18px;
+}
+.brand_ct{
+	border:3px solid #d9d9d9;
+	padding:20px 111px 0 119px;
+}
+.brand_model_pic{
+	text-align:center;
+}
+.brand_model_pic img{
+	vertical-align:bottom;
+}
+.brand_model_introduce{
+	background:url(../img/bg.png) no-repeat -150px -439px;
+	width:425px;
+	height:123px;
+	margin:22px auto 24px;
+}
+.brand_model_list{
+	padding:27px 0 0 32px;
+	margin-bottom:-3px;
+}
+.brand_model_list li{
+	width:50%;
+	padding-bottom:3px;
+}
+.brand_said_tit{
+	border:1px solid #febd81;
+	height:24px;
+	line-height:24px;
+	padding-left:5px;
+	margin-bottom:16px;
+}
+.brand_said_tit strong{
+	color:#ff7a04;
+}
+.brand_said_tit .brand_love{
+	float:right;
+}
+.brand_said_tit .brand_love a{
+	padding-right:13px;
+}
+.brand_said_item .pic{
+	margin-right:18px;
+}
+.brand_said_item li{
+	border-bottom:1px dashed #dedede;
+	padding:10px 0 12px 0;
+}
+.brand_said_item .name{
+	color:#ff675e;
+}
+.brand_tips{
+	text-align:center;
+	padding:26px 0 24px 0;
+}
+.page10_form{
+	padding-top:30px;
+	padding-bottom:24px;
 }
 /*p10 style end*/
 /*p15 style begin*/

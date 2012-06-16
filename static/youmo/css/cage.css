@@ -337,7 +337,8 @@ body{
 }
 .box .bt1,
 .box .bt2,
-.box .bt3{
+.box .bt3,
+.box .bt4{
 	background-repeat:no-repeat;
 	background-position:center bottom;
 	padding-bottom:8px;

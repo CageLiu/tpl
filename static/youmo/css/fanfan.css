@@ -681,7 +681,8 @@ a.moder{
 .new_moving_list .name{
 	color:#ff7068;
 }
-.attention_center h3{
+.attention_center h3,
+.brand_tit{
 	margin-left:-20px;
 	text-align:center;
 }
@@ -913,6 +914,14 @@ a.moder{
 	padding-bottom:25px;
 }
 /*p9 style end*/
+/*p10 style start*/
+.brand_tit .color1{
+	font-size:24px;
+}
+.brand_tit .brand_num{
+	font-size:18px;
+}
+/*p10 style end*/
 /*p15 style begin*/
 .depress_tit{
 	padding-bottom:15px;

@@ -849,25 +849,47 @@ a.moder{
 	background-position:0 -931px;
 	padding-left:18px;
 }
+.model_active_list li{
+	background:url(../img/nr.png) no-repeat left bottom;
+	margin-top:-1px;
+	padding-top:19px;
+	padding-bottom:20px;
+}
 .model_active_ct{
 	position:relative;
-	zoom:1;
-	padding-bottom:10px;
+	padding-bottom:1px;
 }
 .model_active_pic{
 	background:#fafafa;
+	float:left;
 	padding:8px;
 	width:656px;
 	margin-top:8px;
-	margin-bottom:12px;
+	margin-bottom:10px;
 	border:1px solid #f4f4f4;
 	filter:progid:DXImageTransform.Microsoft.Shadow(color='#CCCCCC', Direction=135, Strength=3);
 	box-shadow:2px 2px 3px #ccc;
 	zoom:1;
 }
-.active_btn_pa{
+.model_active_text{
+	line-height:2.0;
+	padding-right:25px;
+}
+.model_active_text p{
+	text-align:justify;
 	position:relative;
-	top:-248px;
+}
+.model_active_text p em{
+	display:inline-block;
+	width:90px;
+}
+.model_active_text .btn{
+	position:absolute;
+	right:-19px;
+	bottom:0;
+}
+.active_btn_pa{
+	margin-top:22px;
 	float:left;
 	margin-bottom:-100%;
 	zoom:1;
@@ -879,6 +901,16 @@ a.moder{
 	float:right;
 	clear:both;
 	left:-100%;
+}
+.model_active_inner{
+	background-color:#fff;
+	padding:18px;
+	line-height:2.0;
+}
+.page9_form{
+	background:#fff;
+	margin-top:-1px;
+	padding-bottom:25px;
 }
 /*p9 style end*/
 /*p15 style begin*/

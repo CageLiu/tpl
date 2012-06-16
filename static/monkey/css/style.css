@@ -221,6 +221,7 @@ body{
 }
 .main{
 	width:100%;
+	overflow:hidden;
 }
 .main_inner{
 	margin-left:192px;
@@ -261,8 +262,9 @@ body{
 	border-bottom:2px solid #E2E2E9;
 	margin:0 3px 6px;
 	border-radius:3px;
-	/*filter: progid:DXImageTransform.Microsoft.Shadow(color='#CCCCCC', Direction=135, Strength=3);*/
-    /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);*/
+	filter: progid:DXImageTransform.Microsoft.Shadow(color='#CCCCCC', Direction=135, Strength=3);
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+	zoom:1;
 }
 .box .bt{
 	border-bottom:1px solid #E2E2E2;

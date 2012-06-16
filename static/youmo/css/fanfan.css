@@ -850,17 +850,20 @@ a.moder{
 	padding-left:18px;
 }
 .model_active_ct{
-	padding-right:24px;
-	padding-top:11px;
 	position:relative;
+	zoom:1;
+	padding-bottom:10px;
 }
 .model_active_pic{
 	background:#fafafa;
-	padding:8px 9px;
+	padding:8px;
+	width:656px;
+	margin-top:8px;
+	margin-bottom:12px;
 	border:1px solid #f4f4f4;
-	filter: Shadow(Color='black', Direction='135', Strength='2');
+	filter:progid:DXImageTransform.Microsoft.Shadow(color='#CCCCCC', Direction=135, Strength=3);
 	box-shadow:2px 2px 3px #ccc;
-	/*filter: progid:DXImageTransform.Microsoft.Shadow(color='#CCCCCC', Direction=135, Strength=3);*/
+	zoom:1;
 }
 .active_btn_pa{
 	position:absolute;

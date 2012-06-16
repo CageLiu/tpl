@@ -48,3 +48,6 @@
 	background:url(../img/box_border.png) repeat-y right 0 #fff\9;
 	_margin-right:1px;
 }
+.box .bt{
+	margin-right:2px;
+}

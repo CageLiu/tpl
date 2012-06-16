@@ -11,6 +11,7 @@
 .box{
 	padding:0\9;
 	background:url(../img/body_bg.png) repeat 0 0\9;
+	box-shadow:none;
 }
 .box .radius{
 	display:block\9;

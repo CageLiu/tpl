@@ -866,15 +866,19 @@ a.moder{
 	zoom:1;
 }
 .active_btn_pa{
-	position:absolute;
-	right:100%;
-	margin-left:-100%;
+	position:relative;
+	top:-248px;
+	float:left;
+	margin-bottom:-100%;
+	zoom:1;
 }
-.pluralism{
-	top:33px;
-}
-.expired{
-	top:66px;
+.active_btn_pa .btn{
+	display:block;
+	margin-bottom:4px;
+	position:relative;
+	float:right;
+	clear:both;
+	left:-100%;
 }
 /*p9 style end*/
 /*p15 style begin*/

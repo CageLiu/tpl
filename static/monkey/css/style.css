@@ -257,11 +257,12 @@ body{
 	color:#fff;
 }
 .box{
-	background-color:#FFF;
+	background:#FFF;
 	border-bottom:2px solid #E2E2E9;
 	margin:0 3px 6px;
-    border-radius:3px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+	border-radius:3px;
+	/*filter: progid:DXImageTransform.Microsoft.Shadow(color='#CCCCCC', Direction=135, Strength=3);*/
+    /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);*/
 }
 .box .bt{
 	border-bottom:1px solid #E2E2E2;

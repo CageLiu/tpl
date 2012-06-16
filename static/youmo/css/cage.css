@@ -483,8 +483,12 @@ body{
 .media .field{
 	color:#CBCBCB;
 }
-.media .summary{
+.media .summary,
+.summary a{
 	color:#969696;
+}
+.media .summary a:hover{
+	color:#FF7068;
 }
 .media .txt{
 	position:relative;

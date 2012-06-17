@@ -166,6 +166,8 @@
 	padding-right:15px;
 	height:25px;
 	line-height:25px;
+	font-size:12px;
+	letter-spacing:normal;
 }
 .btn .ic{
 	padding-left:17px;
@@ -977,6 +979,11 @@ a.moder{
 .brand_tips{
 	text-align:center;
 	padding:26px 0 24px 0;
+	font-size:0;
+	letter-spacing:-0.5em;
+}
+.brand_tips a{
+	margin-right:5px;
 }
 .page10_form{
 	padding-top:30px;

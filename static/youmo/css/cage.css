@@ -806,7 +806,37 @@ body{
 .tg1 .tab_group .tab3{
 	margin-left:20px;
 }
-
+.tg1 .tab3 .more{
+	background:none;
+	padding:10px 0 0;
+}
+.tg1 .tab3 .more .btn{
+	width:36px;
+	height:11px;
+	overflow:hidden;
+	padding:0;
+}
+.tg1 .tab3 .more .btn{
+	background:url(../img/icon.png) no-repeat 0 -385px;
+}
+.tab_group .hide{
+	display:none;
+}
+.tg1 .tab_group .bc{
+	padding-top:1px;
+	zoom:1;
+}
+.tg1 .tab_group .tab_item{
+	overflow:hidden;
+	position:relative;
+	margin-top:-12px;
+	zoom:1;
+}
+.tg1 .tab_group .media2_item{
+	padding:19px 0;
+	border-top:1px dashed #CBCBCB;
+	margin-top:-1px;
+}
 /* slider */
 .slider img{
 	vertical-align:bottom;

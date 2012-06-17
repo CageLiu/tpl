@@ -62,6 +62,10 @@ body{
 	padding-left:20px;
 	padding-right:20px;
 }
+.m_tb_11{
+	margin-top:11px;
+	margin-bottom:11px;
+}
 /* blank style end */
 
 /* base style start */
@@ -76,8 +80,6 @@ body{
 	display:inline-block;
 	overflow:hidden;
 	cursor:pointer;
-	text-align:center;
-	text-justify:auto;
 }
 .btn{
 	position:relative;
@@ -95,16 +97,37 @@ body{
 	filter:alpha(opacity=0);
 }
 .hor_box,
-.hor_list{
+.hor_list,
+.justify_box,
+.justify_list{
 	letter-spacing:-0.5em;
 	font-size:0;
 }
+.justify_box,
+.justify_list{
+	text-align:justify;
+	text-justify:distribute-all-lines;
+}
+.justify_box:after,
+.justify_list:after{
+	content:"";
+	display:inline-block;
+	width:100%;
+	height:0;
+	overflow:hidden;
+}
 .hor_item,
-.hor_list li{
+.hor_list li,
+.justify_item,
+.justify_list li{
 	display:inline-block;
 	letter-spacing:normal;
 	font-size:12px;
 	vertical-align:top;
+	text-align:left;
+	text-justify:auto;
+	*display:inline;
+	*zoom:1;
 }
 .arrow{
 	display:inline-block;
@@ -841,35 +864,29 @@ body{
 }
 .tg1 .bc{
 	padding-top:1px;
+	padding-bottom:1px;
 	zoom:1;
 }
 .tg1 .tab_item{
 	overflow:hidden;
 	position:relative;
 	margin-top:-12px;
-	text-align:justify;
-	text-justify:distribute-all-lines;
 	zoom:1;
-}
-.tg1 .tab_item:after{
-	content: "";
-	display: inline-block;
-	width: 100%;
-	height: 0;
-	visibility: hidden;
 }
 .tg1 .media2_item{
 	padding:19px 0;
 	border-top:1px dashed #CBCBCB;
 	margin-top:-1px;
-	margin-left:20px;
 }
 .tg1 .media3_item{
 	padding-top:28px;
 	width:210px;
-	/*margin-left:20px;*/
 }
-.tg1 .media3{
+.tg1 .pic3_item{
+	margin-top:14px;
+}
+.tg1 .justify_list{
+	margin-bottom:16px;
 }
 /* slider */
 .slider img{

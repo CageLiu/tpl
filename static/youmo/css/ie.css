@@ -3,11 +3,6 @@
 #tab2{
 	*zoom:1;
 }
-.hor_item,
-.hor_list li{
-	*display:inline;
-	*zoom:1;
-}
 .box{
 	padding:0\9;
 	background:url(../img/body_bg.png) repeat 0 0\9;
@@ -47,6 +42,9 @@
 }
 .box .box_inner{
 	background:url(../img/box_border.png) repeat-y right 0 #fff\9;
+	padding-top:1px;
+	padding-bottom:1px;
+	zoom:1;
 	_margin-right:1px;
 }
 .box .bt{

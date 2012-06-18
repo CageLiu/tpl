@@ -345,13 +345,14 @@
 /*vip_statistics style end*/
 /*model_nav style start*/
 .model_nav{
-	text-align:center;
 	background-image:url(../img/bar.png);
 	background-repeat:no-repeat;
 	background-position:0 -38px;
 	height:58px;
+	text-align:center;
 }
 .model_nav li{
+	text-align:center;
 	height:30px;
 	width:70px;
 	padding-top:15px;

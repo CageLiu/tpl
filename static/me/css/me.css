@@ -1,0 +1,104 @@
+html{
+	/*overflow-x:hidden;*/
+	overflow-y:scroll;
+	_background-image:url(about:blank);
+	_background-attachment:fixed;
+}
+body,ul,ol,p,dl,dd,form,textarea,h1,h2,h3,h4,fieldset,input{
+    margin:0;
+}
+
+ul,ol,input,button,td,th,fieldset{
+    padding:0;
+}
+ul,ol{
+    list-style-type:none;
+    list-style-position:outside;
+}
+a{
+    text-decoration:none;
+    color:#3B5998;
+}
+a img,fieldset{
+    border:none;
+}
+fieldset legend{
+	display:none
+}
+a,input,button,textarea{
+	outline:none;
+}
+textarea{
+	resize:none
+}
+table{
+    border-collapse:collapse;
+    border-spacing:0;
+}
+em{
+    font-style:normal
+}
+.clear{
+    clear:both;
+}
+.clearfix{
+	*zoom:1;
+}
+.clearfix:after{
+    content:'';
+    height:0;
+    clear:both;
+    display:block;
+    overflow:hidden;
+}
+body{
+    font:12px/1.5 Tahoma,simsun,'宋体',Helvetica,simsun,sans-serif;
+    color:#222;
+	background-color:#E7EBF2;
+}
+.main{
+	margin-left:140px;
+	padding-top:12px;
+	height:3000px;
+}
+.side{
+	position:fixed;
+	top:50%;
+	left:10px;
+	width:120px;
+	_position:absolute;
+	_top:expression(eval(document.documentElement.clientHeight - 75) / 2 + document.documentElement.scrollTop);
+}
+.nav{
+	margin-top:-75px;
+	_margin-top:0;
+}
+.nav li{
+	margin-bottom:1px;
+}
+.nav a{
+	display:block;
+	line-height:normal;
+	height:23px;
+	line-height:23px;
+	padding-right:2px;
+	border-right:5px solid #627AAD;
+	color:#627AAD;
+	text-align:right;
+} 
+.nav a:hover{
+	color:#3B5998;
+	border-right-color:#3B5998;
+	text-decoration:underline;
+}
+.nav .current a{
+	color:#57A000;
+	font-weight:700;
+	border-right-color:#57A000;
+}
+.face{
+	padding:2px;
+	border:1px solid #999;
+	border-radius:3px;
+	background-color:#fff;
+}

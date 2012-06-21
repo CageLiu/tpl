@@ -1028,7 +1028,8 @@ body{
 }
 .scroll1 .tab_item,
 .scroll2 .tab_item,
-.scroll3 .tab_item{
+.scroll3 .tab_item,
+.scroll5 .tab_item{
 	float:left;
 }
 .scroll1 .tab_item{
@@ -1090,4 +1091,42 @@ body{
 	 height:27px;
 	 margin-top:-40px;
 	 background-position:0 -413px;
+}
+.scroll5{
+	margin-top:32px;
+	margin-bottom:18px;
+}
+.scroll5 .tab_item{
+	width:942px;
+}
+.scroll5 .tab_item li{
+	margin-bottom:16px;
+	/*_width:158px;*/
+}
+.they_say{
+	padding-left:142px;
+	padding-right:142px;
+}
+
+
+
+
+
+
+.divi_rank_list h3{
+	font-size:14px;
+}
+
+
+/*p6 2012-06-20 */
+.filter{
+	background-color:#E3E3E3;
+	border-radius:10px;
+	padding:10px 0;
+	width:724px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.filter .options_item{
+	padding:0 10px;
 }

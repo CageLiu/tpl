@@ -104,7 +104,8 @@
 .btn21,
 .btn21 span,
 .btn23,
-.btn23 span{
+.btn23 span,
+.btn24{
 	background-image:url(../img/btn_bg.png);
 	background-repeat:no-repeat;
 	background-color:#fff;
@@ -307,7 +308,8 @@
 .link_me,
 .writer_icon,
 .visits_icon,
-.enter_icon{
+.enter_icon,
+.invite_icon{
 	background-image:url(../img/icon.png);
 	background-repeat:no-repeat;
 	display:inline-block;
@@ -379,7 +381,6 @@
 	height:100%;
 }
 /*model_nav style end*/
-/*p2 style start*/
 /*media5 style start*/
 .media5 .pic{
 	margin-right:17px;
@@ -1037,4 +1038,149 @@ a.moder{
 	color:#ff7068;
 }
 /*p15 style end*/
-
+/*p21 style end*/
+.logo{
+	background:url(../img/logo.png) no-repeat;
+}
+.login_header .logo{
+	display:block;
+	width:528px;
+	height:93px;
+	text-indent:-999em;
+}
+.box .invite_tit,
+.box .step_invite_tit{
+	background-image:url(../img/font_bg.png);
+	background-repeat:no-repeat;
+	font-size:0;
+	margin-bottom:20px;
+	height:29px;
+	display:inline-block;
+}
+.invite_tit{
+	background-position:0 0;
+	width:246px;
+}
+.step_invite_tit{
+	background-position:0 -29px;
+	width:255px;
+}
+.login_ft{
+	background:url(../img/login_bg.png) no-repeat;
+	padding-left:570px;
+	_height:384px;
+	min-height:384px;
+}
+.login_ct{
+	padding-top:67px;
+}
+.get_invite{
+	padding-top:10px;
+	padding-bottom:35px;
+	margin-bottom:-30px;
+}
+.get_invite p{
+	padding-bottom:30px;
+	font-size:14px;
+}
+.get_invite span.date_color{
+	color:#e52972;
+}
+.step_invite_ct{
+}
+.invite_form{
+	padding-top:20px;
+}
+.invite_item{
+	margin-bottom:20px;
+}
+.invite_field{
+	width:60px;
+	margin-left:-60px;
+	display:inline-block;
+	padding-left:319px;
+}
+.invite_qq_num,
+.invite_test_num{
+	border:1px solid #bdbcbd;
+	background-color:#fff;
+	padding:10px 0;
+	font-size:14px;
+	color:#ccc;
+}
+.invite_qq_num{
+	width:222px;
+	vertical-align:middle;
+}
+.invite_test_num{
+	width:105px;
+	vertical-align:middle;
+}
+.invite_icon{
+	padding-left:34px;
+	height:22px;
+	margin-left:3px;
+	vertical-align:middle;
+}
+.invite_test_img{
+	vertical-align:middle;
+}
+.invite_icon_right{
+	background-position:0 -1010px;	
+}
+.invite_icon_wrong{
+	background-position:0 -1074px;
+}
+.invite_replace{
+	color:#050001;
+	text-decoration:underline;
+}
+.btn24{
+	display:inline-block;
+	width:207px;
+	height:50px;
+	font-size:0;
+}
+.invite_btn{
+	text-align:center;
+}
+.invite_fail{
+	background-position:-41px -698px;
+}
+.invite_success{
+	background-position:-41px -752px;
+}
+.box .invite_tips{
+	color:#f62892;
+	font-size:18px;
+	display:block;
+}
+.invite_apply{
+	padding-top:17px;
+	padding-bottom:10px;
+}
+.invite_h3{
+	background-repeat:no-repeat;
+	background-position:center top;
+	padding-top:35px;
+	padding-bottom:27px;
+}
+.invite_note{
+	padding-top:20px;
+	padding-left:300px;
+	font-size:14px;
+	line-height:2.0;
+}
+.box .invite_get_success{
+	text-align:center;
+	font-size:24px;
+	padding-top:20px;
+	padding-bottom:28px;
+}
+.invite_note2{
+	text-align:center;
+	margin-left:-300px;
+	font-size:24px;
+	padding-bottom:100px;
+}
+/*p21 style end*/

@@ -87,8 +87,8 @@ body{
 	zoom:1;
 } 
 .btn input{
-	width:999em;
-	height:999em;
+	width:9999px;
+	height:9999px;
 	position:absolute;
 	left:0;
 	top:0;
@@ -372,7 +372,8 @@ body{
 .box .bt1{
 	background-image:url(../img/tit_bg1.png);
 }
-.box .bt2{
+.box .bt2,
+.invite_h3{
 	background-image:url(../img/tit_bg2.png);
 }
 .box .bt3{

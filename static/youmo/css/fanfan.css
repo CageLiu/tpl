@@ -1190,3 +1190,62 @@ a.moder{
 	text-align:center;
 	padding-bottom:20px
 }
+/*media7 style start*/
+.media7 .txt{
+	overflow:hidden;
+	zoom:1;
+}
+.media7_tips{
+	position:absolute;
+	top:0;
+	right:0;
+}
+.media7_tips a{
+	background-color:#ff3b2f;
+	padding:0 8px;
+	color:#fff;
+}
+/*media7 style end*/
+/*p16 style start*/
+.agrncy_list{
+	margin-bottom:-14px;
+}
+.agency_list li{
+	border:1px solid #e9e9e9;
+	padding:16px 13px 16px 16px;
+	margin-bottom:14px;
+}
+.agency_list .pic{
+	margin-right:19px;
+}
+.agency_list .media7{
+	position:relative;
+}
+.agency_list h3{
+	display:inline-block;
+	padding-bottom:5px;
+}
+.agency_list h3 a{
+	color:#ff3b2f;
+}
+.agency_list .txt p{
+	padding-bottom:5px;
+}
+.agency_list .take_job{
+	color:#5e5e5e;
+	font-weight:700;
+	text-decoration:underline;
+}
+.page16{
+	padding-top:22px;
+	padding-bottom:25px;
+}
+.extra16_more strong{
+	color:#f45e59;
+	font-family:"宋体";
+	font-size:8px;
+}
+.extra16_more a{
+	color:#bbb;
+}
+/*p16 style end*/

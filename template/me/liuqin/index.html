@@ -1,7 +1,7 @@
-<!DOCTYPE HTML>
+<!doctype html>
 <html>
 	<head>
-		<meta charset="UTF-8">
+		<meta charset="utf-8">
 		<title>刘琴的简历</title>
 		<link type="text/css" rel="stylesheet" href="static/me/css/liuqin/me.css" />
 	</head>
@@ -12,5 +12,89 @@
 			  <li><a href="#">关于我</a></li>
 			</ul>
 		</div>
+
+		<div class="wp">
+			<ul class="hor_list piclist" id="list"></ul>
+		</div>
 	</body>
+	<script type="text/javascript">
+		var aList = [
+			{"name":"作品1","big":"static/me/img/cage/face.png","url":"static/me/img/cage/face.png"},
+			{"name":"作品2","big":"http://sidan.8cuo.org/static/img/slider1.jpg","url":"http://sidan.8cuo.org/static/img/slider1.jpg"},
+			{"name":"作品3","big":"http://sidan.8cuo.org/static/img/slider2.jpg","url":"http://sidan.8cuo.org/static/img/slider2.jpg"},
+			{"name":"作品4","big":"http://sidan.8cuo.org/static/img/slider3.jpg","url":"http://sidan.8cuo.org/static/img/slider3.jpg"},
+			{"name":"作品5","big":"http://sidan.8cuo.org/static/img/slider4.jpg","url":"http://sidan.8cuo.org/static/img/slider4.jpg"},
+			{"name":"作品6","big":"http://sidan.8cuo.org/static/img/slider5.jpg","url":"http://sidan.8cuo.org/static/img/slider5.jpg"},
+			{"name":"作品1","big":"static/me/img/cage/face.png","url":"static/me/img/cage/face.png"},
+			{"name":"作品2","big":"http://sidan.8cuo.org/static/img/slider1.jpg","url":"http://sidan.8cuo.org/static/img/slider1.jpg"},
+			{"name":"作品3","big":"http://sidan.8cuo.org/static/img/slider2.jpg","url":"http://sidan.8cuo.org/static/img/slider2.jpg"},
+			{"name":"作品4","big":"http://sidan.8cuo.org/static/img/slider3.jpg","url":"http://sidan.8cuo.org/static/img/slider3.jpg"},
+			{"name":"作品5","big":"http://sidan.8cuo.org/static/img/slider4.jpg","url":"http://sidan.8cuo.org/static/img/slider4.jpg"},
+			{"name":"作品6","big":"http://sidan.8cuo.org/static/img/slider5.jpg","url":"http://sidan.8cuo.org/static/img/slider5.jpg"},
+			{"name":"作品7","big":"http://sidan.8cuo.org/static/img/case_big_5.jpg","url":"http://sidan.8cuo.org/static/img/case_big_5.jpg"},
+			{"name":"作品2","big":"http://sidan.8cuo.org/static/img/slider1.jpg","url":"http://sidan.8cuo.org/static/img/slider1.jpg"},
+			{"name":"作品3","big":"http://sidan.8cuo.org/static/img/slider2.jpg","url":"http://sidan.8cuo.org/static/img/slider2.jpg"},
+			{"name":"作品4","big":"http://sidan.8cuo.org/static/img/slider3.jpg","url":"http://sidan.8cuo.org/static/img/slider3.jpg"},
+			{"name":"作品5","big":"http://sidan.8cuo.org/static/img/slider4.jpg","url":"http://sidan.8cuo.org/static/img/slider4.jpg"},
+			{"name":"作品6","big":"http://sidan.8cuo.org/static/img/slider5.jpg","url":"http://sidan.8cuo.org/static/img/slider5.jpg"},
+			{"name":"作品1","big":"static/me/img/cage/face.png","url":"static/me/img/cage/face.png"},
+			{"name":"作品2","big":"http://sidan.8cuo.org/static/img/slider1.jpg","url":"http://sidan.8cuo.org/static/img/slider1.jpg"},
+			{"name":"作品3","big":"http://sidan.8cuo.org/static/img/slider2.jpg","url":"http://sidan.8cuo.org/static/img/slider2.jpg"},
+			{"name":"作品4","big":"http://sidan.8cuo.org/static/img/slider3.jpg","url":"http://sidan.8cuo.org/static/img/slider3.jpg"},
+			{"name":"作品5","big":"http://sidan.8cuo.org/static/img/slider4.jpg","url":"http://sidan.8cuo.org/static/img/slider4.jpg"},
+			{"name":"作品6","big":"http://sidan.8cuo.org/static/img/slider5.jpg","url":"http://sidan.8cuo.org/static/img/slider5.jpg"},
+			{"name":"作品7","big":"http://sidan.8cuo.org/static/img/case_big_5.jpg","url":"http://sidan.8cuo.org/static/img/case_big_5.jpg"},
+			{"name":"作品2","big":"http://sidan.8cuo.org/static/img/slider1.jpg","url":"http://sidan.8cuo.org/static/img/slider1.jpg"},
+			{"name":"作品3","big":"http://sidan.8cuo.org/static/img/slider2.jpg","url":"http://sidan.8cuo.org/static/img/slider2.jpg"},
+			{"name":"作品4","big":"http://sidan.8cuo.org/static/img/slider3.jpg","url":"http://sidan.8cuo.org/static/img/slider3.jpg"},
+			{"name":"作品5","big":"http://sidan.8cuo.org/static/img/slider4.jpg","url":"http://sidan.8cuo.org/static/img/slider4.jpg"},
+			{"name":"作品6","big":"http://sidan.8cuo.org/static/img/slider5.jpg","url":"http://sidan.8cuo.org/static/img/slider5.jpg"},
+			{"name":"作品1","big":"static/me/img/cage/face.png","url":"static/me/img/cage/face.png"},
+			{"name":"作品2","big":"http://sidan.8cuo.org/static/img/slider1.jpg","url":"http://sidan.8cuo.org/static/img/slider1.jpg"},
+			{"name":"作品3","big":"http://sidan.8cuo.org/static/img/slider2.jpg","url":"http://sidan.8cuo.org/static/img/slider2.jpg"},
+			{"name":"作品4","big":"http://sidan.8cuo.org/static/img/slider3.jpg","url":"http://sidan.8cuo.org/static/img/slider3.jpg"},
+			{"name":"作品5","big":"http://sidan.8cuo.org/static/img/slider4.jpg","url":"http://sidan.8cuo.org/static/img/slider4.jpg"},
+			{"name":"作品6","big":"http://sidan.8cuo.org/static/img/slider5.jpg","url":"http://sidan.8cuo.org/static/img/slider5.jpg"},
+			{"name":"作品7","big":"http://sidan.8cuo.org/static/img/case_big_5.jpg","url":"http://sidan.8cuo.org/static/img/case_big_5.jpg"},
+			{"name":"作品7","big":"http://sidan.8cuo.org/static/img/case_big_5.jpg","url":"http://sidan.8cuo.org/static/img/case_big_5.jpg"}
+		]
+		var oList = document.getElementById("list");
+		var html = document.documentElement;
+		var body = document.body;
+		var bodyHeight;
+		var clientHeight = document.documentElement.clientHeight;
+		var initnum = (Math.floor(clientHeight / 188) * 3) < aList.length ? Math.floor(clientHeight / 188) * 3 : aList.length;
+		var oFragment = document.createDocumentFragment();
+
+		function loadImg(n){
+			for(var i = 0; i < n; i++){
+				var oImg = new Image();
+				var oLi = document.createElement("li");
+				var oSpan = document.createElement("span");
+				oSpan.className = "name";
+				oSpan.innerHTML = aList[i]["name"];
+				oImg.setAttribute("alt",aList[i]["name"]);
+				oImg.setAttribute("title",aList[i]["name"]);
+				oImg.style.visibility = 'hidden';
+				oImg.onload = function(){
+					this.parentNode.className ="loaded";
+					this.style.visibility = "visible";
+				}
+				oImg.src = aList[i]["url"];
+				oLi.appendChild(oImg);
+				oLi.appendChild(oSpan);
+				oFragment.appendChild(oLi);
+			}
+			oList.appendChild(oFragment);
+			return body.offsetHeight;
+		}
+		bodyHeight = loadImg(initnum);
+		//alert(bodyHeight);
+		window.onscroll = function(){
+			var scrollTop = html.scrollTop || body.scrollTop;
+			if(bodyHeight - clientHeight == scrollTop){
+
+			}
+		}
+	</script>
 </html>

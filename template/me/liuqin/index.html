@@ -16,6 +16,10 @@
 		<div class="wp">
 			<ul class="hor_list piclist" id="list"></ul>
 		</div>
+
+		<div id="gotop">
+			Top
+		</div>
 	</body>
 	<script type="text/javascript">
 		var aList = [
@@ -1001,6 +1005,7 @@
 			{"name":"作品6","big":"http://sidan.8cuo.org/static/img/slider5.jpg","url":"http://sidan.8cuo.org/static/img/slider5.jpg"}
 		]
 		var oList = document.getElementById("list");
+		var gotop = document.getElementById("gotop");
 		var html = document.documentElement;
 		var body = document.body;
 		var bodyHeight;
@@ -1046,6 +1051,15 @@
 			var target = e.target || e.srcElement;
 			if(target.nodeName.toLowerCase() === "img"){
 				window.location.href = target.getAttribute('rel');
+			}
+			if(target.getAttribute("id") === "gotop"){
+				var timer = null;
+				(function(){
+					var scrollTop = html.scrollTop || body.scrollTop;
+					var iSpeed = scrollTop / 4;			  
+					html.scrollTop ? (html.scrollTop = scrollTop - iSpeed) : (body.scrollTop = scrollTop - iSpeed);
+					scrollTop ? timer = setTimeout(arguments.callee,30) : clearTimeout(timer);
+				}());
 			}
 		}
 	</script>

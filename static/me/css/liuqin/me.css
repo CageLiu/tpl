@@ -1,6 +1,8 @@
 html{
 	/*overflow-x:hidden;*/
 	overflow-y:scroll;
+	_background-image:url(about:blank);
+	_background-attachment:fixed;
 }
 body,ul,ol,p,dl,dd,form,textarea,h1,h2,h3,h4,fieldset,input{
     margin:0;
@@ -148,4 +150,24 @@ body{
 	display:block;
 	font-size:14px;
 	color:#000;
+}
+#gotop{
+	width:50px;
+	height:50px;
+	background:#333;
+	border-radius:300px;
+	position:fixed;
+	bottom:10px;
+	right:10px;
+	cursor:pointer;
+	text-align:center;
+	line-height:50px;
+	font-size:18px;
+	font-weight:700;
+	color:#fff;
+	_position:absolute;
+	_top:expression(eval(document.documentElement.clientHeight - 60)  + document.documentElement.scrollTop);
+}
+#gotop:hover{
+	box-shadow:0 0 15px #fff;
 }

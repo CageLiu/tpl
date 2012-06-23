@@ -1252,3 +1252,18 @@ a.moder{
 	height:252px;
 }
 /*p16 style end*/
+/*p17 style start*/
+.brand_pic_list li{
+	width:223px;
+	padding-left:4px;
+	padding-right:5px;
+}
+.brand_pic_list img{
+	background:url(../img/img_bg1.png) no-repeat center bottom;
+	padding-bottom:11px;
+}
+.brand_pic_list .name{
+	color:#343434;
+	font-weight:700;
+}
+/*p17 style end*/

@@ -116,12 +116,6 @@ body{
 	margin-bottom:12px;
 	width:248px;
 	height:220px;
-	-webkit-transition: 0.3s linear all;
-	-moz-transition: 0.3s linear all;
-	-ms-transition: 0.3s linear all;
-	-o-transition: 0.3s linear all;
-	-khtml-transition: 0.3s linear all;
-	transition: 0.3s linear all;
 	margin-left:72px;
 	background:url(../../img/liuqin/loading.gif) no-repeat center center;
 	cursor:pointer;
@@ -132,16 +126,23 @@ body{
 .piclist img{
 	vertical-align:middle;
 	padding:3px;
-	width:240px;
+	width:180px;
 	height:180px;
 	border:1px solid #888;
 	background:#eee;
 	border-radius:3px;
 	box-shadow:0 0 3px #333;
+	-webkit-transition: 0.3s linear all;
+	-moz-transition: 0.3s linear all;
+	-ms-transition: 0.3s linear all;
+	-o-transition: 0.3s linear all;
+	-khtml-transition: 0.3s linear all;
+	transition: 0.3s linear all;
 }
 .piclist img:hover{
 	box-shadow:0 0 10px #57a000;
 	border-color:#57a000;
+	border-radius:250px;
 }
 .piclist .name{
 	display:block;

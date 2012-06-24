@@ -1326,7 +1326,8 @@ a.moder{
 	padding-bottom:18px;
 }
 .form19_ct{
-	padding-left:5px;
+	padding:10px 0 21px 5px;
+	margin-top:-4px;
 }
 .form19_vip{
 	border:1px solid #b3b3b3;
@@ -1340,5 +1341,15 @@ a.moder{
 .form19_vip_txt,
 .form19_vip_field{
 	vertical-align:middle;
+}
+.form19_ct dt{
+	margin-bottom:10px;
+}
+.form19_com_vip{
+	margin-top:27px;
+}
+.form19_ct dd,
+.form19_ct li{
+	margin-bottom:4px;
 }
 /*p19 style end*/

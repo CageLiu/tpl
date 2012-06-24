@@ -219,6 +219,7 @@
 .btn17{
 	background-position:left -603px;
 	padding-left:27px;
+	background-color:transparent;
 }
 .btn17 span{
 	background-position:right -603px;
@@ -226,6 +227,7 @@
 	font-size:16px;
 	height:41px;
 	padding-top:2px;
+	background-color:transparent;
 }
 .btn18{
 	background-position:left -512px;
@@ -1209,6 +1211,37 @@ a.moder{
 	color:#fff;
 }
 /*media7 style end*/
+/*media8 style start*/
+.media8 .txt{
+	text-align:right;
+	padding-right:15px;
+}
+.media8 .tit a{
+	font-size:14px;
+	color:#ec1913;
+	font-weight:700;
+}
+.competi_list{
+	margin-bottom:-13px;
+	margin-right:12px;
+	padding-bottom:43px;
+}
+.competi_list li{
+	border:1px solid #e5e5e5;
+	padding:11px 0 12px 13px;
+	margin-bottom:13px;
+}
+.list_bg1 li{
+	background:url(../img/rx.png) repeat-x 0 -341px #f8f8f8;
+}
+.competi_icon{
+	margin-right:-31px;
+}
+.media8 .tit,
+.media8 .summary{
+	padding-bottom:6px;
+}
+/*media8 style end*/
 /*p16 style start*/
 .agrncy_list{
 	margin-bottom:-14px;
@@ -1335,11 +1368,15 @@ a.moder{
 	padding:0 25px;
 	color:#222;
 	display:inline-block;
+	*display:inline;
+	zoom:1;
 	height:21px;
 	line-height:21px;
 }
 .form19_vip_txt,
-.form19_vip_field{
+.form19_vip_field,
+.form19_item,
+.form19_se .btn{
 	vertical-align:middle;
 }
 .form19_ct dt{
@@ -1351,5 +1388,17 @@ a.moder{
 .form19_ct dd,
 .form19_ct li{
 	margin-bottom:4px;
+}
+.form19_se{
+	padding-left:12px;
+	padding-bottom:19px;
+}
+.form19_item{
+	width:136px;
+	border:1px solid #d8d8d8;
+	color:#929292;
+	font-size:12px;
+	height:22px;
+	line-height:22px;
 }
 /*p19 style end*/

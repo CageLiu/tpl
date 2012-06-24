@@ -549,11 +549,9 @@ a.moder{
 .vip_concern_me{
 	padding:8px 0 1px 21px;
 }
-.vip_concern_me .pic_list2{
-	margin-right:-33px;
-}
-.vip_concern_me .pic_list2 li{
-	margin-right:33px;
+.vip_concern_me .pic_list{
+	margin-right:23px;
+	width:164px;
 }
 .vip_concern_me .pic_txt{
 	margin-top:4px;
@@ -694,6 +692,9 @@ a.moder{
 .brand_tit{
 	margin-left:-20px;
 	text-align:center;
+}
+.bg_color a:hover{
+	position:relative;
 }
 .bg_color a:hover span{
 	background-color:#ff7068;
@@ -1311,3 +1312,33 @@ a.moder{
 	padding-bottom:29px;
 }
 /*p17 style end*/
+/*p19 style start*/
+.side2{
+	width:208px;
+	margin-right:10px;
+}
+.form19_box{
+	border:1px solid #d8d8d8;
+	padding:12px;
+	margin:0 11px 0 12px;
+}
+.form19_tit{
+	padding-bottom:18px;
+}
+.form19_ct{
+	padding-left:5px;
+}
+.form19_vip{
+	border:1px solid #b3b3b3;
+	background-color:#f7f7f7;
+	padding:0 25px;
+	color:#222;
+	display:inline-block;
+	height:21px;
+	line-height:21px;
+}
+.form19_vip_txt,
+.form19_vip_field{
+	vertical-align:middle;
+}
+/*p19 style end*/

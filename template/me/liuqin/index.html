@@ -9,8 +9,7 @@
 		<div class="hd">
 			<ul class="nav hor_list">
 			  <li><a href="#">作品集</a></li>
-			  <li><a href="#">关于我</a></li>
-			  <li><a href="#" class="download">下载简历</a></li>
+			  <li><a href="#" id="showresume">关于我</a></li>
 			</ul>
 		</div>
 
@@ -24,12 +23,91 @@
 		</div>
 		<div id="resume">
 			<div class="inner" id="inner">
-				sdadasdasd
+				<table class="table">
+					<caption>个人简历</caption>
+					<tbody>
+						<tr class="acenter">
+							<td class="field">姓名</td>
+							<td>刘琴</td>
+							<td class="field">性别</td>
+							<td>女</td>
+							<td class="field">民族</td>
+							<td>汉</td>
+							<td rowspan="3" class="face">
+								<img src="static/me/img/liuqin/face.jpg" alt="" />
+							</td>
+						</tr>
+						<tr class="acenter">
+							<td class="field">身高</td>
+							<td>155cm</td>
+							<td class="field">体重</td>
+							<td>女</td>
+							<td class="field">政治面貌</td>
+							<td>汉</td>
+						</tr>
+						<tr class="acenter">
+							<td class="field">出身年月</td>
+							<td>1989.11.15</td>
+							<td class="field">学历</td>
+							<td>大专</td>
+							<td class="field">籍贯</td>
+							<td>皖安庆市</td>
+						</tr>
+						<tr>
+							<td class="field">毕业学校</td>
+							<td colspan="2">安徽三联学院</td>
+							<td class="field">联系地址</td>
+							<td colspan="3">上海市杨浦区国定路600弄10号301室</td>
+						</tr>
+						<tr>
+							<td class="field">专业</td>
+							<td colspan="2">电脑艺术设计</td>
+							<td class="field">联系电话</td>
+							<td colspan="3">13524582900</td>
+						</tr>
+						<tr>
+							<td class="field">兴趣爱好</td>
+							<td colspan="6">剪纸、绘画、种植花木、听音乐、阅读书籍、写作</td>
+						</tr>
+						<tr>
+							<td class="field">大学所学专业课程</td>
+							<td colspan="6">
+								CoreIDRAW、IIIustrator、FLASH、PHOTOSHOP、3DSMAX、色彩、素描、色彩构成、平面构成、装饰图案、包装设计、广告设计、标志设计、徒手动画
+							</td>
+						</tr>
+						<tr>
+							<td class="field">大学中任职经历</td>
+							<td colspan="6">
+								剪纸协会组织部副部长
+							</td>
+						</tr>
+						<tr>
+							<td class="field">奖励情况</td>
+							<td colspan="6">10年12剪纸作品《合荷二仙》获得优秀奖</td>
+						</tr>
+						<tr>
+							<td class="field">自我鉴定</td>
+							<td colspan="6">有较强动手能力、细心，创新意识和责任心强；积极上进，乐观坚强</td>
+						</tr>
+						<tr>
+							<td class="field">应聘职位</td>
+							<td colspan="6">平面设计</td>
+						</tr>
+					</tbody>
+				</table>
 			</div>
 		</div>
 	</body>
 	<script type="text/javascript">
 		var aList = [
+			{"name":"作品1","big":"static/me/img/cage/face.png","url":"static/me/img/cage/face.png"},
+			{"name":"作品1","big":"static/me/img/cage/face.png","url":"static/me/img/cage/face.png"},
+			{"name":"作品1","big":"static/me/img/cage/face.png","url":"static/me/img/cage/face.png"},
+			{"name":"作品1","big":"static/me/img/cage/face.png","url":"static/me/img/cage/face.png"},
+			{"name":"作品1","big":"static/me/img/cage/face.png","url":"static/me/img/cage/face.png"},
+			{"name":"作品1","big":"static/me/img/cage/face.png","url":"static/me/img/cage/face.png"},
+			{"name":"作品1","big":"static/me/img/cage/face.png","url":"static/me/img/cage/face.png"},
+			{"name":"作品1","big":"static/me/img/cage/face.png","url":"static/me/img/cage/face.png"},
 			{"name":"作品1","big":"static/me/img/cage/face.png","url":"static/me/img/cage/face.png"},
 			{"name":"作品1","big":"static/me/img/cage/face.png","url":"static/me/img/cage/face.png"},
 			{"name":"作品1","big":"static/me/img/cage/face.png","url":"static/me/img/cage/face.png"},
@@ -45,6 +123,7 @@
 		var oTips = document.getElementById("tips");
 		var oCount = document.getElementById("count");
 		var oResume = document.getElementById("resume");
+		var oShow = document.getElementById("showresume");
 		var oInner = document.getElementById("inner");
 		var html = document.documentElement;
 		var body = document.body;
@@ -95,7 +174,7 @@
 		document.onclick = function(e){
 			e = e || window.event;
 			var target = e.target || e.srcElement;
-			if(target.nodeName.toLowerCase() === "img"){
+			if(target.nodeName.toLowerCase() === "img" && target.parentNode.nodeName.toLowerCase() === "li"){
 				window.location.href = target.getAttribute('rel');
 			}
 			if(target.getAttribute("id") === "gotop"){
@@ -111,6 +190,21 @@
 				if(initnum >= len){return};
 				var end = (initnum + 3) < len ? initnum + 3 : len;
 				bodyHeight = loadImg(initnum,end);
+			}
+			if(target.nodeName.toLowerCase() === "a" && target.getAttribute("id") === "showresume"){
+				oResume.style.display = "block";
+				document.documentElement.style.overflowY = "hidden";
+			}else{
+				oResume.style.display = "none";
+				document.documentElement.style.overflowY = "scroll";
+			}
+		}
+		oInner.onclick = function(e){
+			e = e || window.event;
+			if(e.stopPropagation){
+				e.stopPropagation();
+			}else{
+				e.cancelBubble = true;
 			}
 		}
 	</script>

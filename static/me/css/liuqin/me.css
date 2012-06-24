@@ -112,6 +112,7 @@ body{
 .piclist{
 	margin-left:-72px;
 	text-align:center;
+	padding-bottom:30px;
 }
 .piclist li{
 	text-align:center;
@@ -165,9 +166,64 @@ body{
 	font-size:18px;
 	font-weight:700;
 	color:#fff;
+	-webkit-transition: 0.3s linear all;
+	-moz-transition: 0.3s linear all;
+	-ms-transition: 0.3s linear all;
+	-o-transition: 0.3s linear all;
+	-khtml-transition: 0.3s linear all;
+	transition: 0.3s linear all;
 	_position:absolute;
 	_top:expression(eval(document.documentElement.clientHeight - 60)  + document.documentElement.scrollTop);
 }
 #gotop:hover{
-	box-shadow:0 0 15px #fff;
+	box-shadow:0 0 15px #000;
+	color:#000;
+	background:#fff;
+}
+.tips{
+	width:320px;
+	text-align:center;
+	height:30px;
+	line-height:30px;
+	color:#fff;
+	background:#333;
+	border-radius:5px;
+	cursor:pointer;
+	position:fixed;
+	left:50%;
+	margin-left:-160px;
+	bottom:0;
+	box-shadow:0px 0px 3px #000;
+	_position:absolute;
+	_top:expression(eval(document.documentElement.clientHeight - 30)  + document.documentElement.scrollTop);
+}
+#count{
+	font-size:14px;
+	font-weight:700;
+	margin:0 5px;
+}
+#resume{
+	position:absolute;
+	top:30px;
+	width:100%;
+	background:rgba(0,0,0,0.5);
+	filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#80000000', endColorstr='#80000000');
+}
+.inner{
+	width:800px;
+	margin:0 auto;
+	height:100%;
+	background:#fff;
+	overflow-y:scroll;
+	overflow-x:hidden;
+}
+.nav .download{
+	background:#fff;
+	color:#57a000;
+	border-radius:3px;
+	font-size:12px;
+	display:inline-block;
+	padding:1px 4px;
+	height:23px;
+	line-height:23px;
 }

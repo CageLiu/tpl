@@ -309,7 +309,9 @@
 .writer_icon,
 .visits_icon,
 .enter_icon,
-.invite_icon{
+.invite_icon,
+.brand_discuss_icon,
+.brand_love_icon{
 	background-image:url(../img/icon.png);
 	background-repeat:no-repeat;
 	display:inline-block;
@@ -1026,7 +1028,7 @@ a.moder{
 	zoom:1;
 }
 .nater_top10_list li{
-	background:url(../img/icon.png) no-repeat 0 -966px;
+	background:url(../img/icon.png) no-repeat -57px -966px;
 	border-top:1px dashed #ebebeb;
 	margin-top:-1px;
 	padding:7px 0 7px 17px;
@@ -1253,17 +1255,59 @@ a.moder{
 }
 /*p16 style end*/
 /*p17 style start*/
+.brand_pic{
+	margin-top:4px;
+}
+.bradn_pic_list{
+	margin-right:-4px;
+	margin-bottom:-10px;
+}
 .brand_pic_list li{
 	width:223px;
-	padding-left:4px;
-	padding-right:5px;
+	padding:7px 5px 0 4px;
+	margin-right:9px;
+	margin-bottom:10px;
 }
 .brand_pic_list img{
 	background:url(../img/img_bg1.png) no-repeat center bottom;
 	padding-bottom:11px;
 }
-.brand_pic_list .name{
+.brand_pic_list .stamp{
 	color:#343434;
 	font-weight:700;
+}
+.brand_pic_list .info{
+	color:#6e6e6e;
+}
+.brand_pic_list .name{
+	color:#ff857e;
+}
+.brand_pic_list .summary{
+	color:#999;
+}
+.brand_love{
+	text-align:right;
+	color:#b7b7b7;
+}
+.brand_love_icon{
+	background-position:0 -559px;
+	padding-left:15px;
+	margin-right:8px;
+}
+.brand_discuss_icon{
+	background-position:0 -591px;
+	padding-left:17px;
+}
+.pic_list5{
+	margin-right:-17px;
+	margin-bottom:-8px;
+}
+.pic_list5 li{
+	padding-right:17px;
+	padding-bottom:8px;
+}
+.page18_form{
+	padding-top:49px;
+	padding-bottom:29px;
 }
 /*p17 style end*/

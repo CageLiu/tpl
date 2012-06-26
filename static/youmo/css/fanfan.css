@@ -366,7 +366,9 @@
 }
 .model_nav a:hover,
 .model_nav a.current,
-.model_concern{
+.model_concern,
+.game_title h2,
+.top_bg{
 	background-image:url(../img/bg.png);
 	background-repeat:no-repeat;
 }
@@ -1242,6 +1244,29 @@ a.moder{
 	padding-bottom:6px;
 }
 /*media8 style end*/
+/*media9 style start*/
+.media9 .pic{
+	width:507px;
+	height:260px;
+	overflow:hidden;
+	margin-right:14px;
+}
+.media9 .txt{
+	background-color:#f4f4f4;
+	width:420px;
+}
+.media9_txt_ct{
+	padding:18px 11px 0 21px;
+}
+.media9 .summary{
+	padding:11px 0 17px 0;
+}
+.media9_txt_ct span{
+	color:#fff;
+	background-color:#ff5147;
+	padding:0 7px;
+}
+/*media9 style end*/
 /*p16 style start*/
 .agrncy_list{
 	margin-bottom:-14px;
@@ -1402,3 +1427,86 @@ a.moder{
 	line-height:22px;
 }
 /*p19 style end*/
+/*p20 style start*/
+.game_title{
+	position:relative;
+}
+.game_title h2{
+	height:65px;
+	line-height:65px;
+	text-align:center;
+	background-position:0 -562px;
+	font-size:28px;
+	font-weight:normal;
+}
+.game_title_extra{
+	position:absolute;
+	right:51px;
+	top:19px;
+}
+.top3_list{
+	margin-right:-19px;
+}
+.top3_list li{
+	border:8px solid #ffbc15;
+	position:relative;
+	margin-right:19px;
+}
+.top3_list img,
+.vote_list img{
+	vertical-align:bottom;
+}
+.top_bg{
+	width:75px;
+	height:82px;
+	overflow:hidden;
+	text-indent:-9999px;
+	position:absolute;
+	top:-8px;
+	left:-8px;
+}
+.top1_bg{
+	background-position:0 0;
+}
+.top2_bg{
+	background-position:-75px 0;
+}
+.top3_bg{
+	background-position:-150px 0;
+}
+.vote_list{
+	overflow:hidden;
+}
+.vote_list li{
+	border-top:1px dashed #d0d0d0;
+	padding-top:19px;
+	padding-bottom:25px;
+	margin-top:-1px;
+}
+.vote_inner_list{
+	margin-right:-14px;
+}
+.vote_inner_list li{
+	border:1px solid #e6e6e6;
+	padding:8px 8px 8px 9px;
+	margin-right:7px;
+}
+.vote_inner_list .vote_list_spe{
+	border:0 none;
+	background:none;
+	margin-top:-10px;
+	position:relative;
+	width:252px;
+}
+.vote_inner_list .vote_list_pa{
+	position:absolute;
+	top:8px;
+	right:8px;
+	width:32px;
+	margin-top:-6px;
+}
+.vote_list_pa .btn{
+	margin-top:6px;
+}
+/*p20 style end*/
+

@@ -777,6 +777,8 @@ a.moder{
 .new_moving_list li{
 	border-bottom:1px solid #e9e9e9;
 	padding:26px 0 18px 0;
+	position:relative;
+	zoom:1;
 }
 .model_pic_list img{
 	vertical-align:middle;

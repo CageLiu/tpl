@@ -1644,4 +1644,12 @@ a.moder{
 	font-size:18px;
 	font-weight:normal;
 }
+.future_star_list span{
+	padding-right:5px;
+}
+.future_star_btn{
+	letter-spacing:-0.5em;
+}
+.future_star_btn a{
+}
 /*p29 style end*/

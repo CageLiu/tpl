@@ -1,4 +1,4 @@
-/*resect*/
+/*resect style start*/
 .mb15{
 	margin-bottom:15px;
 }
@@ -29,6 +29,16 @@
 	font-size:16px;
 	font-weight:700;
 }
+/*resect style end*/
+/*base style start*/
+.pbg{
+	background-image:url(../img/pbg.png);
+	background-repeat:no-repeat;
+	width:967px;
+	height:208px;
+	margin-left:7px;
+}
+/*base style end*/
 /*btn style start*/
 .btn em,
 .view_more em{
@@ -105,7 +115,13 @@
 .btn21 span,
 .btn23,
 .btn23 span,
-.btn24{
+.btn24,
+.btn25,
+.btn25 span,
+.btn26,
+.btn27,
+.btn28,
+.btn28 span{
 	background-image:url(../img/btn_bg.png);
 	background-repeat:no-repeat;
 	background-color:#fff;
@@ -283,6 +299,39 @@
 .btn22 span{
 	padding:17px 7px 15px 0;	
 	overflow:hidden;
+}
+.btn25{
+	background-position:left -969px;
+	padding-left:20px;
+	height:31px;
+	line-height:31px;
+}
+.btn25 span{
+	background-position:right -969px;
+	padding-right:20px;
+}
+.btn26,
+.btn27{
+	width:217px;
+	height:54px;
+	font-size:0;
+}
+.btn26{
+	background-position:0 -854px;
+}
+.btn27{
+	background-position:0 -911px;
+}
+.btn28{
+	background-position:left -1063px;
+	padding-left:25px;
+	height:29px;
+	line-height:29px;
+}
+.btn28 span{
+	background-position:right -1063px;
+	padding-right:25px;
+	color:#1f1c1d;
 }
 /*btn style end*/
 /*vip_statistics style start*/
@@ -874,7 +923,7 @@ a.moder{
 }
 .model_active_ct{
 	position:relative;
-	padding-bottom:1px;
+	padding-bottom:10px;
 }
 .model_active_pic{
 	background:#fafafa;
@@ -882,7 +931,6 @@ a.moder{
 	padding:8px;
 	width:656px;
 	margin-top:8px;
-	margin-bottom:10px;
 	border:1px solid #f4f4f4;
 	filter:progid:DXImageTransform.Microsoft.Shadow(color='#CCCCCC', Direction=135, Strength=3);
 	box-shadow:2px 2px 3px #ccc;
@@ -927,7 +975,7 @@ a.moder{
 .page9_form{
 	background:#fff;
 	margin-top:-1px;
-	padding-bottom:25px;
+	padding:25px 0;
 }
 /*p9 style end*/
 /*p10 style start*/
@@ -1517,4 +1565,83 @@ a.moder{
 	padding-bottom:25px;
 }
 /*p25 style end*/
-
+/*p27 style start*/
+.team_tit h2{
+	display:inline-block;
+	*display:inline;
+	zoom:1;
+}
+.team_num{
+	margin-right:-7px;
+	letter-spacing:-0.5em;
+}
+.team_num span{
+	letter-spacing:normal;
+	color:#606060;
+	padding-left:5px;
+}
+.team{
+	background-position:0 -416px;
+}
+.team_extra{
+	text-align:right;
+	padding-right:25px;
+	letter-spacing:-0.5em;
+}
+.team_extra .btn{
+	margin-right:5px;
+	letter-spacing:normal;
+}
+.team_btn{
+	text-align:right;
+	padding-top:120px;
+	padding-right:140px;
+}
+.view_box{
+	padding-top:10px;
+	margin-right:26px;
+}
+.view_item{
+	border:4px solid #587eff;
+	padding:16px 23px 16px 11px;
+	position:relative;
+}
+.top_arrow{
+	background-position:-49px -1137px;
+	position:absolute;
+	width:15px;
+	height:10px;
+	top:-10px;
+	right:101px;
+}
+.view_vip_list{
+	margin-right:-7px;
+	padding-top:11px;
+}
+.view_vip_list li{
+	padding:0 7px 0 0;
+	background:none;
+}
+/*p27 style end*/
+/*p29 style start*/
+.star_pbg{
+	background-position:0 -208px;
+}
+.star_pbg_btn{
+	padding-top:135px;
+	padding-right:157px;
+	text-align:right;
+}
+.media10 .pic{
+	margin-right:17px;
+}
+.future_star_list li{
+	border:6px solid #e1e1e1;
+	padding:7px 14px 7px 7px;
+}
+.future_star_txt h3{
+	color:#1c1c1c;
+	font-size:18px;
+	font-weight:normal;
+}
+/*p29 style end*/

@@ -674,7 +674,6 @@ body{
 	width:162px;
 	padding:10px;
 	background:#fff;
-	/*margin-left:12px;*/
 	box-shadow:1px 2px 2px #ccc;
 	filter: progid:DXImageTransform.Microsoft.Shadow(color='#CCCCCC', Direction=135, Strength=3);
 }
@@ -715,6 +714,35 @@ body{
 .pic_list4 .comment .summary{
 	overflow:visible;
 	height:auto;
+}
+.pic_list5 li{
+	/*
+	 *zoom:1;
+	 *position:relative;
+	 *padding-left:2px;
+	 */
+}
+.pic_list5{
+	padding-left:17px;
+}
+.pic_list5 li{
+	zoom:1;
+	padding:0 2px;
+	margin-left:-15px;
+}
+.pic_list5 .picture{
+	border:1px solid #F0F0F0;
+	padding:3px;
+}
+.pic_list5 .pic_txt{
+	margin-top:10px;
+	font-size:14px;
+}
+.pic_list5 .picture:hover{
+	border-width:3px;
+	border-color:#DCDCDC;
+	margin:-2px;
+	position:relative;
 }
 /* pic list style end */
 
@@ -1070,12 +1098,14 @@ body{
 	margin-left:-12px;
 }
 .scroll3 .tbtn,
-.scroll4 .tbtn{
+.scroll4 .tbtn,
+.scroll6 .tbtn{
 	background-image:url(../img/icon.png);
 	background-repeat:no-repeat;
 }
 .scroll3 .next,
-.scroll4 .next{
+.scroll4 .next,
+.scroll6 .next{
 	filter:FlipH;
 	-webkit-transform: rotate(-180deg);
 	-moz-transform: rotate(-180deg);
@@ -1105,7 +1135,29 @@ body{
 }
 .scroll5 .tab_item li{
 	margin-bottom:16px;
-	/*_width:158px;*/
+}
+.scroll6{
+	overflow:visible;
+}
+.scroll6 .tbtn{
+	width:25px;
+	height:25px;
+	background-position:right -414px;
+}
+.scroll6 .scroll_box{
+	margin:0 13px;
+}
+.scroll6 .pic_list5{
+	margin:10px 0;
+}
+.scroll6 .tbtn{
+	margin-top:-15px;
+}
+.scroll6 .prev{
+	left:-14px;
+}
+.scroll6 .next{
+	right:-14px;
 }
 .they_say{
 	padding-left:142px;
@@ -1141,4 +1193,79 @@ body{
 .mod_list1 li{
 	margin-bottom:10px;
 	margin-right:2px;
+}
+
+/* selector */
+.selector .sitem{
+	position:relative;
+	line-height:22px;
+	border-style:solid solid none;
+	border-width:1px 1px 0;
+	border-color:#C5C5C5;
+	cursor:pointer;
+	margin-right:4px;
+	zoom:1;
+}
+.selector .arrow{
+	position:absolute;
+	border-style:solid dashed dashed;
+	border-color:#000 #fff #fff;
+	border-width:5px;
+	top:9px;
+	right:3px;
+}
+.selector .cur{
+	padding:0 12px;
+	border-right:1px solid #D7D7D7;
+	display:block;
+	margin-right:15px;
+	background:#fff;
+}
+.selector .slist{
+	position:relative;
+	border:1px solid #C5C5C5;
+	background:#fff;
+	z-index:999;
+	margin:0 -1px;
+	top:-1px;
+}
+.selector .slist li{
+	padding-left:12px;
+	line-height:25px;
+	white-space:nowrap;
+	padding-right:12px;
+}
+.selector .close{
+	height:22px;
+	overflow:hidden;
+}
+.selector1 .txt{
+	height:21px;
+	border:1px solid #C5C5C5;
+	margin-right:4px;
+	overflow:hidden;
+}
+.selector1 .txt input{
+	background:#fff;
+	height:21px;
+	line-height:21px;
+	border:none;
+}
+.bar1{
+	height:30px;
+}
+.selector1{
+	position:absolute;
+	top:15px;
+}
+.selector1 .txt .sbtn{
+	background:url(../img/bar.png) no-repeat 0 -13px;
+	padding:0 10px;
+	border-left:1px solid #C5C5C5;
+	overflow:visible;
+	height:21px;
+	line-height:21px;
+}
+.selector1 .sort_type{
+	
 }

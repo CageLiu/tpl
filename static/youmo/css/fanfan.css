@@ -1691,4 +1691,31 @@ a.moder{
 	color:#fff;
 	text-align:center;
 }
+.actor_vip_dl dd,
+.cator_vip_dl .current{
+	background-image:url(../img/icon.png);
+	background-repeat:no-repeat;
+	padding-left:15px;
+}
+.actor_vip_dl dd{
+	background-position:-58px -1197px;
+	padding-bottom:10px;
+}
+.actor_vip_dl .current{
+	background-position:0 -1229px;
+}
+.vip_sort_ct{
+	background-color:#fff;
+	border:2px solid #ff5758;
+	border-top:0 none;
+}
+.vip_sort_inner{
+	padding:16px 0 13px 29px;
+}
+.actor_vip_dl dt{
+	font-size:18px;
+	color:#282828;
+	padding-left:12px;
+	padding-bottom:10px;
+}
 /*p30 style end*/

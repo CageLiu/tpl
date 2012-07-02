@@ -1180,7 +1180,7 @@ body{
 
 /*p6 2012-06-20 */
 .filter{
-	background-color:#E3E3E3;
+	background:url(../img/body_bg.png) repeat 0 0;
 	padding:10px 0;
 	width:724px;
 	margin-left:auto;
@@ -1188,6 +1188,11 @@ body{
 }
 .filter .options_item{
 	padding:0 10px;
+}
+.filter .options_item li{
+	border-radius:10px;
+	background:#fff;
+	padding:15px 18px 20px 9px;
 }
 
 .mod_list1{

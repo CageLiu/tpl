@@ -526,25 +526,29 @@ body{
 }
 
 .media1 .txt,
-.media6 .txt{
+.media6 .txt,
+.media11 .txt{
 	margin-top:12px;
 	color:#797979;
 }
-.media1 .name{
+.media1 .name,
+.media11 .name{
 	font-weight:700;
 	text-decoration:underline;
 }
 .media1 .name:hover{
 	color:#FF3A2E;
 }
-.media1 .like{
+.media1 .like,
+.media11 .like{
 	position:absolute;
 	display:block;
 	right:0;
 	top:0;
 	_right:8px;
 }
-.media1 p{
+.media1 p,
+.media11 p{
 	line-height:normal;
 	padding-bottom:4px;
 }
@@ -1177,7 +1181,6 @@ body{
 /*p6 2012-06-20 */
 .filter{
 	background-color:#E3E3E3;
-	border-radius:10px;
 	padding:10px 0;
 	width:724px;
 	margin-left:auto;
@@ -1239,6 +1242,15 @@ body{
 	height:22px;
 	overflow:hidden;
 }
+.selector .fixed_width{
+	/*width:64px;*/
+	border-bottom:1px solid #c5c5c5;
+	line-height:21px;
+}
+.selector .fixed_width .slist{
+	position:absolute;
+	top:21px;
+}
 .selector1 .txt{
 	height:21px;
 	border:1px solid #C5C5C5;
@@ -1266,6 +1278,43 @@ body{
 	height:21px;
 	line-height:21px;
 }
-.selector1 .sort_type{
-	
+.selector1 .sort_type span{
+	background:url(../img/icon.png)  no-repeat right -1174px;
+	padding-right:12px;
+}
+.selector1 .fixed_width .slist{
+	width:480px;
+}
+.selector1 .sublist{
+	background:#e0e0e0;
+	padding:3px 0;
+}
+.selector1 .province{
+	position:absolute;
+	width:72px;
+	left:0;
+	top:0;
+	text-align:right;
+}
+.selector1 .fixed_width .slist li{
+	white-space:normal;
+	padding-left:76px;
+	position:relative;
+	padding-bottom:12px;
+	zoom:1;
+}
+.selector1 .citylist{
+	padding-top:12px;
+	cursor:default;
+	/*display:none;*/
+}
+.selector1 .citylist .checked{
+	color:#F64141;
+}
+.selector1 .city,
+.selector1 .county{
+	padding:0 5px;
+	white-space:nowrap;
+	display:inline-block;
+	cursor:pointer;
 }

@@ -417,7 +417,8 @@
 .model_nav a.current,
 .model_concern,
 .game_title h2,
-.top_bg{
+.top_bg,
+.vip_bt{
 	background-image:url(../img/bg.png);
 	background-repeat:no-repeat;
 }
@@ -1649,7 +1650,45 @@ a.moder{
 }
 .future_star_btn{
 	letter-spacing:-0.5em;
+	padding-top:10px;
+}
+.future_star_dl dd{
+	padding-bottom:5px;
 }
 .future_star_btn a{
+	letter-spacing:normal;
+	margin-right:5px;
+	display:inline-block;
+	padding:3px 10px;
+	background-color:#ff3d31;
+	color:#fff;
 }
 /*p29 style end*/
+/*p30 style start*/
+.actor_box{
+	padding-top:22px;
+}
+.actor_list li{
+	margin-bottom:15px;
+}
+.random_show_list .media11{
+	padding:7px;
+	border:1px solid #eaeaea;
+	margin-left:8px;
+	margin-top:15px;
+}
+.random_show_list{
+	margin-top:-15px;
+}
+.vip_bt{
+	background-position:-575px -439px;
+	height:44px;
+	line-height:44px;
+}
+.vip_bt h3{
+	font-weight:400;
+	font-size:24px;
+	color:#fff;
+	text-align:center;
+}
+/*p30 style end*/

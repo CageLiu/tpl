@@ -1180,11 +1180,11 @@ body{
 
 /*p6 2012-06-20 */
 .filter{
-	background:url(../img/body_bg.png) repeat 0 0;
+	/*background:url(../img/body_bg.png) repeat 0 0;*/
+	background:#E3E3E3;
 	padding:10px 0;
-	width:724px;
-	margin-left:auto;
-	margin-right:auto;
+	margin:0 -8px;
+	border-radius:10px;
 }
 .filter .options_item{
 	padding:0 10px;
@@ -1192,7 +1192,30 @@ body{
 .filter .options_item li{
 	border-radius:10px;
 	background:#fff;
-	padding:15px 18px 20px 9px;
+	padding:10px 10px 20px 7px;
+	min-height:280px;
+	_height:280px;
+}
+.filter h4{
+	font-size:12px;
+	text-align:center;
+	margin-bottom:10px;
+}
+.filter p{
+	margin-bottom:3px;
+}
+.filter input,
+.filter span{
+	vertical-align:middle;
+	overflow:visible;
+}
+.filter span{
+	margin-left:5px;
+}
+.filter_btn{
+	text-align:center;
+	margin-top:23px;
+	margin-bottom:10px;
 }
 
 .mod_list1{
@@ -1204,6 +1227,10 @@ body{
 }
 
 /* selector */
+.selector{
+	position:relative;
+	z-index:999;
+}
 .selector .sitem{
 	position:relative;
 	line-height:22px;
@@ -1248,8 +1275,6 @@ body{
 	overflow:hidden;
 }
 .selector .fixed_width{
-	/*width:64px;*/
-	border-bottom:1px solid #c5c5c5;
 	line-height:21px;
 }
 .selector .fixed_width .slist{

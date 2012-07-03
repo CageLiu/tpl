@@ -121,7 +121,9 @@
 .btn26,
 .btn27,
 .btn28,
-.btn28 span{
+.btn28 span,
+.btn29,
+.btn30{
 	background-image:url(../img/btn_bg.png);
 	background-repeat:no-repeat;
 	background-color:#fff;
@@ -311,7 +313,9 @@
 	padding-right:20px;
 }
 .btn26,
-.btn27{
+.btn27,
+.btn29,
+.btn30{
 	width:217px;
 	height:54px;
 	font-size:0;
@@ -332,6 +336,12 @@
 	background-position:right -1063px;
 	padding-right:25px;
 	color:#1f1c1d;
+}
+.btn29{
+	background-position:0 -1095px;
+}
+.btn30{
+	background-position:0 -1153px;
 }
 /*btn style end*/
 /*vip_statistics style start*/
@@ -1719,3 +1729,16 @@ a.moder{
 	padding-bottom:10px;
 }
 /*p30 style end*/
+/*p31 style start*/
+.desk_show{
+	background-position:0 0;
+}
+.desk_show_btn{
+	padding-top:139px;
+	padding-left:147px;
+	margin-right:-238px;
+}
+.desk_show_btn .btn{
+	margin-right:238px;
+}
+/*p31 style end*/

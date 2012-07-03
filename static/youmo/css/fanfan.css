@@ -1646,9 +1646,13 @@ a.moder{
 .media10 .pic{
 	margin-right:17px;
 }
-.future_star_list li{
+.future_star_box{
+	padding-top:15px;
+}
+.future_star_list .item{
 	border:6px solid #e1e1e1;
 	padding:7px 14px 7px 7px;
+	margin-bottom:11px;
 }
 .future_star_txt h3{
 	color:#1c1c1c;
@@ -1661,6 +1665,10 @@ a.moder{
 .future_star_btn{
 	letter-spacing:-0.5em;
 	padding-top:10px;
+}
+.future_star_dl{
+	position:relative;
+	zoom:1;
 }
 .future_star_dl dd{
 	padding-bottom:5px;

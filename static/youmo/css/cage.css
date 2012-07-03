@@ -328,9 +328,6 @@ body{
 	zoom:1;
 	box-shadow:1px 2px 2px #ccc;
 }
-.box .bc{
-	/*zoom:1;*/
-}
 .box .extra{
 	position:absolute;
 	top:20px;
@@ -1103,20 +1100,22 @@ body{
 }
 .scroll3 .tbtn,
 .scroll4 .tbtn,
-.scroll6 .tbtn{
+.scroll6 .tbtn,
+.scroll7 .tbtn{
 	background-image:url(../img/icon.png);
 	background-repeat:no-repeat;
 }
 .scroll3 .next,
 .scroll4 .next,
-.scroll6 .next{
+.scroll6 .next,
+.scroll7 .next{
 	filter:FlipH;
-	-webkit-transform: rotate(-180deg);
-	-moz-transform: rotate(-180deg);
-	-o-transform: rotate(-180deg);
-	-ms-transform: rotate(-180deg);
-	-khtml-transform: rotate(-180deg);
-	transform: rotate(-180deg);
+	-webkit-transform: rotateY(-180deg);
+	-moz-transform: rotateY(-180deg);
+	-o-transform: rotateY(-180deg);
+	-ms-transform: rotateY(-180deg);
+	-khtml-transform: rotateY(-180deg);
+	transform: rotateY(-180deg);
 }
 .scroll3 .tbtn{
 	width:39px;
@@ -1163,9 +1162,31 @@ body{
 .scroll6 .next{
 	right:-14px;
 }
-.they_say{
-	padding-left:142px;
-	padding-right:142px;
+.scroll7{
+	width:402px;
+}
+.scroll7 .scroll_box{
+	margin:0 37px;
+}
+.scroll7 .pic_list2{
+	margin-left:-7px;
+}
+.scroll7 .pic_list2 li{
+	margin-left:7px;
+}
+.scroll7 .pic_list2 img{
+	border:3px solid #ddd;
+}
+.scroll7 .tbtn{
+	width:20px;
+	height:25px;
+	top:18px;
+	background-position:right -783px;
+}
+.future_star_dl .scroll{
+	position:absolute;
+	right:0;
+	bottom:-80px;
 }
 
 
@@ -1173,6 +1194,11 @@ body{
 
 
 
+
+.they_say{
+	padding-left:142px;
+	padding-right:142px;
+}
 .divi_rank_list h3{
 	font-size:14px;
 }

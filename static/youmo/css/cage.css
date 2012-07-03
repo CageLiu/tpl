@@ -1192,7 +1192,7 @@ body{
 .filter .options_item li{
 	border-radius:10px;
 	background:#fff;
-	padding:10px 10px 20px 7px;
+	padding:10px 10px 20px 12px;
 	min-height:280px;
 	_height:280px;
 }
@@ -1204,13 +1204,16 @@ body{
 .filter p{
 	margin-bottom:3px;
 }
+.filter input{
+	*margin:0 -3px;
+}
 .filter input,
 .filter span{
 	vertical-align:middle;
 	overflow:visible;
 }
 .filter span{
-	margin-left:5px;
+	margin-left:8px;
 }
 .filter_btn{
 	text-align:center;
@@ -1318,6 +1321,7 @@ body{
 .selector1 .sublist{
 	background:#e0e0e0;
 	padding:3px 0;
+	display:none;
 }
 .selector1 .province{
 	position:absolute;

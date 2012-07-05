@@ -1448,3 +1448,10 @@ body{
 .agency_list .hover .action{
 	display:block;
 }
+.selector_bar{
+	position:relative;
+	z-index:999;
+	padding-bottom:60px;
+	margin-left:32px;
+	zoom:1;
+}

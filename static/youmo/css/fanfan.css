@@ -1265,15 +1265,19 @@ a.moder{
 }
 .media7_tips{
 	position:absolute;
-	top:0;
-	right:0;
+	top:20px;
+	right:13px;
 }
 .media7_tips a{
 	background-color:#ff3b2f;
 	padding:0 8px;
 	color:#fff;
+	vertical-align:middle;
+	display:inline-block;
+	/*zoom:1;*/
 }
 /*media7 style end*/
+
 /*media8 style start*/
 .media8 .txt{
 	text-align:right;
@@ -1334,14 +1338,16 @@ a.moder{
 }
 .agency_list li{
 	border:1px solid #e9e9e9;
-	padding:16px 13px 16px 16px;
 	margin-bottom:14px;
+	background:#000;
 }
 .agency_list .pic{
 	margin-right:19px;
 }
 .agency_list .media7{
 	position:relative;
+	padding:16px 13px 16px 16px;
+	background:#fff;
 }
 .agency_list h3{
 	display:inline-block;

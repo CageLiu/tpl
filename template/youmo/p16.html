@@ -32,6 +32,96 @@
 				</div>
 			</div>
 		</div>	
+		<div class="column" style="position:relative;z-index:999">
+			<div class="box">
+				<div class="radius radius_top">
+					<div>radius top</div>
+				</div>
+				<div class="box_inner p_lr_20">
+					<div class="bc bar1">
+						<form action="">
+							<div class="hor_box selector selector1">
+								<div class="hor_item txt">
+									<input type="text" value="发布者" />
+									<input type="submit" class="sbtn" value="搜索" />
+								</div>
+								<div class="hor_item sitem">
+									<span class="cur">默认排序</span>
+									<i class="arrow">arrow</i>
+									<ul class="slist sort_type">
+										<li><span>排序选项</span></li>
+										<li><span>排序选项</span></li>
+										<li><span>排序选项</span></li>
+									</ul>
+									<input type="hidden" value="" />
+								</div>
+								<div class="hor_item sitem fixed_width">
+									<span class="cur">地区</span>
+									<i class="arrow">arrow</i>
+									<ul class="slist citylist">
+										<li>
+										<strong class="province">安徽省</strong>
+										<span data_children = "hefei" class="city checked">合肥市</span>
+										<span data_children = "wuhu" class="city">芜湖市</span>
+										<span data_children = "anqing" class="city">安庆市</span>
+										<span data_children = "maanshan" class="city">马鞍山市</span>
+										<span data_children = "huainan" class="city">淮南市</span>
+										<span data_children = "huabei" class="city">淮北市</span>
+										<span data_children = "huangshan" class="city">黄山市</span>
+										<span data_children = "suzhou" class="city">宿州市</span>
+										<span data_children = "xuancheng" class="city">宣城市</span>
+										<span data_children = "chaohu" class="city">巢湖市</span>
+										<div class="sublist">
+											<span class="county">妖海区</span>
+											<span class="county">妖海区</span>
+											<span class="county">罩杯区</span>
+											<span class="county">阿斯空区</span>
+											<span class="county">岳西县</span>
+											<span class="county">钱山县</span>
+											<span class="county">太湖县</span>
+											<span class="county">诉讼县</span>
+											<span class="county">罩杯区</span>
+											<span class="county">阿斯空区</span>
+											<span class="county">岳西县</span>
+											<span class="county">钱山县</span>
+											<span class="county">太湖县</span>
+											<span class="county">诉讼县</span>
+										</div>
+										</li>
+										<li>
+										<strong class="province">安徽省</strong>
+										<span class="city">合肥市</span>
+										<span class="city">芜湖市</span>
+										<span class="city">安庆市</span>
+										<span class="city">马鞍山市</span>
+										<span class="city">淮南市</span>
+										<span class="city">淮北市</span>
+										<span class="city">黄山市</span>
+										<span class="city">宿州市</span>
+										<span class="city">宣城市</span>
+										<span class="city">巢湖市</span>
+										<div class="sublist">
+											<span class="county">妖海区</span>
+											<span class="county">罩杯区</span>
+											<span class="county">阿斯空区</span>
+											<span class="county">岳西县</span>
+											<span class="county">钱山县</span>
+											<span class="county">太湖县</span>
+											<span class="county">诉讼县</span>
+										</div>
+										</li>
+									</ul>
+									<input type="hidden" value="" />
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="radius radius_btm">
+					<div>radius bottom</div>
+				</div>
+			</div>
+		</div>
 		<div class="column">
 			<div class="box">
 				<div class="radius radius_top">
@@ -40,8 +130,8 @@
 				<div class="box_inner p_lr_20">
 					<div class="bc">
 						<div class="agency">
-							<ul class="agency_list">
-								<li>
+							<ul class="agency_list" id="agency_list">
+								<li class="item">
 									<div class="media media7 clearfix">
 										<div class="fleft pic">
 											<a href="#">
@@ -59,8 +149,12 @@
 											<a href="#">查看</a>
 										</div>
 									</div>
+									<span class="action">
+										<em class="putop">置顶</em>
+										<em class="del">删除</em>
+									</span>
 								</li>
-								<li>
+								<li class="item">
 									<div class="media media7 clearfix">
 										<div class="fleft pic">
 											<a href="#">
@@ -78,8 +172,12 @@
 											<a href="#">查看</a>
 										</div>
 									</div>
+									<span class="action">
+										<em class="putop">置顶</em>
+										<em class="del">删除</em>
+									</span>
 								</li>
-								<li>
+								<li class="item">
 									<div class="media media7 clearfix">
 										<div class="fleft pic">
 											<a href="#">
@@ -97,8 +195,12 @@
 											<a href="#">查看</a>
 										</div>
 									</div>
+									<span class="action">
+										<em class="putop">置顶</em>
+										<em class="del">删除</em>
+									</span>
 								</li>
-								<li>
+								<li class="item">
 									<div class="media media7 clearfix">
 										<div class="fleft pic">
 											<a href="#">
@@ -116,8 +218,12 @@
 											<a href="#">查看</a>
 										</div>
 									</div>
+									<span class="action">
+										<em class="putop">置顶</em>
+										<em class="del">删除</em>
+									</span>
 								</li>
-								<li>
+								<li class="item">
 									<div class="media media7 clearfix">
 										<div class="fleft pic">
 											<a href="#">
@@ -135,8 +241,12 @@
 											<a href="#">查看</a>
 										</div>
 									</div>
+									<span class="action">
+										<em class="putop">置顶</em>
+										<em class="del">删除</em>
+									</span>
 								</li>
-								<li>
+								<li class="item">
 									<div class="media media7 clearfix">
 										<div class="fleft pic">
 											<a href="#">
@@ -154,8 +264,12 @@
 											<a href="#">查看</a>
 										</div>
 									</div>
+									<span class="action">
+										<em class="putop">置顶</em>
+										<em class="del">删除</em>
+									</span>
 								</li>
-								<li>
+								<li class="item">
 									<div class="media media7 clearfix">
 										<div class="fleft pic">
 											<a href="#">
@@ -173,8 +287,12 @@
 											<a href="#">查看</a>
 										</div>
 									</div>
+									<span class="action">
+										<em class="putop">置顶</em>
+										<em class="del">删除</em>
+									</span>
 								</li>
-								<li>
+								<li class="item">
 									<div class="media media7 clearfix">
 										<div class="fleft pic">
 											<a href="#">
@@ -192,6 +310,10 @@
 											<a href="#">查看</a>
 										</div>
 									</div>
+									<span class="action">
+										<em class="putop">置顶</em>
+										<em class="del">删除</em>
+									</span>
 								</li>
 							</ul>
 						</div>
@@ -439,7 +561,7 @@
 						</h3>
 					</div>
 					<div class="vip_concern_me bg_color">
-						<ul class="hor_list pic_list pic_list2">
+						<ul class="justify_list pic_list pic_list2">
 							<li>
 								<a href="#" class="picture">
 									<img src="static/youmo/img/img1.jpg" alt="" width="65" height="65">
@@ -522,7 +644,7 @@
 						</h3>
 					</div>
 					<div class="vip_concern_me bg_color">
-						<ul class="hor_list pic_list pic_list2">
+						<ul class="justify_list pic_list pic_list2">
 							<li>
 								<a href="#" class="picture">
 									<img src="static/youmo/img/img1.jpg" alt="" width="65" height="65">
@@ -768,7 +890,7 @@
 						</h3>
 					</div>
 					<div class="vip_concern_me bg_color">
-						<ul class="hor_list pic_list pic_list2">
+						<ul class="justify_list pic_list pic_list2">
 							<li>
 								<a href="#" class="picture">
 									<img src="static/youmo/img/img1.jpg" alt="" width="65" height="65">
@@ -840,3 +962,26 @@
 	</div>
 </div>
 <{include file="youmo/footer.html"}>
+<!--[if IE 6]>
+<script type="text/javascript">
+	(function(){
+		var oAgencyList = document.getElementById("agency_list");
+		var aItem = oAgencyList.childNodes;
+		var len = aItem.length;
+		var temp = [];
+		var r = / hover/g;
+		while(len--){
+			aItem[len].nodeType === 1 && temp.unshift(aItem[len]);
+		}
+		for(var i = 0, length = temp.length; i < length; i++){
+			temp[i].onmouseover = function(){
+				this.className += " hover";
+			};
+			temp[i].onmouseout = function(){
+				var className = this.className;
+				this.className = className.replace(r,"");
+			};
+		}
+	}());
+</script>
+<![endif] -->

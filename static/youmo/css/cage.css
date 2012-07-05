@@ -1378,3 +1378,73 @@ body{
 	display:inline-block;
 	cursor:pointer;
 }
+
+/*action*/
+.action em{
+	background-image:url(../img/icon.png);
+	background-repeat:no-repeat;
+	margin:0 4px;
+	cursor:pointer;
+	padding-left:14px;
+}
+
+/*p14*/
+.model_active_pic .pic{
+	display:block;
+	position:relative;
+	overflow:hidden;
+	zoom:1;
+}
+.model_active_pic .pic img{
+	display:block;
+}
+.model_active_pic .action{
+	position:absolute;
+	top:14px;
+	right:16px;
+	display:none;
+}
+.model_active_pic .action .putop{
+	background-position:0 -1265px;
+}
+.model_active_pic .action .del{
+	background-position:2px -1296px;
+}
+.model_active_pic .pic:hover{
+	color:#fff;
+	background:#000;
+	margin-bottom:2px;
+}
+.model_active_pic .pic:hover img{
+	opacity:0.4;
+	filter:alpha(opacity=40);
+	margin-bottom:-2px;
+}
+.model_active_pic .pic:hover .action{
+	display:block;
+}
+.agency_list .item{
+	position:relative;
+	zoom:1;
+}
+.agency_list .item .action{
+	position:absolute;
+	right:13px;
+	bottom:10px;
+	display:none;
+}
+.agency_list .action .putop{
+	background-position:0 -1330px;
+}
+.agency_list .action .del{
+	background-position:0 -1364px;
+}
+.agency_list .item:hover .media7,
+.agency_list .hover .media7{
+	opacity:0.8;
+	filter:alpha(opacity=80);
+}
+.agency_list .item:hover .action,
+.agency_list .hover .action{
+	display:block;
+}

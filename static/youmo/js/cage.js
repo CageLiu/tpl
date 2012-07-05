@@ -216,6 +216,7 @@ var youmo = {
 		maxH : 0,
 		init : function(obj){
 			this.water = typeof obj === "string" ? document.getElementById(obj) : obj;
+			if(!this.water){return;}
 			var item = [];
 			var temp = this.water.childNodes;
 			var len = temp.length;

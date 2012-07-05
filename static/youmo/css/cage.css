@@ -1404,10 +1404,12 @@ body{
 	right:16px;
 	display:none;
 }
-.model_active_pic .action .putop{
+.model_active_pic .action .putop,
+.brand_pic_list .action .putop{
 	background-position:0 -1265px;
 }
-.model_active_pic .action .del{
+.model_active_pic .action .del,
+.brand_pic_list .action .del{
 	background-position:2px -1296px;
 }
 .model_active_pic .pic:hover{
@@ -1454,4 +1456,32 @@ body{
 	padding-bottom:60px;
 	margin-left:32px;
 	zoom:1;
+}
+.brand_pic_list .picture{
+	position:relative;
+	overflow:hidden;
+	background-color:transparent;
+	zoom:1;
+}
+.brand_pic_list .picture .action{
+	position:absolute;
+	width:100%;
+	height:23px;
+	line-height:23px;
+	filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#80000000', endColorstr='#80000000');
+	background-color:rgba(0,0,0,0.5);
+	left:0;
+	bottom:-100px;
+	text-align:right;
+	color:#fff;
+}
+.brand_pic_list .picture:hover{
+	background:#fff;
+	color:#fff;
+}
+.brand_pic_list .picture:hover .action{
+	bottom:10px;
+}
+.vip_concern_me .pic_list2 li{
+	margin-bottom:5px;
 }

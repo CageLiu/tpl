@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>测试页 - 勿删</title>
+</head>
+
+<body>
+<div id="wrap" style="width:260px; margin:10px">
+	<h2 style="font-size:16px; color:blue">我是测试页面333333333333333333</h2>
+</div>
+<script type="text/javascript" src="{%$STATIC_JS_URL%}public/jquery.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	var dialog=parent.sharkDialog.getDialog(window);
+	//console.log("333:" + dialog.getId());
+	dialog.ok(function(){
+		alert('33333');
+		dialog.close();
+	});
+})
+</script>
+</body>
+</html>

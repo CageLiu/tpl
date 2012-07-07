@@ -1,0 +1,95 @@
+ body{
+	background:#f1f1f1
+}
+
+/*
+ * .main_menu{
+ *background-image: -webkit-gradient(
+ *    linear,
+ *    left top,
+ *    right top,
+ *    color-stop(0.98, rgb(99,145,236)),
+ *    color-stop(0.97, rgba(255,255,255,0.5)),
+ *    color-stop(0, rgba(255,255,255,0.3))
+ *);
+ *background-image: -moz-linear-gradient(
+ *    left center,
+ *    rgb(99,145,236) 98%,
+ *    rgba(255,255,255,0.5) 97%,
+ *    rgba(255,255,255,0.3) 0%
+ *);
+ *}
+ */
+
+ .menu_onff span{
+	background:#6390EC;
+	color:#fff
+}
+
+ .panle_bottom{
+	/*
+	 *background:-moz-linear-gradient(center top , rgba(227, 223, 223, 1), rgba(255, 255, 255, 1));
+	 *background:-webkit-gradient(linear,0 0,0 100%,from(rgba(227,223,223,1)),to(rgba(255,255,255,1)));
+	 */
+	background:-moz-linear-gradient(center top , #f0f0f0,#fff);
+	background:-webkit-gradient(linear,0 0,0 100%,from(#f0f0f0),to(#fff));
+	border-top-color:#fff;
+	box-shadow:4px -3px 3px #ddd
+}
+
+ .main_menu .user{
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#8fb0fa), to(#6390ec));
+	background:-moz-linear-gradient(top,#8fb0fa,#6390ec);
+}
+	
+ .main_menu dt{color:#4668b0;}
+
+ .main_menu .user i.arrow{
+	border-color:#fff #759df1 #6893ed #749cf1;
+}
+
+ .main_menu .user i.show{
+	border-color:#fff #7BA2F4 #84A8F7 #7BA2F4;
+}
+
+
+ .main_menu dt.show i.icon{
+	background-position:-185px 0
+}
+ .main_menu dd li.current,  .main_menu dd li:hover{	
+background: -webkit-gradient(linear, 0 0, 0 100%, from(#8fb0fa), to(#6390ec));
+	background:-moz-linear-gradient(top,#8fb0fa,#6390ec);
+}
+
+
+ .main_menu dl{
+	background:#f1f1f1;
+	border-right:1px solid #ddd;
+	box-shadow:-1px 0 4px #ddd inset;
+}
+
+/*
+ * .nav a.current,  .nav a:hover{
+ *    background:-webkit-gradient(linear,0 0,0 100%,from(rgba(255,255,255,.8)),to(rgba(255,255,255,.2)));
+ *    background:-moz-linear-gradient(0 100% 90deg,rgba(255,255,255,.2),rgba(255,255,255,.8));
+ *}
+ */
+	
+.taskbar li.current{
+	border-color:#777;
+	box-shadow:inset 0 0 5px #fff;
+}
+	
+ .switch_workspace span.current,  .switch_workspace span:hover{
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#8fb0fa), to(#6390ec));
+	background:-moz-linear-gradient(top,#8fb0fa,#6390ec);
+}	
+.skin_box{
+	box-shadow:0 0 4px #F93 inset;
+}
+.skin_box a:hover{
+	background:#F93;
+	color:#FFF;
+}
+	
+	

@@ -1,0 +1,396 @@
+/*************************************
+ * reset css start
+ ************************************/
+*{
+	margin:0;
+	padding:0;
+}
+
+html{
+	overflow:hidden;
+	height:100%;
+}
+
+body{
+	font-size:12px;
+	color:#000;
+	height:100%;
+	overflow:hidden;
+	position:relative;
+	background:url(/img/shark/header_bg.png) repeat-x 0 -82px;
+}
+
+ul,ol{
+	list-style:none;
+	list-style-position:outset;
+}
+
+a{
+	color:#4267AF;
+	text-decoration:none;
+}
+
+a img{
+	border:none;
+}
+
+a:hover{
+	text-decoration:underline;
+}
+
+.clear{
+	clear:both;
+}
+
+.clearfix{
+	zoom:1;
+}
+
+.clearfix:after{
+	content:"";
+	display:block;
+	clear:both;
+	overflow:hidden;
+	font-size:0;
+	height:0;
+	visibility:hidden;
+}
+/*************************************
+ * reset css end
+*************************************/
+
+
+/*************************************
+ * layout css start
+ ************************************/
+
+.header{
+	height:78px;
+	position:absolute;
+	top:0;
+	right:28px;
+	width:100%;
+	background:url(/img/shark/header_bg.png) repeat-x 0 -82px;
+	box-shadow:-5px 1px 2px #ccc;
+	z-index:9999;
+}
+
+.sidebar{
+	width:200px;
+	height:500px;
+	float:left;
+	position:absolute;
+	top:80px;
+	left:0;
+	height:100%;
+	z-index:9999;
+	background:#fff;
+	/*border-right:3px solid #7e96c5;*/
+}
+
+.wrapper{
+	overflow-x:hidden;
+	overflow-y:scroll;
+	height:100%;
+    zoom:1;
+    position:relative;
+}
+
+.maincont{
+	margin-left:200px;
+	margin-right:28px;
+	padding:75px 0 10px 0;
+}
+
+/*************************************
+ * layout css end
+ ************************************/
+
+
+/*************************************
+* module css start
+*************************************/
+
+h1.logo{
+	padding:2px 0 0 80px;
+}
+
+.searchbar{
+	position:relative;
+	left:52%;
+	float:left;
+	margin-top:-37px;
+}
+
+.searchbar span{
+	position:relative;
+	float:left;
+	right:50%;
+	padding:1px 1px 0 1px;
+}
+
+.searchbar span input.txt{
+	width:380px;
+	height:27px;
+    line-height:27px;
+}
+
+.searchbar span, .searchbar span input.txt{
+	border-style:solid solid none;
+	border-width:1px;
+	border-color:#ccc;
+	border-radius:3px 3px 0 0;
+}
+
+.searchbar span input.txt{
+	padding-left:5px;
+	padding-right:30px;
+}
+
+.searchbar span input.btn{
+	border:none;
+	position:absolute;
+	right:0;
+	height:27px;
+	width:30px;
+	vertical-align:middle;
+	background:url(/img/shark/search_btn.png) no-repeat center center;
+	text-indent:-999em;
+}
+
+ul.menu{
+	padding:14px 0 0 20px;
+}
+
+ul.menu li{
+	height:35px;
+	line-height:35px;
+	font-size:15px;
+}
+
+ul.menu li a{
+	color:#333;
+	display:block;
+	padding-left:35px;
+	height:35px;
+	background-position:10px center;
+	background-repeat:no-repeat;
+	border-radius:3px 0 0 3px;
+}
+
+ul.menu li.bug a{
+	background-image:url(/img/shark/bug.png);
+}
+
+ul.menu li.tools a{
+	background-image:url(/img/shark/tools.png);
+}
+
+ul.menu li.project_list a{
+	background-image:url(/img/shark/list.png);
+}
+
+ul.menu li a:hover{
+	text-decoration:none;
+	background-color:#eee;
+	color:#222
+}
+
+ul.list{
+	overflow:hidden;
+	position:relative;
+	zoom:1;
+	padding-left:8px;
+}
+
+#project li.item{
+	padding:0 8px;
+	border-bottom:1px dotted #ccc;
+	margin-bottom:-1px;
+	cursor:pointer;
+	border-left:3px solid #fff;
+    zoom:1;
+}
+
+#project li.loading{
+	background:url(/img/shark/loading.gif) no-repeat center center;
+}
+
+#project li.item:hover{
+	border-left-color:#ff5b5b;
+}
+
+#project li.item:hover h3.tag{
+	color:#ff5b5b;
+}
+
+#project h3.tag{
+	height:32px;
+	font-size:14px;
+	color:#65769a;
+	cursor:pointer;
+	padding:20px 0;
+    overflow:hidden;
+    zoom:1;
+	/*color:#333*/
+}
+
+#project h3.tag span{
+	float:left;
+	height:32px;
+	line-height:32px;
+	padding-left:40px;
+}
+
+#project li.close h3.tag span{
+	background:url(/img/shark/folder.png) no-repeat 0 -3px;
+}
+
+#project li.close .details{
+	display:none;
+}
+
+#project li.open{
+	/*border-left-color:#ff5b5b*/
+}
+
+#project li.open h3.tag span{
+	background:url(/img/shark/folder_open.png) no-repeat 0 -1px;
+	color:#ff5b5b;
+}
+
+#project .details{
+	position:relative;
+	padding:0 250px 10px 30px;
+	cursor:default;
+    zoom:1
+}
+
+#project .details .tit{
+	position:absolute;
+	left:6px;
+	top:50%;
+	width:15px;
+	height:72px;
+}
+
+#project .details .tit span{
+	line-height:18px;
+	display:inline-block;
+	font-weight:bold;
+	position:relative;
+	top:-50%;
+}
+
+#project .details .info{
+	border-left:1px solid #ccc;
+	border-radius:10px;
+	padding:4px 8px;
+}
+
+#project .details .info ul{
+	border:1px solid #ddd;
+	background:#f0f0f0;
+	padding:8px;
+	margin-bottom:8px;
+	border-radius:3px;
+    zoom:1;
+}
+
+#project .details .info li a{
+	padding-left:24px;
+	background:url(/img/shark/link.gif) no-repeat 0 center;
+}
+
+#project .details .info li a:hover{
+	background-color:#4267AF;
+	color:#fff;
+}
+
+#project .details .info h4,#project .details .remarks h4{
+	font-size:12px;
+	height:22px;
+}
+
+#project .details .remarks h4{
+	text-align:center;
+}
+
+#project .details .info li{
+	height:23px;
+	line-height:23px;
+	overflow:hidden;
+}
+
+#project .details .info li strong{
+	font-weight:normal;
+}
+
+#project .details .info li span{
+	display:inline-block;
+	width:100px;
+	text-align:right;
+	padding-right:8px;
+	font-weight:bold;
+}
+
+#project .details .remarks{
+	position:absolute;
+	right:0;
+	top:26px;
+	border:1px solid #ccc;
+	width:240px;
+	background:#feff94;
+	border-radius:3px;
+	min-height:30px;
+	line-height:22px
+	_height:30px;
+}
+
+.tip{
+	position:absolute;
+	left:50%;
+	top:78px;
+	display:none;
+}
+
+.tipcont{
+	float:left;
+	position:relative;
+	right:50%;
+	background:#feff94;
+	line-height:30px;
+	padding:0 80px 0 8px;
+	border-style:none solid solid;
+	border-width:1px;
+	border-color:#ddd;
+	border-radius:0 0 3px 3px;
+	cursor:default;
+}
+
+.tipcont strong{
+	cursor:pointer;
+	position:absolute;
+	bottom:0;
+	right:8px;
+	color:#f00;
+}
+
+.preview{
+	position:absolute;
+	top:0;
+	height:100%;
+	width:600px;
+	overflow:scroll;
+	z-index:9999;
+	background:#fff;
+	border-style:none solid;
+	border-width:1px;
+	border-color:#aaa;
+	display:none;
+	right:0;
+}
+
+/*************************************
+* module css end
+*************************************/

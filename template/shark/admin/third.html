@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html class="demo">
+<head>
+<title>后台</title>
+	<meta charset="utf-8" />
+	<link type="text/css" rel="stylesheet" href="{%$STATIC_CSS_URL%}admin/frame.css" />
+	<link type="text/css" rel="stylesheet" href="{%$STATIC_CSS_URL%}admin/pop.css" />
+	<link type="text/css" rel="stylesheet" href="{%$STATIC_CSS_URL%}admin/t_skin_00.css" />
+	<script type="text/javascript" src="{%$STATIC_JS_URL%}public/jquery.min.js"></script>
+	<script type="text/javascript" src="{%$STATIC_JS_URL%}public/jplugins/easing.js"></script>
+	<script type="text/javascript" src="{%$STATIC_JS_URL%}public/jplugins/hotkeys.js"></script>
+	<script type="text/javascript" src="{%$STATIC_JS_URL%}admin/base.js"></script>
+</head>
+
+<body>
+	<div class="main_menu">
+		<div class="logo">
+			<img src = '{%$STATIC_IMG_URL%}admin/xw.png' alt="大首页" width=30 height=30 />
+			<span>大首页</span>
+		</div>
+		<dl>
+			<dt class="show">
+			内容发布管理
+			<i class="icon">&nbsp;</i>
+			</dt>
+			<dd class="show">
+			<ul>
+				<li><a href="/page.php?p=dialog" target="content">弹出层演示</a></li>
+				<li class="current"><a href="#">菜单栏目名称</a></li>
+				<li><a href="/page.php?p=admin/fragment" target="content">碎片管理</a></li>
+				<li><a href="/page.php?p=admin/category_list" target="content">栏目管理</a></li>
+				<li><a href="/page.php?p=admin/article_list" target="content">文章管理</a></li>
+				<li><a href="#">菜单栏目名称</a></li>
+			</ul>
+			</dd>
+			<dt>
+			发布管理
+			<i class="icon">&nbsp;</i>
+			</dt>
+			<dd>
+			<ul>
+				<li><a href="#">菜单栏目名称</a></li>
+				<li><a href="#">菜单栏目名称</a></li>
+				<li><a href="#">菜单栏目名称</a></li>
+				<li><a href="#">菜单栏目名称</a></li>
+				<li><a href="#">菜单栏目名称</a></li>
+				<li><a href="#">菜单栏目名称</a></li>
+				<li><a href="#">菜单栏目名称</a></li>
+				<li><a href="#">菜单栏目名称</a></li>
+				<li><a href="#">菜单栏目名称</a></li>
+				<li><a href="#">菜单栏目名称</a></li>
+				<li><a href="#">菜单栏目名称</a></li>
+				<li><a href="#">菜单栏目名称</a></li>
+			</ul>
+			</dd>
+			<dt>
+			内容相关设置
+			<i class="icon">&nbsp;</i>
+			</dt>
+			<dd>
+			<ul>
+				<li><a href="#">菜单栏目名称</a></li>
+				<li><a href="#">菜单栏目名称</a></li>
+				<li><a href="#">菜单栏目名称</a></li>
+				<li><a href="#">菜单栏目名称</a></li>
+			</ul>
+			</dd>
+			<dt>
+			私募管理
+			<i class="icon">&nbsp;</i>
+			</dt>
+			<dd>
+			<ul>
+				<li><a href="#">菜单栏目名称</a></li>
+				<li><a href="#">菜单栏目名称</a></li>
+				<li><a href="#">菜单栏目名称</a></li>
+				<li><a href="#">菜单栏目名称</a></li>
+				<li><a href="#">菜单栏目名称</a></li>
+				<li><a href="#">菜单栏目名称</a></li>
+				<li><a href="#">菜单栏目名称</a></li>
+				<li><a href="#">菜单栏目名称</a></li>
+			</ul>
+			</dd>
+		</dl>
+		<div class="menu_onff" title="收起菜单">
+			<span>
+				.
+				<br/>
+				.
+				</br>
+				.
+			</span>
+		</div>
+	</div>
+
+	<div class="workspace">
+		<div class="panle panle_top">
+			<nav class="nav">
+			<a href="#" class="current">我的面板</a>
+			<a href="#">设置</a>
+			<a href="#">模块</a>
+			<a href="#">内容</a>
+			<a href="#">兼职</a>
+			<a href="#">界面</a>
+			<a href="#">扩展</a>
+			<a href="#">phpsso</a>
+			<a href="#">快速导入</a>
+			</nav>
+		</div>
+		<div class="panle panle_bottom">
+			<span class="skin_btn" title="更换任务栏背景">&nbsp;</span>
+			<div class="cur_position">
+				<span>当前位置：</span>
+				<a href="#">首页</a>
+				&gt;
+				<a href="#">视频</a>
+				&gt;
+				<a href="#">详情</a>
+			</div>
+			<div class="userbar">
+				<span>您好，Administrators!</span>
+				<a href="#" class="admin">帐号管理</a>
+				<a href="#" class="sys">系统设置</a>
+				<a href="#" class="hmsg">2条消息</a>
+				<a href="#" class="channel">切换频道</a>
+				<a href="#" class="quit">退出</a>
+			</div>	
+		</div>
+		<div class="main_cont">
+			<iframe name="content" src="http://www.cctvcj.com"></iframe>
+		</div>
+	</div>
+</body>
+</html>

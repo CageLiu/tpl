@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html class="index">
+<head>
+<title>第三版后台</title>
+	<meta charset="utf-8" />
+	<link type="text/css" rel="stylesheet" href="../static/css/admin/second.css" />
+	<script type="text/javascript" src="../static/js/public/jquery.min.js"></script>
+	<script type="text/javascript" src="../static/js/admin/second.js"></script>
+</head>
+
+<body>
+	<header id="header">
+		<div class="logo">
+			<a href="#"><img src="http://www.google.com.hk/intl/zh-CN/images/logo_cn.png" alt="麒麟财经" width="120" height="48"  /></a>
+		</div>
+		<nav class="nav">
+			<a href="#">后台首页</a>
+			<a href="#">网站首页管理</a>
+			<a href="#" class="current">菜单设置</a>
+			<a href="#">文章管理</a>
+			<a href="#">采集设置</a>
+			<a href="#">广告管理</a>
+			<a href="#">数据管理</a>
+			<a href="#">用户管理</a>
+			<a href="#">系统设置</a>
+		</nav>
+		<div class="tips">
+			<a href="#">使用帮助</a>
+			<a href="#">关于</a>
+		</div>
+		<div class="userbar">
+			<span>您好，Administration</span>
+			<a href="#">帐号管理</a>
+			<a href="#">系统设置</a>
+			<a href="#" class="msg">0条消息</a>
+			<a href="#">退出</a>
+		</div>
+        <span title="close" id="spt">^</span>
+	</header>
+	<div class="cur_posit" id="cur_posit">
+		<span>当前位置：</span>
+		<a href="#">首页</a>
+		<i class="arrow"></i>
+		<a href="#">列表</a>
+		<i class="arrow"></i>
+		<a href="#">详细</a>
+	</div>
+	<div class="frame" id="frame">
+		<div class="main_menu">
+			<dl>
+				<dt class="show"><span>常用功能操作</span></dt>
+				<dd class="show">
+					<ul>
+						<li><a href="#">网站栏目管理</a></li>
+						<li><a href="#">档案列表</a></li>
+						<li><a class="current" href="#">等待审核的列表</a></li>
+						<li><a href="#">评论管理</a></li>
+						<li><a href="#">内容回收站</a></li>
+					</ul>
+				</dd>
+				<dt><span>网站订阅查看</span></dt>
+				<dd>
+					<ul>
+						<li><a href="#">等待审核的列表</a></li>
+						<li><a href="#">评论管理</a></li>
+						<li><a href="#">内容回收站</a></li>
+					</ul>
+				</dd>
+                <dt><span>发布管理</span></dt>
+                <dd>
+                	<ul>
+						<li><a href="#">等待审核的列表</a></li>
+						<li><a href="#">评论管理</a></li>
+						<li><a href="#">内容回收站</a></li>
+					</ul>
+                </dd>
+                <dt><span>内容相关设置</span></dt>
+                <dd>
+                	<ul>
+						<li><a href="#">等待审核的列表</a></li>
+						<li><a href="#">评论管理</a></li>
+						<li><a href="#">内容回收站</a></li>
+					</ul>
+                </dd>
+			</dl>
+            <span title="close" id="spl">&lt;</span>
+		</div>
+		<div class="main_cont">
+			<table class="t">
+				<thead>
+					<tr>
+						<th>表头一</th>
+						<th>表头二</th>
+						<th>表头三</th>
+						<th>表头四</th>
+						<th>表头五</th>
+						<th>表头六</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>单元格</td>
+						<td>单元格</td>
+						<td>单元格</td>
+						<td>单元格</td>
+						<td>单元格</td>
+						<td>单元格</td>
+					</tr>
+					<tr>
+						<td>单元格</td>
+						<td>单元格</td>
+						<td>单元格</td>
+						<td>单元格</td>
+						<td>单元格</td>
+						<td>单元格</td>
+					</tr>
+					<tr>
+						<td>单元格</td>
+						<td>单元格</td>
+						<td>单元格</td>
+						<td>单元格</td>
+						<td>单元格</td>
+						<td>单元格</td>
+					</tr>
+					<tr>
+						<td>单元格</td>
+						<td>单元格</td>
+						<td>单元格</td>
+						<td>单元格</td>
+						<td>单元格</td>
+						<td>单元格</td>
+					</tr>
+					<tr>
+						<td>单元格</td>
+						<td>单元格</td>
+						<td>单元格</td>
+						<td>单元格</td>
+						<td>单元格</td>
+						<td>单元格</td>
+					</tr>
+					<tr>
+						<td>单元格</td>
+						<td>单元格</td>
+						<td>单元格</td>
+						<td>单元格</td>
+						<td>单元格</td>
+						<td>单元格</td>
+					</tr>
+					<tr>
+						<td>单元格</td>
+						<td>单元格</td>
+						<td>单元格</td>
+						<td>单元格</td>
+						<td>单元格</td>
+						<td>单元格</td>
+					</tr>
+				</tbody>
+			</table>
+			<fieldset class="form_wrap">
+				<legend>这里是表单的名称：</legend>
+				<form action="">
+					<ul class="form">
+						<li>
+						<label>这个是文本框的样式：</label><input type="text" class="text" />
+						</li>
+						<li>
+						<label>这个是文本框的样式：</label><input type="password" class="text" />
+						</li>
+						<li class="check">
+						<label>这个是复选框的样式：</label><input type="checkbox"><span>全选</span>
+						</li>
+						<li class="radio">
+						<label>这个是单选框的样式：</label><input type="radio" /><span>选择</span>
+						</li>
+						<li class="file">
+						<label>这个是上传表单的样式：</label><input type="file" id="upload" />
+						<span class="imitate_file">
+							<input type="text" class="text" id="file_src" /><input type="submit" value="选择文件" />
+						</span>
+						</li>
+						<li class="tarea">
+						<label>这个是文本域的样式：</label><textarea></textarea>
+						</li>
+						<li>
+						<label>请选择日期：</label><input type="text" class="text" onClick="WdatePicker({dateFmt:'yyyy-MM-dd'})" />
+						</li>
+						<li>
+						<label>这个是按钮的样式：</label><input type="submit" value="这是个按钮" class="fbtn" />
+						</li>
+					</ul>	
+				</form>
+			</fieldset>
+			<script type="text/javascript">
+				var upload = document.getElementById("upload");
+				var file_src = document.getElementById("file_src");
+				upload.onchange = function(){
+					file_src.value = this.value;
+				}
+			</script>
+		</div>
+	</div>
+</body> 
+</html>

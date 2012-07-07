@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>视觉元素</title>
+		<meta charset="utf-8" />
+		<link type="text/css" rel="stylesheet" href="{%$STATIC_CSS_URL%}admin/third.css" />
+		<link type="text/css" rel="stylesheet" href="{%$STATIC_CSS_URL%}admin/category.css" />
+        <link rel="stylesheet" type="text/css" href="{%$STATIC_CSS_URL%}admin/pop.css">
+		<script type="text/javascript" src="{%$STATIC_JS_URL%}public/jquery.min.js"></script>
+		<script type="text/javascript" src="{%$STATIC_JS_URL%}public/jplugins/jquery.cookie.js"></script>
+        <script type="text/javascript" src="{%$STATIC_JS_URL%}public/jplugins/ui/js/jquery-ui.js"></script>
+        <script type="text/javascript" src="{%$STATIC_JS_URL%}admin/mb_pop.js"></script>
+		<script type="text/javascript" src="{%$STATIC_JS_URL%}admin/category.js"></script>
+	</head>
+
+	<body style="padding-top:1px">
+		<form action="">
+			<ul class="dir_tree" id="dir_tree" style="min-width:1167px">
+				<li id="tog_all">
+					&nbsp;
+				</li>
+				<li class="title">
+					<a href="#" class="current">管理栏目</a>
+					<a href="#">添加栏目</a>
+					<a href="#">添加单页</a>
+					<a href="#">批量修改</a>
+					<a href="#">批量删除</a>
+					<a href="#">导出</a>
+					<a href="#">导入</a>
+					<div class="operate">
+						<span id="check_all">选择</span>
+						<span>内部栏目</span>
+						<span>文章模型</span>
+						<span>数据量</span>
+						<span>操作</span>
+					</div>
+				</li>
+				<li>
+					<span>
+						<a href="#">一级频道A</a>
+						<i class="on_off on" status = 1>&nbsp;</i>
+						<i class="icon folder_on" status = 1>&nbsp;</i>
+					</span>
+					<ul>
+						<li>
+							<span>
+								<a href="#">二级频道B</a>
+								<i class="on_off on" status = 1>&nbsp;</i>
+								<i class="icon folder_on" status = 1>&nbsp;</i>
+							</span>
+							<ul>
+								<li>
+									<span>
+										<a href="#">三级频道C</a>
+										<i class="on_off on" status = 1>&nbsp;</i>
+										<i class="icon folder_on" status = 1>&nbsp;</i>
+									</span>
+									<ul> 
+										<li>
+											<span>
+												<a href="#">四级内容C</a>
+												<i class="icon page">&nbsp;</i>
+											</span>
+											<div class="operate">
+												<span><input type="checkbox" /></span>
+												<span>内部栏目</span>
+												<span>文章模型</span>
+												<span>数据量</span>
+												<span>
+													<a class="add_category" href="#">添加子栏目</a>
+                                                    <a class="del_category" href="#">删除</a>
+                                                    <a class="edit_category" href="#">修改</a>
+												</span>
+											</div>
+										</li>
+										<li>
+											<span>
+												<a href="#">四级内容C</a>
+												<i class="icon page">&nbsp;</i>
+											</span>
+											<div class="operate">
+												<span><input type="checkbox" /></span>
+												<span>内部栏目</span>
+												<span>文章模型</span>
+												<span>数据量</span>
+												<span>
+													<a class="add_category" href="#">添加子栏目</a>
+                                                    <a class="del_category" href="#">删除</a>
+                                                    <a class="edit_category" href="#">修改</a>
+												</span>
+											</div>
+										</li>
+										<li>
+											<span>
+												<a href="#">四级内容C</a>
+												<i class="icon page">&nbsp;</i>
+											</span>
+											<div class="operate">
+												<span><input type="checkbox" /></span>
+												<span>内部栏目</span>
+												<span>文章模型</span>
+												<span>数据量</span>
+												<span>
+													<a class="add_category" href="#">添加子栏目</a>
+                                                    <a class="del_category" href="#">删除</a>
+                                                    <a class="edit_category" href="#">修改</a>
+												</span>
+											</div>
+										</li>
+										<li>
+											<span>
+												<a href="#">四级内容C</a>
+												<i class="icon page">&nbsp;</i>
+											</span>
+											<div class="operate">
+												<span><input type="checkbox" /></span>
+												<span>内部栏目</span>
+												<span>文章模型</span>
+												<span>数据量</span>
+												<span>
+													<a class="add_category" href="#">添加子栏目</a>
+                                                    <a class="del_category" href="#">删除</a>
+                                                    <a class="edit_category" href="#">修改</a>
+												</span>
+											</div>
+										</li>
+										<li>
+											<span>
+												<a href="#">四级内容C</a>
+												<i class="icon page">&nbsp;</i>
+											</span>
+											<div class="operate">
+												<span><input type="checkbox" /></span>
+												<span>内部栏目</span>
+												<span>文章模型</span>
+												<span>数据量</span>
+												<span>
+													<a class="add_category" href="#">添加子栏目</a>
+                                                    <a class="del_category" href="#">删除</a>
+                                                    <a class="edit_category" href="#">修改</a>
+												</span>
+											</div>
+										</li>
+										<li>
+											<span>
+												<a href="#">四级内容C</a>
+												<i class="icon page">&nbsp;</i>
+											</span>
+											<div class="operate">
+												<span><input type="checkbox" /></span>
+												<span>内部栏目</span>
+												<span>文章模型</span>
+												<span>数据量</span>
+												<span>
+													<a class="add_category" href="#">添加子栏目</a>
+                                                    <a class="del_category" href="#">删除</a>
+                                                    <a class="edit_category" href="#">修改</a>
+												</span>
+											</div>
+										</li>
+										<li>
+											<span>
+												<a href="#">四级内容C</a>
+												<i class="icon page">&nbsp;</i>
+											</span>
+											<div class="operate">
+												<span><input type="checkbox" /></span>
+												<span>内部栏目</span>
+												<span>文章模型</span>
+												<span>数据量</span>
+												<span>
+													<a class="add_category" href="#">添加子栏目</a>
+                                                    <a class="del_category" href="#">删除</a>
+                                                    <a class="edit_category" href="#">修改</a>
+												</span>
+											</div>
+										</li>
+										<li>
+											<span>
+												<a href="#">四级内容C</a>
+												<i class="icon page">&nbsp;</i>
+											</span>
+											<div class="operate">
+												<span><input type="checkbox" /></span>
+												<span>内部栏目</span>
+												<span>文章模型</span>
+												<span>数据量</span>
+												<span>
+													<a class="add_category" href="#">添加子栏目</a>
+                                                    <a class="del_category" href="#">删除</a>
+                                                    <a class="edit_category" href="#">修改</a>
+												</span>
+											</div>
+										</li>
+										<li>
+											<span>
+												<a href="#">四级内容C</a>
+												<i class="icon page">&nbsp;</i>
+											</span>
+											<div class="operate">
+												<span><input type="checkbox" /></span>
+												<span>内部栏目</span>
+												<span>文章模型</span>
+												<span>数据量</span>
+												<span>
+													<a class="add_category" href="#">添加子栏目</a>
+                                                    <a class="del_category" href="#">删除</a>
+                                                    <a class="edit_category" href="#">修改</a>
+												</span>
+											</div>
+										</li>
+									</ul>
+									<div class="operate">
+										<span><input type="checkbox" /></span>
+										<span>内部栏目</span>
+										<span>文章模型</span>
+										<span>数据量</span>
+										<span>
+											<a class="add_category" href="#">添加子栏目</a>
+                                            <a class="del_category" href="#">删除</a>
+                                            <a class="edit_category" href="#">修改</a>
+										</span>
+									</div>
+								</li>
+								<li>
+									<span>
+										<a href="#">三级频道C</a>
+										<i class="on_off on" status = 1>&nbsp;</i>
+										<i class="icon folder_on" status = 1>&nbsp;</i>
+									</span>
+									<ul>
+										<li>
+											<span>
+												<a href="#">四级内容C</a>
+												<i class="icon page">&nbsp;</i>
+											</span>
+											<div class="operate">
+												<span><input type="checkbox" /></span>
+												<span>内部栏目</span>
+												<span>文章模型</span>
+												<span>数据量</span>
+												<span>
+													<a class="add_category" href="#">添加子栏目</a>
+                                                    <a class="del_category" href="#">删除</a>
+                                                    <a class="edit_category" href="#">修改</a>
+												</span>
+											</div>
+										</li>
+										<li>
+											<span>
+												<a href="#">四级内容C</a>
+												<i class="icon page">&nbsp;</i>
+											</span>
+											<div class="operate">
+												<span><input type="checkbox" /></span>
+												<span>内部栏目</span>
+												<span>文章模型</span>
+												<span>数据量</span>
+												<span>
+													<a class="add_category" href="#">添加子栏目</a>
+                                                    <a class="del_category" href="#">删除</a>
+                                                    <a class="edit_category" href="#">修改</a>
+												</span>
+											</div>
+										</li>
+										<li>
+											<span>
+												<a href="#">四级内容C</a>
+												<i class="icon page">&nbsp;</i>
+											</span>
+											<div class="operate">
+												<span><input type="checkbox" /></span>
+												<span>内部栏目</span>
+												<span>文章模型</span>
+												<span>数据量</span>
+												<span>
+													<a class="add_category" href="#">添加子栏目</a>
+                                                    <a class="del_category" href="#">删除</a>
+                                                    <a class="edit_category" href="#">修改</a>
+												</span>
+											</div>
+										</li>
+									</ul>
+									<div class="operate">
+										<span><input type="checkbox" /></span>
+										<span>内部栏目</span>
+										<span>文章模型</span>
+										<span>数据量</span>
+										<span>
+											<a class="add_category" href="#">添加子栏目</a>
+                                            <a class="del_category" href="#">删除</a>
+                                            <a class="edit_category" href="#">修改</a>
+										</span>
+									</div>
+								</li>
+							</ul>
+							<div class="operate">
+								<span><input type="checkbox" /></span>
+								<span>内部栏目</span>
+								<span>文章模型</span>
+								<span>数据量</span>
+								<span>
+									<a class="add_category" href="#">添加子栏目</a>
+									<a class="del_category" href="#">删除</a>
+									<a class="edit_category" href="#">修改</a>
+								</span>
+							</div>
+						</li>
+					</ul>
+					<div class="operate">
+						<span><input type="checkbox" /></span>
+						<span>内部栏目</span>
+						<span>文章模型</span>
+						<span>数据量</span>
+						<span>
+							<a class="add_category" href="#">添加子栏目</a>
+							<a class="del_category" href="#">删除</a>
+							<a class="edit_category" href="#">修改</a>
+						</span>
+					</div>
+				</li>
+				<li>
+					<span>
+						<a href="#">站点地图</a>
+						<i class="icon page">&nbsp;</i>
+					</span>
+					<div class="operate">
+						<span><input type="checkbox" /></span>
+						<span>内部栏目</span>
+						<span>文章模型</span>
+						<span>数据量</span>
+						<span>
+							<a class="add_category" href="#">添加子栏目</a>
+							<a class="del_category" href="javascript:mb_del('删除','确定删除吗？','Delete(122)')">删除</a>
+							<a class="edit_category" href="#">修改</a>
+						</span>
+					</div>
+				</li>
+			</ul>
+	</form>
+	</body>
+</html>
+<script type="text/javascript">
+function Delete(data){
+	alert("调用自定义删除方法！删除id:"+data)
+}
+</script>

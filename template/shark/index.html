@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" /> 
+		<title>shark前端</title>
+		<link type="text/css" rel="stylesheet" href="static/shark/css/shark/style.css" />
+		<script type="text/javascript" src="static/shark/js/public/jquery.min.js"></script>
+		<script type="text/javascript" src="static/shark/js/shark/base.js"></script>
+	</head>
+	<body>
+		<div class="header" id="head">
+			<h1 class="logo">
+				<a href="index.html"><img src="{%$STATIC_IMG_URL%}shark/logo.png" alt="Shark前端" title="Shark前端" /></a>
+			</h1>
+			<form action="#">
+				<div class="searchbar" id="search">
+					<span>
+						<input class="txt" type="text" placeholder="太多不好找？戳我搜一下！" /><input type="submit" value="搜索" class="btn" />
+					</span>
+				</div>
+			</form>
+		</div>
+		<div class="sidebar" id="side">
+			<ul class="menu">
+				<li class="project_list"><a href="#">项目列表</a></li>
+				<li class="bug"><a href="#">Bug总结</a></li>
+				<li class="blog"><a href="#">前端Blog</a></li>
+				<li class="tools"><a href="#">前端工具</a></li>
+				<li class="member"><a href="#">Shark成员</a></li>
+			</ul>
+		</div>
+		<div class="wrapper clearfix">
+						<div class="maincont" id="project_list">
+				<ul class="list" id="project">
+					<li class="item close">
+						<h3 class="tag">
+							<span>财经频道</span>
+						</h3>
+						<div class="details">
+							<div class="tit">
+								<span>项目资料</span>
+							</div>						
+							<div class="info">
+								<h4>静态页URL：</h4>
+								<ul>
+									<li><span>首页:</span><a href="http://www.google.com.hk">http://www.google.com.hk</a></li>
+									<li><span>国内:</span><a href="http://www.baidu.com">http://www.baidu.com</a></li>
+									<li><span>国际:</span><a href="http://www.taobao.com">http://www.taobao.com</a></li>
+									<li><span>产业经济:</span><a href="http://www.qq.com">http://www.qq.com</a></li>
+									<li><span>列表页1:</span><a href="http://fund.cctvcj.com">http://fund.cctvcj.com</a></li>
+									<li><span>列表页2:</span><a href="http://money.163.com">http://money.163.com</a></li>
+									<li><span>详细页:</span><a href="http://www.hao123.com">http://www.hao123.com</a></li>
+								</ul>
+								<h4>文件存放：</h4>
+									<ul>
+										<li><span>Html:</span><strong>\\192.168.188.2\htmls\shark\templates\licai</strong></li>
+										<li><span>Css:</span><strong>\\192.168.188.2\htmls\shark\static\css\licai</strong></li>
+										<li><span>Image:</span><strong>\\192.168.188.2\htmls\shark\static\img\licai</strong></li>
+										<li><span>Js:</span><strong>\\192.168.188.2\htmls\shark\static\js\licai</strong></li>
+										<li><span>效果图:</span><strong>\\192.168.188.3\web front page\项目设计图文件夹\二期改版\财经频道</strong></li>
+										<li><span>产品原型:</span><strong>\\192.168.188.3\部门风采\产品\二期改版\财经频道</strong></li>
+									</ul>
+							</div>
+							<div class="remarks">
+								<p style="line-height:30px;text-align:center">暂无备注信息</p>
+							</div>
+						</div>
+					</li>
+					<li class="item close">
+						<h3 class="tag">
+							<span>理财频道</span>
+						</h3>
+						<div class="details">
+							<div class="tit">
+								<span>项目资料</span>
+							</div>						
+							<div class="info">
+								<h4>静态页URL：</h4>
+								<ul>
+									<li><span>首页:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>国内:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>国际:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>产业经济:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>列表页1:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>列表页2:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>详细页:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+								</ul>
+								<h4>文件存放：</h4>
+									<ul>
+										<li><span>Html:</span><strong>\\192.168.188.2\htmls\shark\templates\licai</strong></li>
+										<li><span>Css:</span><strong>\\192.168.188.2\htmls\shark\static\css\licai</strong></li>
+										<li><span>Image:</span><strong>\\192.168.188.2\htmls\shark\static\img\licai</strong></li>
+										<li><span>Js:</span><strong>\\192.168.188.2\htmls\shark\static\js\licai</strong></li>
+										<li><span>效果图:</span><strong>\\192.168.188.3\web front page\项目设计图文件夹\二期改版\财经频道</strong></li>
+										<li><span>产品原型:</span><strong>\\192.168.188.3\部门风采\产品\二期改版\财经频道</strong></li>
+									</ul>
+							</div>
+							<div class="remarks">
+								<h4>备注:</h4>
+							</div>
+						</div>
+					</li>
+					<li class="item close">
+						<h3 class="tag">
+							<span>生活频道</span>
+						</h3>
+						<div class="details">
+							<div class="tit">
+								<span>项目资料</span>
+							</div>						
+							<div class="info">
+								<h4>静态页URL：</h4>
+								<ul>
+									<li><span>首页:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>国内:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>国际:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>产业经济:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>列表页1:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>列表页2:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>详细页:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+								</ul>
+								<h4>文件存放：</h4>
+									<ul>
+										<li><span>Html:</span><strong>\\192.168.188.2\htmls\shark\templates\licai</strong></li>
+										<li><span>Css:</span><strong>\\192.168.188.2\htmls\shark\static\css\licai</strong></li>
+										<li><span>Image:</span><strong>\\192.168.188.2\htmls\shark\static\img\licai</strong></li>
+										<li><span>Js:</span><strong>\\192.168.188.2\htmls\shark\static\js\licai</strong></li>
+										<li><span>效果图:</span><strong>\\192.168.188.3\web front page\项目设计图文件夹\二期改版\财经频道</strong></li>
+									</ul>
+							</div>
+							<div class="remarks">
+								<h4>备注:</h4>
+							</div>
+						</div>
+					</li>
+					<li class="item close">
+						<h3 class="tag">
+							<span>外汇频道</span>
+						</h3>
+						<div class="details">
+							<div class="tit">
+								<span>项目资料</span>
+							</div>						
+							<div class="info">
+								<h4>静态页URL：</h4>
+								<ul>
+									<li><span>首页:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>国内:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>国际:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>产业经济:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>列表页1:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>列表页2:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>详细页:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+								</ul>
+								<h4>文件存放：</h4>
+									<ul>
+										<li><span>Html:</span><strong>\\192.168.188.2\htmls\shark\templates\licai</strong></li>
+										<li><span>Css:</span><strong>\\192.168.188.2\htmls\shark\static\css\licai</strong></li>
+										<li><span>Image:</span><strong>\\192.168.188.2\htmls\shark\static\img\licai</strong></li>
+										<li><span>Js:</span><strong>\\192.168.188.2\htmls\shark\static\js\licai</strong></li>
+										<li><span>效果图:</span><strong>\\192.168.188.3\web front page\项目设计图文件夹\二期改版\财经频道</strong></li>
+									</ul>
+							</div>
+							<div class="remarks">
+								<h4>备注:</h4>
+							</div>
+						</div>
+					</li>
+					<li class="item close">
+						<h3 class="tag">
+							<span>期货频道</span>
+						</h3>
+						<div class="details">
+							<div class="tit">
+								<span>项目资料</span>
+							</div>						
+							<div class="info">
+								<h4>静态页URL：</h4>
+								<ul>
+									<li><span>首页:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>国内:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>国际:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>产业经济:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>列表页1:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>列表页2:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>详细页:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+								</ul>
+								<h4>文件存放：</h4>
+									<ul>
+										<li><span>Html:</span><strong>\\192.168.188.2\htmls\shark\templates\licai</strong></li>
+										<li><span>Css:</span><strong>\\192.168.188.2\htmls\shark\static\css\licai</strong></li>
+										<li><span>Image:</span><strong>\\192.168.188.2\htmls\shark\static\img\licai</strong></li>
+										<li><span>Js:</span><strong>\\192.168.188.2\htmls\shark\static\js\licai</strong></li>
+										<li><span>效果图:</span><strong>\\192.168.188.3\web front page\项目设计图文件夹\二期改版\财经频道</strong></li>
+									</ul>
+							</div>
+							<div class="remarks">
+								<h4>备注:</h4>
+							</div>
+						</div>
+					</li>
+					<li class="item close">
+						<h3 class="tag">
+							<span>黄金频道</span>
+						</h3>
+						<div class="details">
+							<div class="tit">
+								<span>项目资料</span>
+							</div>						
+							<div class="info">
+								<h4>静态页URL：</h4>
+								<ul>
+									<li><span>首页:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>国内:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>国际:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>产业经济:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>列表页1:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>列表页2:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>详细页:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+								</ul>
+								<h4>文件存放：</h4>
+									<ul>
+										<li><span>Html:</span><strong>\\192.168.188.2\htmls\shark\templates\licai</strong></li>
+										<li><span>Css:</span><strong>\\192.168.188.2\htmls\shark\static\css\licai</strong></li>
+										<li><span>Image:</span><strong>\\192.168.188.2\htmls\shark\static\img\licai</strong></li>
+										<li><span>Js:</span><strong>\\192.168.188.2\htmls\shark\static\js\licai</strong></li>
+										<li><span>效果图:</span><strong>\\192.168.188.3\web front page\项目设计图文件夹\二期改版\财经频道</strong></li>
+									</ul>
+							</div>
+							<div class="remarks">
+								<h4>备注:</h4>
+							</div>
+						</div>
+					</li>
+					<li class="item close">
+						<h3 class="tag">
+							<span>独家新闻</span>
+						</h3>
+						<div class="details">
+							<div class="tit">
+								<span>项目资料</span>
+							</div>						
+							<div class="info">
+								<h4>静态页URL：</h4>
+								<ul>
+									<li><span>首页:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>国内:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>国际:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>产业经济:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>列表页1:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>列表页2:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>详细页:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+								</ul>
+								<h4>文件存放：</h4>
+									<ul>
+										<li><span>Html:</span><strong>\\192.168.188.2\htmls\shark\templates\licai</strong></li>
+										<li><span>Css:</span><strong>\\192.168.188.2\htmls\shark\static\css\licai</strong></li>
+										<li><span>Image:</span><strong>\\192.168.188.2\htmls\shark\static\img\licai</strong></li>
+										<li><span>Js:</span><strong>\\192.168.188.2\htmls\shark\static\js\licai</strong></li>
+										<li><span>效果图:</span><strong>\\192.168.188.3\web front page\项目设计图文件夹\二期改版\财经频道</strong></li>
+									</ul>
+							</div>
+							<div class="remarks">
+								<h4>备注:</h4>
+							</div>
+						</div>
+					</li>
+					<li class="item close">
+						<h3 class="tag">
+							<span>私募</span>
+						</h3>
+						<div class="details">
+							<div class="tit">
+								<span>项目资料</span>
+							</div>						
+							<div class="info">
+								<h4>静态页URL：</h4>
+								<ul>
+									<li><span>首页:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>国内:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>国际:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>产业经济:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>列表页1:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>列表页2:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>详细页:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+								</ul>
+								<h4>文件存放：</h4>
+									<ul>
+										<li><span>Html:</span><strong>\\192.168.188.2\htmls\shark\templates\licai</strong></li>
+										<li><span>Css:</span><strong>\\192.168.188.2\htmls\shark\static\css\licai</strong></li>
+										<li><span>Image:</span><strong>\\192.168.188.2\htmls\shark\static\img\licai</strong></li>
+										<li><span>Js:</span><strong>\\192.168.188.2\htmls\shark\static\js\licai</strong></li>
+										<li><span>效果图:</span><strong>\\192.168.188.3\web front page\项目设计图文件夹\二期改版\财经频道</strong></li>
+									</ul>
+							</div>
+							<div class="remarks">
+								<h4>备注:</h4>
+							</div>
+						</div>
+					</li>
+					<li class="item close">
+						<h3 class="tag">
+							<span>股票频道</span>
+						</h3>
+						<div class="details">
+							<div class="tit">
+								<span>项目资料</span>
+							</div>						
+							<div class="info">
+								<h4>静态页URL：</h4>
+								<ul>
+									<li><span>首页:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>国内:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>国际:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>产业经济:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>列表页1:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>列表页2:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>详细页:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+								</ul>
+								<h4>文件存放：</h4>
+									<ul>
+										<li><span>Html:</span><strong>\\192.168.188.2\htmls\shark\templates\licai</strong></li>
+										<li><span>Css:</span><strong>\\192.168.188.2\htmls\shark\static\css\licai</strong></li>
+										<li><span>Image:</span><strong>\\192.168.188.2\htmls\shark\static\img\licai</strong></li>
+										<li><span>Js:</span><strong>\\192.168.188.2\htmls\shark\static\js\licai</strong></li>
+										<li><span>效果图:</span><strong>\\192.168.188.3\web front page\项目设计图文件夹\二期改版\财经频道</strong></li>
+									</ul>
+							</div>
+							<div class="remarks">
+								<h4>备注:</h4>
+							</div>
+						</div>
+					</li>
+					<li class="item close">
+						<h3 class="tag">
+							<span>视讯中心</span>
+						</h3>
+						<div class="details">
+							<div class="tit">
+								<span>项目资料</span>
+							</div>						
+							<div class="info">
+								<h4>静态页URL：</h4>
+								<ul>
+									<li><span>首页:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>国内:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>国际:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>产业经济:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>列表页1:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>列表页2:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>详细页:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+								</ul>
+								<h4>文件存放：</h4>
+									<ul>
+										<li><span>Html:</span><strong>\\192.168.188.2\htmls\shark\templates\licai</strong></li>
+										<li><span>Css:</span><strong>\\192.168.188.2\htmls\shark\static\css\licai</strong></li>
+										<li><span>Image:</span><strong>\\192.168.188.2\htmls\shark\static\img\licai</strong></li>
+										<li><span>Js:</span><strong>\\192.168.188.2\htmls\shark\static\js\licai</strong></li>
+										<li><span>效果图:</span><strong>\\192.168.188.3\web front page\项目设计图文件夹\二期改版\财经频道</strong></li>
+									</ul>
+							</div>
+							<div class="remarks">
+								<h4>备注:</h4>
+							</div>
+						</div>
+					</li>
+					<li class="item close">
+						<h3 class="tag">
+							<span>培训终端</span>
+						</h3>
+						<div class="details">
+							<div class="tit">
+								<span>项目资料</span>
+							</div>						
+							<div class="info">
+								<h4>静态页URL：</h4>
+								<ul>
+									<li><span>首页:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>国内:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>国际:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>产业经济:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>列表页1:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>列表页2:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>详细页:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+								</ul>
+								<h4>文件存放：</h4>
+									<ul>
+										<li><span>Html:</span><strong>\\192.168.188.2\htmls\shark\templates\licai</strong></li>
+										<li><span>Css:</span><strong>\\192.168.188.2\htmls\shark\static\css\licai</strong></li>
+										<li><span>Image:</span><strong>\\192.168.188.2\htmls\shark\static\img\licai</strong></li>
+										<li><span>Js:</span><strong>\\192.168.188.2\htmls\shark\static\js\licai</strong></li>
+										<li><span>效果图:</span><strong>\\192.168.188.3\web front page\项目设计图文件夹\二期改版\财经频道</strong></li>
+									</ul>
+							</div>
+							<div class="remarks">
+								<h4>备注:</h4>
+							</div>
+						</div>
+					</li>
+					<li class="item close">
+						<h3 class="tag">
+							<span>会员中心</span>
+						</h3>
+						<div class="details">
+							<div class="tit">
+								<span>项目资料</span>
+							</div>						
+							<div class="info">
+								<h4>静态页URL：</h4>
+								<ul>
+									<li><span>首页:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>国内:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>国际:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>产业经济:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>列表页1:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>列表页2:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>详细页:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+								</ul>
+								<h4>文件存放：</h4>
+									<ul>
+										<li><span>Html:</span><strong>\\192.168.188.2\htmls\shark\templates\licai</strong></li>
+										<li><span>Css:</span><strong>\\192.168.188.2\htmls\shark\static\css\licai</strong></li>
+										<li><span>Image:</span><strong>\\192.168.188.2\htmls\shark\static\img\licai</strong></li>
+										<li><span>Js:</span><strong>\\192.168.188.2\htmls\shark\static\js\licai</strong></li>
+										<li><span>效果图:</span><strong>\\192.168.188.3\web front page\项目设计图文件夹\二期改版\财经频道</strong></li>
+									</ul>
+							</div>
+							<div class="remarks">
+								<h4>备注:</h4>
+							</div>
+						</div>
+					</li>
+					<li class="item close">
+						<h3 class="tag">
+							<span>行情频道</span>
+						</h3>
+						<div class="details">
+							<div class="tit">
+								<span>项目资料</span>
+							</div>						
+							<div class="info">
+								<h4>静态页URL：</h4>
+								<ul>
+									<li><span>首页:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>国内:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>国际:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>产业经济:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>列表页1:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>列表页2:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>详细页:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+								</ul>
+								<h4>文件存放：</h4>
+									<ul>
+										<li><span>Html:</span><strong>\\192.168.188.2\htmls\shark\templates\licai</strong></li>
+										<li><span>Css:</span><strong>\\192.168.188.2\htmls\shark\static\css\licai</strong></li>
+										<li><span>Image:</span><strong>\\192.168.188.2\htmls\shark\static\img\licai</strong></li>
+										<li><span>Js:</span><strong>\\192.168.188.2\htmls\shark\static\js\licai</strong></li>
+										<li><span>效果图:</span><strong>\\192.168.188.3\web front page\项目设计图文件夹\二期改版\财经频道</strong></li>
+									</ul>
+							</div>
+							<div class="remarks">
+								<h4>备注:</h4>
+							</div>
+						</div>
+					</li>
+					<li class="item close">
+						<h3 class="tag">
+							<span>关于我们</span>
+						</h3>
+						<div class="details">
+							<div class="tit">
+								<span>项目资料</span>
+							</div>						
+							<div class="info">
+								<h4>静态页URL：</h4>
+								<ul>
+									<li><span>首页:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>国内:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>国际:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>产业经济:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>列表页1:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>列表页2:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>详细页:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+								</ul>
+								<h4>文件存放：</h4>
+									<ul>
+										<li><span>Html:</span><strong>\\192.168.188.2\htmls\shark\templates\licai</strong></li>
+										<li><span>Css:</span><strong>\\192.168.188.2\htmls\shark\static\css\licai</strong></li>
+										<li><span>Image:</span><strong>\\192.168.188.2\htmls\shark\static\img\licai</strong></li>
+										<li><span>Js:</span><strong>\\192.168.188.2\htmls\shark\static\js\licai</strong></li>
+										<li><span>效果图:</span><strong>\\192.168.188.3\web front page\项目设计图文件夹\二期改版\财经频道</strong></li>
+									</ul>
+							</div>
+							<div class="remarks">
+								<h4>备注:</h4>
+							</div>
+						</div>
+					</li>
+					<li class="item close">
+						<h3 class="tag">
+							<span>专题频道</span>
+						</h3>
+						<div class="details">
+							<div class="tit">
+								<span>项目资料</span>
+							</div>						
+							<div class="info">
+								<h4>静态页URL：</h4>
+								<ul>
+									<li><span>首页:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>国内:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>国际:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>产业经济:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>列表页1:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>列表页2:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+									<li><span>详细页:</span><a href="#">http://shark.htmls.70wang.cn/page.php?p=caijing/p1</a></li>
+								</ul>
+								<h4>文件存放：</h4>
+									<ul>
+										<li><span>Html:</span><strong>\\192.168.188.2\htmls\shark\templates\licai</strong></li>
+										<li><span>Css:</span><strong>\\192.168.188.2\htmls\shark\static\css\licai</strong></li>
+										<li><span>Image:</span><strong>\\192.168.188.2\htmls\shark\static\img\licai</strong></li>
+										<li><span>Js:</span><strong>\\192.168.188.2\htmls\shark\static\js\licai</strong></li>
+										<li><span>效果图:</span><strong>\\192.168.188.3\web front page\项目设计图文件夹\二期改版\财经频道</strong></li>
+									</ul>
+							</div>
+							<div class="remarks">
+								<h4>备注:</h4>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="tip" class="tip" status="">
+			<div class="tipcont">
+				<span></span>
+				<strong>俺晓得咧!X</strong>
+			</div>
+		</div>
+		<!--<iframe id="preview" class="preview" src="http://money.cctvcj.com"></iframe>-->
+	</body>
+</html>

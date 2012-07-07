@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="{%$STATIC_CSS_URL%}admin/pop.css">
+<link rel="stylesheet" type="text/css" href="{%$STATIC_CSS_URL%}public/dtp/dtp.css">
+<title>文章管理 - 高级搜索</title>
+</head>
+
+<body>
+<div class="article_adv_search">
+    <table>
+        <tr>
+            <td width="120" align="right">作者：</td>
+            <td align="left"><input class="ipt" id="" type="text" size="15"></td>
+        </tr>
+        <tr>
+            <td width="120" align="right">时间：</td>
+            <td align="left">
+                <div class="datePickers"><input class="ipt" id="date_begin" type="text"></div> 
+                - 
+                <div class="datePickers"><input class="ipt" id="data_end" type="text"></div>
+            </td>
+        </tr>
+        <tr>
+            <td width="120" align="right">来源：</td>
+            <td align="left"><input class="ipt" id="" type="text" size="34"></td>
+        </tr>
+        <tr>
+            <td width="120" align="right">标题：</td>
+            <td align="left"><input class="ipt" id="" type="text" size="34"></td>
+        </tr>
+        <tr>
+            <td width="120" align="right">栏目：</td>
+            <td align="left"><input class="ipt" id="" type="text" size="22"></td>
+        </tr>
+        <tr>
+            <td width="120" align="right">推荐级别：</td>
+            <td align="left"><input class="ipt" id="" type="text" size="22"></td>
+        </tr>
+        <tr>
+            <td width="120" align="right">是否有图：</td>
+            <td align="left"><input class="ipt" id="" type="text" size="22"></td>
+        </tr>
+    </table>
+</div>
+<script type="text/javascript" src="{%$STATIC_JS_URL%}public/jquery.min.js"></script>
+<script type="text/javascript" src="{%$STATIC_JS_URL%}public/jplugins/jq.dtp.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	$("#date_begin,#data_end").datePicker();
+})
+</script>
+</body>
+</html>

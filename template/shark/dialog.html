@@ -1,0 +1,90 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="{%$STATIC_CSS_URL%}admin/pop.css">
+<title>Magic Box 弹出层使用</title>
+<style type="text/css">
+.example{padding:6px}
+.example textarea{font-size:12px; width:90%}
+</style>
+</head>
+
+<body>
+<h1>Magic Box 弹出层使用</h1>
+<div class="example">
+	<input type="button" id="btn1" value="iframe"><br>
+    <textarea style="height:200px" readonly>
+//按钮页代码
+sharkDialog.getInstance({
+    url:"page.php?p=admin/test",
+    height:300,
+    width:600
+});
+
+//弹出层iframe中页面
+var dialog=parent.sharkDialog.getDialog(window);   //获取到该弹出层
+dialog.ok(function(){  //重定义确定按钮
+    alert('11111');
+    dialog.close();
+});
+    </textarea><br>
+</div>
+<div class="example">
+	<input type="button" id="btn2" value="modal"><br>
+    <textarea style="height:180px" readonly>
+//按钮页代码
+sharkDialog.getInstance({
+    type:"modal",
+    url:"page.php?p=modal_page",
+    height:400,
+    width:500
+})
+
+//模态页代码
+<input type="button" value="设置父页面背景色为红色" onClick="javascript:opener.window.document.body.style.background='red'">
+<input type="button" value="刷新父页面" onClick="javascript:opener.window.location.href=opener.window.location.href">
+    </textarea><br>
+</div>
+<div class="example">
+	<input type="button" id="btn3" value="global"><br>
+    <textarea style="height:90px" readonly>
+sharkDialog.del("确定删除吗?",'del(14)');
+
+function del(id){
+	alert("删除了"+id)
+}
+    </textarea><br>
+</div>
+<script type="text/javascript" src="{%$STATIC_JS_URL%}public/jquery.min.js"></script>
+<script type="text/javascript" src="{%$STATIC_JS_URL%}admin/mb_pop.js"></script>
+<script type="text/javascript">
+$(function(){
+	$("#btn1").click(function(){
+		sharkDialog.getInstance({
+			url:"page.php?p=admin/article_import",
+			allowmax:true,
+			height:600,
+			width:1020
+		});
+	});
+	
+	$("#btn2").click(function(){
+		sharkDialog.getInstance({
+			type:"modal",
+			url:"page.php?p=modal_page",
+			height:400,
+			width:500
+		})
+	});
+	
+	$("#btn3").click(function(){
+		sharkDialog.del("确定删除吗?",'del(14)')
+	});
+})
+function del(id){
+	alert("删除了"+id)
+}
+</script>
+</body>
+</html>

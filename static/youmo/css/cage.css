@@ -1485,3 +1485,35 @@ body{
 .vip_concern_me .pic_list2 li{
 	margin-bottom:5px;
 }
+.top3_list .pic,
+.vote_list_spe .pic{
+	position:relative;
+}
+.vote_list_spe .pic{
+	width:215px;
+	display:block;
+}
+.top3_list .affix,
+.vote_list_spe .affix{
+	position:absolute;
+	width:100%;
+	left:0;
+	bottom:0;
+	height:30px;
+	line-height:30px;
+	filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#99000000', endColorstr='#99000000');
+	background-color:rgba(0,0,0,0.6);
+	color:#fff;
+}
+.top3_list .affix strong,
+.vote_list_spe .affix strong{
+	font-size:14px;
+	margin-left:10px;
+}
+.top3_list .affix em,
+.vote_list_spe .affix em{
+	float:right;
+	margin-right:10px;
+	font-family:"宋体";
+	cursor:pointer;
+}

@@ -210,13 +210,13 @@ str += "";
 //var time = +new Date();
 var youmo = {
 	waterfall : {
-		col : 4,
 		gap : 10,
 		cols : [],
 		maxH : 0,
-		init : function(obj){
+		init : function(obj,col){
 			this.water = typeof obj === "string" ? document.getElementById(obj) : obj;
-			if(!this.water){return;}
+			this.col = col;
+			//if(!this.water){return;}
 			var item = [];
 			var temp = this.water.childNodes;
 			var len = temp.length;
@@ -232,8 +232,8 @@ var youmo = {
 						this.cols[j]["items"].push(item[i]);
 						this.cols[j]['height'] += oHtml.h;
 						this.maxH = Math.max(this.maxH,this.cols[j]["height"]);
-						if(i && (i + 1) % 4 === 0 && i < len - 3){
-							for(var k = 1; k <= 4; k++){
+						if(i && (i + 1) % col === 0 && i < len - col + 1){
+							for(var k = 1; k <= col; k++){
 								item[i + k].style.marginTop = this.cols[k - 1]["height"] - this.maxH + "px";
 							}
 						}
@@ -256,8 +256,8 @@ var youmo = {
 				oHtml.h = oHtml.offsetHeight + this.gap;
 				for(var j = 0; j < this.col; j++){
 					if(i % this.col === j){
-						if(i % 4 === 0){
-							for(var k = 0; k < 4; k++){
+						if(i % this.col === 0){
+							for(var k = 0; k < this.col; k++){
 								item[i + k].style.marginTop = this.cols[k]["height"] - this.maxH + "px";
 							}
 						}
@@ -272,13 +272,3 @@ var youmo = {
 		}		
 	}
 };
-youmo.waterfall.init("waterfall");
-/*
- *window.onscroll = function(){
- *    var scrolltop = document.documentElement.scrollTop || document.body.scrollTop;
- *    document.title = document.body.clientHeight - document.documentElement.clientHeight + " ? " + scrolltop;
- *    if(document.body.clientHeight - document.documentElement.clientHeight - scrolltop < 10){
- *        youmo.waterfall.load(str);
- *    }
- *}
- */

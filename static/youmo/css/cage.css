@@ -302,6 +302,7 @@ body{
 }
 .column{
 	margin-bottom:14px;
+	zoom:1;
 }
 .main{
 	width:764px;
@@ -1516,4 +1517,41 @@ body{
 	margin-right:10px;
 	font-family:"宋体";
 	cursor:pointer;
+}
+
+/*p26*/
+.game_title .tukutit{
+	text-align:left;
+	padding-left:24px;
+}
+.tukutit .red{
+	color:#F64141;
+}
+.lately_hot,
+.lately_hot .btn{
+	border-width:1px;
+	border-color:#D8D7D3;
+}
+.lately_hot{
+	border-style:solid none;
+	position:absolute;
+	font-size:0;
+	letter-spacing:-0.5em;
+	right:24px;
+	top:18px;
+}
+.lately_hot .btn{
+	border-style:none solid;
+	font-size:14px;
+	letter-spacing:normal;
+	padding:0 18px;
+	margin-left:-1px;
+	background-color:#fff;
+	margin-right:-1px;
+	height:29px;
+	line-height:29px;
+	_left:-1px;
+}
+.lately_hot .cur{
+	background:url(../img/btn_bg.png) no-repeat right -1003px;
 }

@@ -31,6 +31,9 @@
 }
 /*resect style end*/
 /*base style start*/
+.w109{
+	width:109px;
+}
 .pbg{
 	background-image:url(../img/pbg.png);
 	background-repeat:no-repeat;
@@ -124,7 +127,13 @@
 .btn31,
 .btn31 span,
 .desk_show_dl dt,
-.btn32{
+.btn32,
+.btn33,
+.btn33 span,
+.btn34,
+.btn34 span,
+.btn35,
+.btn35 span{
 	background-image:url(../img/btn_bg.png);
 	background-repeat:no-repeat;
 	background-color:#fff;
@@ -366,6 +375,44 @@
 .btn31 span{
 	background-position:right -862px;
 	padding-right:17px;
+}
+.btn33,
+.btn34{
+	padding-left:20px;
+	font-size:16px;
+	font-weight:700;
+}
+.btn33 span,
+.btn34 span{
+	padding-right:20px;
+	height:36px;
+	line-height:36px;
+}
+.btn33{
+	color:#fff;
+	background-position:0 -1232px;
+}
+.btn33 span{
+	background-position:right -1232px;
+}
+.btn34{
+	background-position:0 -1273px;
+	color:#2A4F98;
+}
+.btn34 span{
+	background-position:right -1273px;
+}
+.btn35{
+	background-position:0 -1153px;
+	padding-left:51px;
+}
+.btn35 span{
+	background-position:right -1153px;
+	padding-right:51px;
+	height:38px;
+	line-height:38px;
+	color:#fff;
+	font-size:16px;
 }
 /*btn style end*/
 /*vip_statistics style start*/
@@ -1845,5 +1892,64 @@ a.moder{
 	color:#ff0a0a;
 }
 /*p31 style end*/
-/*p32 style start*/
-/*p32 style end*/
+/*p36 style start*/
+.login_box2{
+	margin-top:32px;
+	background-color:#fff;
+	width:1099px;
+	min-height:510px;
+	_height:510px;
+	box-shadow:2px 2px 3px #d2d2d2;
+	filter: dropshadow(OffX=2, OffY=2, Color='black', Positive='true');
+}
+.login_box2_inner{
+	background:url(../img/login_bg.jpg) no-repeat right bottom;
+	height:510px;
+}
+.login_box2_tit{
+	padding:21px 0 13px 30px;
+	position:relative;
+}
+.login_tit_extra{
+	position:absolute;
+	top:21px;
+	right:57px;
+	font-size:14px;
+}
+.login_tips{
+	background:url(../img/login_tips_bg.png) no-repeat -2px 0;
+	height:45px;
+	line-height:45px;
+	font-size:14px;
+	padding-left:27px;
+}
+.login2_form{
+	padding-top:26px;
+	padding-left:77px;
+}
+.login2_form .item{
+	margin-bottom:12px;
+}
+.login2_form .change_valid_code{
+	padding:15px 0 10px 0;
+}
+.login_tips,
+.login2_form .pink,
+.login_tit_extra .pink{
+	color:#e7588d;
+}
+/*p36 style end*/
+/*p37 style start*/
+.login_tit_extra .underl{
+	text-decoration:underline;
+}
+.partners_num_list{
+	margin-right:-77px;
+	padding-left:43px;
+	margin-top:-30px;
+}
+.partners_num_list li{
+	margin-right:77px;
+	padding-top:30px;
+}
+/*p37 style end*/

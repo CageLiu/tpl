@@ -58,6 +58,12 @@ body{
 /* reset style end */
 
 /* blank style start */
+.w230{
+	width:230px;
+}
+.w117{
+	width:117px;
+}
 .p_lr_20{
 	padding-left:20px;
 	padding-right:20px;
@@ -1571,4 +1577,89 @@ body{
 }
 .lately_hot .cur{
 	background:url(../img/btn_bg.png) no-repeat right -1003px;
+}
+
+/* form */
+.form input,
+.form .txt,
+.form .tips,
+.form .btn,
+.form select,
+.form img,
+.form .ftext{
+	vertical-align:middle;
+}
+.form .item{
+	padding-left:114px;
+	position:relative;
+	margin-bottom:6px;
+	zoom:1;
+}
+.form .field{
+	position:absolute;
+	font-size:18px;
+	font-weight:700;
+	top:3px;
+	left:0;
+	text-align:right;
+	width:100px;
+}
+.form .txt,
+.form .txt input{
+	display:inline-block;
+	background-image:url(../img/btn_bg.png);
+	background-repeat:no-repeat;
+}
+.form .txt{
+	padding-left:6px;
+	background-position:0 -1195px;
+	overflow:hidden;
+}
+.form .txt input{
+	border:none 0;
+	padding-right:6px;
+	background-position:right -1195px;
+	height:32px;
+	line-height:32px;
+	font-size:14px;
+	_margin-top:-1px;
+}
+.form .ftext{
+	font-size:14px;
+	_position:relative;
+	_top:2px;
+}
+.login_box{
+	width:338px;
+	height:400px;
+	padding-top:70px;
+	padding-right:46px;
+	padding-left:36px;
+	background:url(../img/pbg.png) no-repeat 0 -630px #000;
+}
+.login_box .form{
+	margin-left:-36px;
+}
+.login_box .tips_info{
+	border:1px solid #E63479;
+	padding-left:34px;
+	height:31px;
+	line-height:31px;
+	font-size:14px;
+	background:url(../img/icon.png) no-repeat 4px -1070px;
+	margin-bottom:12px;
+}
+.login_box .change_valid_code{
+	font-size:14px;
+	color:#2A4F98;
+	display:inline-block;
+	padding:12px 0 4px;
+}
+.login_box .btn{
+	margin-top:12px;
+	margin-right:48px;
+}
+.partners_login{
+	margin-top:16px;
+	border-top:1px solid #C6C6C6;
 }

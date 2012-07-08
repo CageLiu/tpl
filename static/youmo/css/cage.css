@@ -1102,14 +1102,16 @@ body{
 .scroll3 .tbtn,
 .scroll4 .tbtn,
 .scroll6 .tbtn,
-.scroll7 .tbtn{
+.scroll7 .tbtn,
+.scroll8 .tbtn{
 	background-image:url(../img/icon.png);
 	background-repeat:no-repeat;
 }
 .scroll3 .next,
 .scroll4 .next,
 .scroll6 .next,
-.scroll7 .next{
+.scroll7 .next,
+.scroll8 .next{
 	filter:FlipH;
 	-webkit-transform: rotateY(-180deg);
 	-moz-transform: rotateY(-180deg);
@@ -1140,7 +1142,8 @@ body{
 .scroll5 .tab_item li{
 	margin-bottom:16px;
 }
-.scroll6{
+.scroll6,
+.scroll8{
 	overflow:visible;
 }
 .scroll6 .tbtn{
@@ -1189,7 +1192,21 @@ body{
 	right:0;
 	bottom:-80px;
 }
-
+.scroll8 .scroll_box{
+	margin:16px 32px;
+}
+.scroll8 .tbtn{
+	width:35px;
+	height:30px;
+	background-position:0 -1120px;
+	margin-top:-15px;
+}
+.scroll8 .prev{
+	left:-14px;
+}
+.scroll8 .next{
+	right:-14px;
+}
 
 
 

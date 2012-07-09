@@ -1790,3 +1790,40 @@ body{
 	top:-20px;
 	left:20px;
 }
+.hot_mod_list ul{
+	margin-top:-20px;
+}
+.hot_mod_list li{
+	margin-top:20px;
+	margin-bottom:10px;
+}
+.quick_entry{
+	position:absolute;
+	right:0;
+	top:0;
+}
+.dtwy{
+	font-size:14px;
+	font-weight:700;
+	color:#7B7878;
+	margin-bottom:5px;
+}
+.quick_entry a{
+	width:113px;
+	height:32px;
+	display:inline-block;
+	background-image:url(../img/btn_bg.png);
+	background-repeat:no-repeat;
+	font-size:0;
+}
+.quick_entry .to_cash{
+	background-position:-287px -735px;
+}
+.quick_entry .profile{
+	background-position:-287px -769px;
+}
+.model_item .jg_name strong,
+.model_item .jg_name{
+	color:#B90404;
+	vertical-align:middle;
+}

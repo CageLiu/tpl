@@ -1663,3 +1663,86 @@ body{
 	margin-top:16px;
 	border-top:1px solid #C6C6C6;
 }
+.login_hot{
+	margin:30px -20px 40px;
+	position:relative;
+	zoom:1;
+}
+.online{
+	width:240px;
+	padding-right:10px;
+}
+.login_hot .lhc{
+	background:url(../img/rxg_1.png) repeat-x 0 bottom #fff;
+	padding:18px 10px 25px;
+}
+.login_hot .lhc{
+	border:1px solid #BEBDBE;
+}
+.newimg{
+	width:480px;
+}
+.saying{
+	width:260px;
+}
+.lbt{
+	font-size:18px;
+	font-weight:700;
+	color:#676667;
+	height:49px;
+	background-image:url(../img/sd.png);
+	background-repeat:no-repeat;
+	line-height:42px;
+	padding-left:10px;
+}
+.login_hot .lht{
+	height:53px;
+	line-height:53px;
+	font-size:18px;
+	color:#000;
+	border-style:solid solid none;
+	border-width:1px;
+	border-color:#D3D4CC;
+	background:url(../img/rxg_3.png) repeat-x 0 0;
+	padding-left:16px;
+}
+.login_hot .lht span{
+	color:#1B7EB5;
+}
+.online .lbt{
+	background-position:0 -49px;
+}
+.saying .lbt{
+	background-position:0 -98px;
+}
+.online .lbc{
+	padding:15px 25px 15px 15px;
+}
+.online .pic_list li{
+	margin-bottom:5px;
+}
+.online .pic_list a{
+	color:#458BD8;
+}
+.newimg .lbc{
+	padding:10px 10px 0;
+}
+.newimg .pic_list img{
+	padding:3px;
+	border:1px solid #F1F1F3;
+}
+.saying .lbc{
+	padding-top:10px;
+}
+.saylist li{
+	height:23px;
+	line-height:23px;
+	overflow:hidden;
+	margin-bottom:4px;
+	padding-left:30px;
+	background:url(../img/icon.png) no-repeat 20px -1395px;
+}
+.saying li span{
+	color:#FF7068;
+	margin-right:5px;
+}

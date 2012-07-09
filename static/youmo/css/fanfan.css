@@ -1897,6 +1897,7 @@ a.moder{
 	margin-top:32px;
 	background-color:#fff;
 	width:1099px;
+	overflow:hidden;
 	min-height:510px;
 	_height:510px;
 	box-shadow:2px 2px 3px #d2d2d2;
@@ -1954,4 +1955,29 @@ a.moder{
 }
 /*p37 style end*/
 /*p39 style start*/
+.login_steps_list{
+	margin-left:-2px;
+}
+.login_steps_list li,
+.login_steps_list span{
+	background-image:url(../img/step_bg.png);
+}
+.login_steps_list li{
+	/*width:360px;*/
+	height:49px;
+	line-height:49px;
+	color:#f93b9e;
+	font-size:24px;
+	background-position:-1px -168px;
+	text-align:center;
+	padding-left:100px;
+}
+.login_steps_list span{
+	background-position:right -168px;
+	display:inline-block;
+	padding-right:118px;
+}
+.login_steps_list .last span{
+	background-position:-639px -168px;
+}
 /*p39 style end*/

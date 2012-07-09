@@ -1773,9 +1773,9 @@ body{
 }
 .hot_mod_list{
 	border:5px solid #FF95A8;
-	padding:32px 25px 15px;
+	padding:25px;
 	position:relative;
-	margin:30px 0;
+	margin:30px 0 20px;
 	zoom:1;
 }
 .hot_mod_list .type{
@@ -1784,7 +1784,7 @@ body{
 	color:#fff;
 	width:100px;
 	height:31px;
-	line-height:33px;
+	line-height:31px;
 	background:url(../img/btn_bg.png) no-repeat -300px -698px;
 	text-align:center;
 	top:-20px;

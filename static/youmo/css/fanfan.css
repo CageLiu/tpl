@@ -2005,4 +2005,11 @@ a.moder{
 	letter-spacing:normal;
 	margin-right:10px;
 }
+.login_steps_list .last_current{
+	background-position:0 -321px;
+	color:#fff;
+}
+.login_steps_list .last_current span{
+	background-position:right -321px;
+}
 /*p40 style end*/

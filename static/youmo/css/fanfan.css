@@ -1996,6 +1996,12 @@ a.moder{
 }
 /*p39 style end*/
 /*p40 style start*/
+.login_steps_list .done{
+	background-position:right -85px;
+}
+.login_steps_list .done span{
+	background-position:-1px -85px;
+}
 .over_btn{
 	letter-spacing:-0.5em;
 	margin-right:-10px;

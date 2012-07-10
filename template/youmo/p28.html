@@ -603,13 +603,14 @@
 		</div>
 	</form>
 </div>
-<script type="text/javascript" src="static/youmo/js/artDialog/artDialog.source.js?skin=opera"></script>
+<script type="text/javascript" src="static/youmo/js/artDialog/artDialog.source.js?skin=default"></script>
 <script type="text/javascript">
 	document.body.onclick = function(){
 		art.dialog({
 			id : "online_registration",
 			title: '在线报名',
-			content: document.getElementById("online_registration")
+			content: document.getElementById("online_registration"),
+			lock : true
 		});
 		art.dialog({id: 'online_registration'});
 	}

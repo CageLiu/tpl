@@ -1694,6 +1694,7 @@ a.moder{
 	border:4px solid #587eff;
 	padding:16px 23px 16px 11px;
 	position:relative;
+	zoom:1;
 }
 .top_arrow{
 	background-position:-49px -1137px;

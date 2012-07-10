@@ -1880,3 +1880,30 @@ body{
 .ubox .tab5{
 	zoom:-1;
 }
+.sform .sbtn{
+	width:115px;
+	height:39px;
+	background:url(../img/btn_bg.png) no-repeat -285px -911px;
+	display:block;
+	margin:0 auto;
+	text-indent:-999em;
+	border:none;
+	cursor:pointer;
+}
+.sform .item{
+	margin-bottom:12px;
+}
+.sform label,
+.sform .txt{
+	vertical-align:middle;
+}
+.sform .txt{
+	height:26px;
+	line-height:26px;
+	border:1px solid #D6D6D6;
+	width:220px;
+	margin-left:5px;
+}
+#online_registration{
+	display:none;
+}

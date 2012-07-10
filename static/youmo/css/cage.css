@@ -477,6 +477,16 @@ body{
 	font-weight:700;
 	color:#fff;
 }
+.tab5 li{
+	border:1px solid #FCC3E1;
+	background:#EBEAEA;
+	font-size:14px;
+	padding:6px 16px;
+	margin-right:1px;
+}
+.tab5 .current{
+	background:#fff;
+}
 /* tab style end */
 
 /* icon style start */
@@ -1826,4 +1836,47 @@ body{
 .model_item .jg_name{
 	color:#B90404;
 	vertical-align:middle;
+}
+/*p24*/
+.uside{
+	width:210px;
+	border-right:1px solid #DCD4DC;
+}
+.uside_nav{
+	margin-left:40px;
+}
+.uside_nav dt{
+	font-size:24px;
+	color:#0D6B01;
+	margin-bottom:5px;
+	margin-top:16px;
+}
+.uside_nav dd{
+	margin-left:1em;
+	font-size:18px;
+}
+.umain{
+	width:744px;
+	margin-left:14px;
+	margin-right:12px;
+	padding-top:18px;
+}
+.ubox{
+	margin-bottom:12px;
+	position:relative;
+	zoom:1;
+}
+.ubox .ubt{
+	border-bottom:1px solid #FCC3E1;
+	padding-bottom:3px;
+}
+.ubox .ubt span{
+	font-size:20px;
+	font-weight:700;
+}
+.ubox .extra{
+	top:-1px;
+}
+.ubox .tab5{
+	zoom:-1;
 }

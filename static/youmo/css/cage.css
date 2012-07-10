@@ -1907,3 +1907,40 @@ body{
 #online_registration{
 	display:none;
 }
+.desktop .main{
+	width:754px;
+	margin-left:10px;
+}
+.resolution{
+	margin:0 -15px;
+}
+.resolution dt{
+	height:59px;
+	text-indent:-999em;
+	background:url(../img/btn_bg.png) no-repeat 0 -1091px;
+	border-bottom:1px solid #fff;
+}
+.resolution dd{
+	font-size:18px;
+	font-weight:700;
+	text-align:center;
+	border-top:1px solid #fff;
+	height:44px;
+	line-height:44px;
+}
+.resolution a{
+	display:block;
+	background:#E0E0E0;
+}
+.resolution .current{
+	background:#C6C6C6;
+}
+.releasing_desktop{
+	width:115px;
+	height:42px;
+	display:block;
+	text-indent:-999em;
+	overflow:hidden;
+	background:url(../img/btn_bg.png) no-repeat -285px -1101px;
+	margin:20px auto;
+}

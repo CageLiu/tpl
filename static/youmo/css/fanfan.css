@@ -1977,20 +1977,20 @@ a.moder{
 .login_steps_list span{
 	display:inline-block;
 	padding-right:0;
-	background-position:-1px -168px;
+	background-position:0 -168px;
 }
 .login_steps_list .last{
 	background-position:right -251px;
 }
 .login_steps_list .last span{
-	background-position:-1px -251px;
+	background-position:0 -251px;
 }
 .login_steps_list .current{
 	background-position:right 0;
 	color:#fff;
 }
 .login_steps_list .current span{
-	background-position:-1px 0;
+	background-position:0 0;
 }
 .form .txt input{
 	color:#b3b3b3;
@@ -2001,7 +2001,7 @@ a.moder{
 	background-position:right -85px;
 }
 .login_steps_list .done span{
-	background-position:-1px -85px;
+	background-position:0 -85px;
 }
 .over_btn{
 	letter-spacing:-0.5em;

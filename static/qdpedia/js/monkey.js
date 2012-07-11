@@ -88,8 +88,9 @@ var $$ = monkey;
 		}else if(obj.currentStyle){
 			return obj.currentStyle[attr];
 		}else if(document.defaultView && document.defaultView.getComputedStyle){
-			var s = document.defaultView.getComputedStyle(obj,"");
-			return s && s.getPropertyValue(attr);
+			return document.defaultView.getComputedStyle(obj,null)[attr];
+			//var s = document.defaultView.getComputedStyle(obj,"");
+			//return s && s.getPropertyValue(attr);
 		}else{
 			return null;
 		}

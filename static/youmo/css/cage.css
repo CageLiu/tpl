@@ -1119,7 +1119,8 @@ body{
 .scroll4 .tbtn,
 .scroll6 .tbtn,
 .scroll7 .tbtn,
-.scroll8 .tbtn{
+.scroll8 .tbtn,
+.scroll9 .tbtn{
 	background-image:url(../img/icon.png);
 	background-repeat:no-repeat;
 }
@@ -1127,7 +1128,8 @@ body{
 .scroll4 .next,
 .scroll6 .next,
 .scroll7 .next,
-.scroll8 .next{
+.scroll8 .next,
+.scroll9 .next{
 	filter:FlipH;
 	-webkit-transform: rotateY(-180deg);
 	-moz-transform: rotateY(-180deg);
@@ -1222,6 +1224,26 @@ body{
 }
 .scroll8 .next{
 	right:-14px;
+}
+.scroll9 .scroll_box{
+	margin-bottom:20px;
+}
+.scroll9 img{
+	padding:7px;
+	border:1px solid #CBCBCB;
+	position:relative;
+	margin-right:1px;
+}
+.scroll9 .tbtn{
+	width:15px;
+	height:16px;
+	background-position:-49px -818px;
+	bottom:0;
+	left:auto;
+	top:auto;
+}
+.scroll9 .prev{
+	right:20px;
 }
 
 
@@ -1943,4 +1965,85 @@ body{
 	overflow:hidden;
 	background:url(../img/btn_bg.png) no-repeat -285px -1101px;
 	margin:20px auto;
+}
+.igylike .pic_list img{
+	border:none 0;
+	padding:6px;
+	border:1px solid #E1E1E1;
+}
+.igylike .pic_list .name{
+	padding-left:0;
+	color:#000;
+}
+.igylike .publisher{
+	color:#FF0A0A;
+}
+.hside{
+	width:132px;
+	background:url(../img/btn_bg.png) no-repeat right -452px;
+	padding-top:56px;
+	margin-bottom:100px;
+}
+.hside .hnav{
+	background:#fff;
+	overflow:hidden;
+}
+.hside .hnav dd{
+	border-style:none solid;
+	border-width:5px;
+	border-color:#FF5758;
+	text-align:center;
+	font-size:14px;
+	margin-bottom:-1px;
+}
+.hside .hnav a{
+	display:block;
+	margin:0 10px;
+	padding:10px 0;
+	border-bottom:1px dashed #FFDADA;
+}
+.hside .hnav .current{
+	color:#FF0002;
+}
+.hside .last a{
+	padding-bottom:80px;
+}
+.hside .hrb{
+	width:132px;
+	height:16px;
+	background:url(../img/btn_bg.png) no-repeat right -390px;
+	text-indent:-999em;
+}
+.hmain{
+	width:742px;
+	margin-top:16px;
+	margin-left:65px;
+}
+.hbt h2{
+	font-size:24px;
+	background:url(../img/tit_bg1.png) no-repeat center bottom;
+	padding-bottom:5px;
+}
+.hbt span{
+	color:#F64141;
+}
+.hbt h2 em{
+	padding-left:20px;
+	background:url(../img/icon.png) no-repeat 0 -1443px;
+}
+.help_cont{
+	margin-top:40px;
+}
+.help_cont dt{
+	padding-left:30px;
+	font-size:14px;
+	font-weight:700;
+	height:30px;
+	line-height:30px;
+	background:url(../img/icon.png) no-repeat 10px -1487px #F7F7F7;
+	margin-bottom:10px;
+}
+.help_cont dd{
+	line-height:23px;
+	margin-bottom:16px;
 }

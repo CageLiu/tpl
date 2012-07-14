@@ -1,0 +1,198 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="{%$STATIC_CSS_URL%}admin/pop.css">
+<link rel="stylesheet" type="text/css" href="{%$STATIC_CSS_URL%}public/dtp/dtp.css">
+<title>文章管理 - 添加</title>
+</head>
+
+<body>
+<div class="article_add">
+    <div class="cur_position">
+        <span>当前位置：</span><a href="#">首页</a>&gt;<a href="#">视频</a>&gt;<a href="#">详情</a>
+    </div>
+    <div class="article_add_wrap clearfix">
+        <div class="left">
+            <table class="add_table">
+                <tr>
+                    <td class="col1" align="right">作者</td>
+                    <td class="col2"><input class="ipt" type="text"></td>
+                </tr>
+                <tr>
+                    <td align="right">推荐级别</td>
+                    <td>
+                        <input type="radio" name="rank" value="" checked><label>默认</label>
+                        <input type="radio" name="rank" value=""><label>一级</label>
+                        <input type="radio" name="rank" value=""><label>二级</label>
+                        <input type="radio" name="rank" value=""><label>三级</label>
+                        <input type="radio" name="rank" value=""><label>推荐级别</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right"><span class="icon_tips">*</span>栏目</td>
+                    <td>财经要闻 [同时发布到其他栏目]</td>
+                </tr>
+                <tr>
+                    <td align="right"><span class="icon_tips">*</span>标题</td>
+                    <td>
+                        <input class="ipt art_title" type="text">
+                        <span class="check_title_btn">检测重复</span>
+                        <span class="txt_tips">还可以输入<strong>80</strong>个字符</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">关键词</td>
+                    <td>
+                        <input class="ipt" type="text">
+                        <span class="txt_tips">关键词之间用空格或者“，”隔开</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">来源</td>
+                    <td>
+                        <input class="ipt" type="text">
+                        <select>
+                            <option selected>= 请选择 =</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right" valign="top">摘要</td>
+                    <td>
+                        <textarea class="textarea a_about"></textarea>
+                        <span class="txt_tips">还可以输入<strong>255</strong>个字符</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right" valign="top"><span class="icon_tips">*</span>内容</td>
+                    <td>
+                        <textarea id="edit_area">这里放编辑器</textarea>
+                        <div class="more_sel">
+                            <p><input type="checkbox" checked> 是否截取内容<input class="ipt" type="text">字符至内容摘要</p>
+                            <p><input type="checkbox" checked> 是否获取内容第<input class="ipt" type="text">张图片作为标题图片</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">分页方式</td>
+                    <td>
+                        <select>
+                            <option selected>不分页</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">推荐位</td>
+                    <td><span class="cur_category">本栏目</span><span>全部</span></td>
+                </tr>
+                <tr>
+                    <td align="right">阅读权限</td>
+                    <td>
+                        <ul class="read_rank clearfix">
+                            <li><input type="checkbox"><label>游客</label></li>
+                            <li><input type="checkbox"><label>新手上路</label></li>
+                            <li><input type="checkbox"><label>注册会员</label></li>
+                            <li><input type="checkbox"><label>中级会员</label></li>
+                            <li><input type="checkbox"><label>高级会员</label></li>
+                            <li><input type="checkbox"><label>禁止访问</label></li>
+                            <li><input type="checkbox"><label>邮件认证</label></li>
+                            <li><input type="checkbox"><label>兼职编辑</label></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">添加投票</td>
+                    <td>
+                        <input class="ipt vote" type="text">
+                        <a class="ipt_btn" href="">选择已有投票</a>
+                        <a class="ipt_btn" href="">新增投票</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right"><span class="icon_tips">*</span>属性</td>
+                    <td>
+                        <input type="checkbox"><label>国内要闻</label>
+                        <input type="checkbox"><label>要闻</label>
+                        <input type="checkbox"><label>宏观财经新闻</label>
+                        <input type="checkbox"><label>国际要闻</label>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="right">
+            <dl>
+                <dt>缩略图</dt>
+                <dd class="a_img">
+                    
+                </dd>
+                <dt>相关文章</dt>
+                <dd class="a_article">
+                    <a class="ipt_btn" href="">新增投票</a>
+                </dd>
+                <dt>发布时间</dt>
+                <dd class="a_date">
+                    <input id="datePicker" class="ipt" type="text">
+                </dd>
+                <dt>转向链接</dt>
+                <dd class="a_link_type">
+                    <input class="ipt" type="text">
+                    <select>
+                        <option selected></option>
+                    </select>
+                </dd>
+                <dt>内容页模板</dt>
+                <dd class="a_art_template">
+                    <select>
+                        <option selected>请选择</option>
+                    </select>
+                </dd>
+                <dt>允许评论</dt>
+                <dd class="a_comment">
+                    <input type="radio" name="comment" value="" checked><label>允许评论</label>
+                    <input type="radio" name="comment" value=""><label>不允许评论</label>
+                </dd>
+                <dt>阅读收费</dt>
+                <dd class="a_payfor_read">
+                    <input class="ipt" type="text">
+                    <input type="radio" name="type" value="" checked><label>点</label>
+                    <input type="radio" name="type" value=""><label>元</label>
+                </dd>
+                <dt>状态</dt>
+                <dd class="a_status">
+                    <input type="radio" name="status" value="" checked><label>发布</label>
+                    <input type="radio" name="status" value=""><label>审核</label>
+                </dd>
+            </dl>
+        </div>
+    </div>
+    <div class="bot_button">
+        <span class="btn_bg"><input class="btn" type="button" value="保存后自动关闭"></span>
+        <span class="btn_bg"><input class="btn" type="button" value="保存并继续发表"></span>
+        <span class="btn_bg"><input class="btn" type="button" value="关闭"></span>
+    </div>
+</div>
+<script type="text/javascript" src="{%$STATIC_JS_URL%}public/jquery.min.js"></script>
+<script type="text/javascript" src="{%$STATIC_JS_URL%}public/kindeditor.min.js"></script>
+<script type="text/javascript" src="{%$STATIC_JS_URL%}public/jplugins/jq.dtp.min.js"></script>
+<script type="text/javascript">
+KE.show({
+	id : 'edit_area',
+	//cssPath : '{%$STATIC_CSS_URL%}index.css',
+	afterCreate : function(id) {
+		KE.event.ctrl(document, 13, function() {
+			KE.sync(id);
+			document.forms['example'].submit();
+		});
+		KE.event.ctrl(KE.g[id].iframeDoc, 13, function() {
+			KE.sync(id);
+			document.forms['example'].submit();
+		});
+	}
+});
+$(function(){
+	$("#datePicker").datePicker()
+})
+</script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>添加栏目</title>
+	<meta charset="utf-8" />
+	<link type="text/css" rel="stylesheet" href="../static/css/admin/pop.css" />
+	<script type="text/javascript" src="../static/js/public/jquery.min.js"></script>
+	<script type="text/javascript" src="../static/js/public/jplugins/jquery.cookie.js"></script>
+	<script type="text/javascript" src="../static/js/admin/category.js"></script>
+	<script type="text/javascript" src="../static/js/admin/base.js"></script>
+</head>
+
+<body>
+<div class="add_category">
+	<div class="tag_wrap">
+		<div class="tag" id="tag">
+			<a href="#" class="current">基本选项</a><a href="#">生成HTML模板</a><a href="#">模板设置</a><a href="#">SEO设置</a>
+		</div>
+		<div id="tag_cont_wrap">
+			<div class="tag_cont" style="display:block">
+				<p class="input_list"><label>添加方式：</label><input type="radio" checked="checked" name="sex" id="" /><label for="">单条添加</label>&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="sex" id="" /><label for="">批量添加</label></p>
+				<p class="input_list"><label for="">请选择模型：</label><select>
+						<option>请选择模型</option>
+						<option>文章模型</option>
+						<option>下载模型</option>
+					<select/>
+				</p>
+				<p class="input_list"><label for="">栏目名称：</label><input type="text" class="ipt" id="" />
+					<span class="ipt_tips">请输入栏目名称！</span>
+					<span class="ipt_error">请输入栏目名称！</span>
+					<span class="ipt_right">请输入栏目名称！</span>
+				</p>
+				<p class="input_list"><label for="">英文目录：</label><input type="text" class="ipt" id="" />
+					<span class="ipt_tips">请输入目录名称！</span>
+					<span class="ipt_error">请输入目录名称！</span>
+					<span class="ipt_right">请输入栏目名称！</span>
+				</p>
+				<p class="input_list"><label for="">栏目属性：</label><input type="text" class="ipt" id="" />
+					<span class="ipt_tips">请输入栏目属性，多个属性用空格或逗号分隔！</span>
+					<span class="ipt_error">请输入栏目属性，多个属性用空格或逗号分隔！</span>
+					<span class="ipt_right">请输入栏目属性，多个属性用空格或逗号分隔！</span>
+				</p>
+				<p class="input_list input_file"><label for="upLoad">栏目图片：</label><input type="file" id="upLoad" class="upLoad" />
+					<input type="text" class="up_txt" /><input type="button" class="up_btn" value="上传图片" /> 
+				</p>
+				<p class="input_list"><label>描述：</label><textarea class="textarea"></textarea></p>
+				<p class="input_list"><label>请选择模型：</label><select>
+						<option>请选择模型</option>
+						<option>文章模型</option>
+						<option>下载模型</option>
+					<select/>
+				</p>
+				<p class="input_list"><label>是否在导航显示：</label><input type="radio" checked="checked" name="sex" id="" /><label for="">是</label>&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="sex" id="" /><label for="">否</label></p>
+				<!--<p class="input_list"><span class="btn_bg"><input type="submit" value="提 交" class="btn" /></span></p>-->
+			</div>
+			<div class="tag_cont" style="display:none">
+				<p class="input_list"><label>栏目生成Html：</label><input type="radio" checked="checked" name="sex" id="" /><label for="">是</label>&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="sex" id="" /><label for="">否</label></p>
+				<p class="input_list"><label>内容页生成Html：</label><input type="radio" checked="checked" name="sex" id="" /><label for="">是</label>&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="sex" id="" /><label for="">否</label></p>
+				<p class="input_list"><label>栏目页URL规则：</label><select>
+						<option>news/index.shtml|news/index-1000.shtml</option>
+					<select/>
+				</p>
+				<p class="input_list"><label>内容页URL规则：</label><select>
+						<option>2.shtml|2-1.shtml</option>
+					<select/>
+				</p>
+				<p class="input_list"><label>是否生成到根目录：</label><input type="radio" checked="checked" name="sex" id="" /><label for="">是</label>&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="sex" id="" /><label for="">否</label></p>
+				<!--<p class="input_list"><span class="btn_bg"><input type="submit" value="提 交" class="btn" /></span></p>-->
+			</div>
+			<div class="tag_cont" style="display:none">
+				<p class="input_list"><label>可用风格：</label><select>
+						<option>请选择模板</option>
+						<option>财经模板</option>
+					<select/>
+					<span class="ipt_tips">请在【模板设置】选项中设置模板</span>
+					<span class="ipt_error">请在【模板设置】选项中设置模板</span>
+					<span class="ipt_right">请在【模板设置】选项中设置模板</span>
+				</p>
+				<p class="input_list"><label>栏目首页模板：</label> </p>	
+				<p class="input_list"><label>栏目列表页模板：</label></p> 	
+				<p class="input_list"><label>内容页模板：</label></p>
+				<!--<p class="input_list"><span class="btn_bg"><input type="submit" value="提 交" class="btn" /></span></p>-->
+			</div>
+			<div class="tag_cont seo_tag_cont" style="display:none">
+				<p class="input_list"><label><strong>META Title（栏目标题）</strong><br />针对搜索引擎设置的标题</label>&nbsp;<input type="text" class="ipt" id="" />	</p>
+				<p class="input_list"><label><strong>META Keywords（栏目关键词）</strong><br />关键字中间用半角逗号隔开</label>&nbsp;<textarea class="textarea"></textarea></p>
+				<p class="input_list"><label><strong>META Description（栏目描述）</strong><br />针对搜索引擎设置的网页描述</label>&nbsp;<textarea class="textarea"></textarea></p>
+				<!--<p class="input_list"><span class="btn_bg"><input type="submit" value="提 交" class="btn" /></span></p>-->
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

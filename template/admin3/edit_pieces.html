@@ -1,0 +1,384 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="{%$STATIC_CSS_URL%}admin/pop.css"/>
+<script type="text/javascript" src="{%$STATIC_JS_URL%}public/jquery.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	var	_results=$(".search_result li"),    //搜索结果
+		_record_table=$(".pieces_records table"), //记录表格
+		_btn_up=_record_table.find(".btn_up"), //上移按钮
+		_btn_down=_record_table.find(".btn_down"), //下移按钮
+		_btn_delete=_record_table.find(".btn_delete"),
+		_btn_add=$(".pieces_records .btn_add"); //删除按钮
+	var title_len=12,
+		cont_len=300;
+	
+	refrash_table();
+	_record_table.find("tr").live("click",function(){
+		$(this).addClass("trfocus").siblings().removeClass("trfocus");
+	})
+	_record_table.find("img").live("click",function(){
+		$(".pieces_search,.search_result").hide();
+		$(".img_upload").show();
+	})
+	_record_table.find(".ipt,.textarea").live("focus",function(){
+		$(".pieces_search,.search_result").show();
+		$(".img_upload").hide();
+	})
+	_record_table.find(".ipt").each(function(){
+			keyup_check($(this),title_len);
+		})
+		.live({
+			"keyup":function(){
+				keyup_check($(this),title_len);
+			},
+			"blur":function(){
+				blur_check($(this),title_len,"字数过多,请调整字数！");
+			}
+		})
+	_record_table.find(".textarea").each(function(){
+			keyup_check($(this),cont_len);
+		})
+		.live({
+			"keyup":function(){
+				keyup_check($(this),cont_len);
+			},
+			"blur":function(){
+				blur_check($(this),cont_len,"字数过多！");
+			}
+		})
+	
+	$(".img_upload .tab span").click(function(){
+		var _index=$(this).index();
+		$(this).addClass("current").siblings().removeClass("current");
+		$(".img_upload .tabcont").hide().eq(_index).show();
+	})
+	
+	//添加操作 双击单条搜索结果
+	_results.live("dblclick",function(){
+		var id=parseInt($(this).find("span").text()),
+			_select=select_option();
+		if(_select.isselect){
+			alert("插入记录ID:"+id+",插入位置："+_select.index);
+			//插入操作
+			
+		}else{
+			alert("请先在右边选取要插入的位置!");
+			return;
+		}
+	})
+	
+	//上移
+	_btn_up.live("click",function(e){
+		if(e && e.stopPropagation){
+			e.stopPropagation();
+		}
+		var _this=$(this),
+			_cur_index=_this.parents("tr").index(),
+			_html=get_html(_this),
+			_val=get_val(_this);
+		if(_cur_index!=0){
+			_this.parents("tr").remove();
+			$(_html).insertBefore(_record_table.find("tr").eq(_cur_index-1)).find(".ipt").val(_val.ipt_val).end().find(".textarea").val(_val.text_val);
+			refrash_table();
+		}else{
+			alert("已经是第一条！");
+		}
+	})
+	
+	//下移
+	_btn_down.live("click",function(e){
+		if(e && e.stopPropagation){
+			e.stopPropagation();
+		}
+		var _this=$(this),
+			_cur_index=_this.parents("tr").index(),
+			_html=get_html(_this),
+			_val=get_val(_this);
+		if(_cur_index!=_record_table.find("tr").length-1){
+			//alert(_val.ipt_val)
+			_this.parents("tr").remove();
+			$(_html).insertAfter(_record_table.find("tr").eq(_cur_index)).find(".ipt").val(_val.ipt_val).end().find(".textarea").val(_val.text_val);
+			refrash_table();
+		}else{
+			alert("已经是最后一条！");
+		}
+	})
+	
+	//清除
+	_btn_delete.live("click",function(e){
+		if(e && e.stopPropagation){
+			e.stopPropagation();
+		}
+		var _parent=$(this).parents("tr");
+		_parent.find(".ipt").val("").end().find(".tips").removeClass("tips_error").text("0/"+title_len);
+		_parent.find(".textarea").val("").end().find(".tips").removeClass("tips_error").text("0/"+cont_len);
+	})
+	
+	//确定
+	/*parent.dialog_ok.click(function(){
+		alert("确定");
+		//do something
+	})*/
+	
+	function select_option(){ 
+		var a={
+			isselect:false,
+			index:null
+		};
+		_record_table.find("tr").each(function(){
+			if($(this).hasClass("trfocus")){
+				a.isselect=true;
+				a.index=$(this).index();
+			}
+		})
+		return a;
+	}
+	
+	function get_val(obj){
+		var a={
+			ipt_val:null,
+			text_val:null
+		};
+		_parent=obj.parents("tr");
+		a.ipt_val=_parent.find(".ipt").val();
+		a.text_val=_parent.find(".textarea").val();
+		return a;
+	}
+	
+	function get_html(obj){
+		var _ptr=obj.parents("tr"),
+			cn="";
+		if(_ptr.hasClass("trfocus"))cn="trfocus";
+		return "<tr class='"+cn+"'>"+_record_table.find("tr").eq(_ptr.index()).html()+"</tr>";
+	}
+	
+	function refrash_table(){ //刷新表格序列和背景
+		_record_table.find("tr").removeClass("trodd");
+		_record_table.find("tr:odd").addClass("trodd");
+	}
+});
+
+function keyup_check(obj,maxlen){
+	var _tips=obj.siblings(".tips");
+		if(str_len(obj.val())>maxlen){
+			_tips.addClass("tips_error")
+		}else{
+			_tips.removeClass("tips_error")
+		}
+		_tips.text( str_len(obj.val())+"/"+maxlen )
+}
+
+function blur_check(obj,maxlen,error_str){
+	if(str_len(obj.val())>maxlen){
+		obj.siblings(".tips").text(error_str);
+	}
+}
+
+function str_len(str){
+	var len=str.replace(/[^\x00-\xff]/g,"**").length;
+	return Math.ceil(len/2);
+}
+</script>
+<title>编辑碎片</title>
+</head>
+
+<body>
+<div class="pieces_wrap">
+	<div class="pieces_left">
+        <div class="pieces_search">
+            <form>
+                <table width="100%">
+                    <tr>
+                        <td align="right" width="20%">栏目：</td>
+                        <td colspan="3">
+                            <select>
+                                <option selected>财经要闻</option>
+                                <option>研究报告</option>
+                                <option>交易提示</option>
+                            </select>
+                            &nbsp;&nbsp;
+                            <select disabled>
+                                <option>财经要闻二级1</option>
+                                <option>财经要闻二级2</option>
+                                <option>财经要闻二级3</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">推荐：</td>
+                        <td width="75">
+                            <select>
+                                <option selected>全部</option>
+                                <option>推荐</option>
+                                <option>不推荐</option>
+                            </select>
+                        </td>
+                        <td width="60" align="right">搜索方式：</td>
+                        <td>
+                        	<select>
+                                <option selected>标题</option>
+                                <option>简介</option>
+                                <option>用户名</option>
+                                <option>ID</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">缩略图：</td>
+                        <td colspan="3">
+                            <input type="radio" name="slt" value="" checked><label>有图</label>&nbsp;&nbsp;
+                            <input type="radio" name="slt" value=""><label>无图</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">关键词：</td>
+                        <td colspan="3">
+                            <input type="text" id="" class="ipt">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" align="right"><span class="btn_bg"><input type="button" class="btn" value="搜 索"></span></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        
+        <div class="search_result">
+        	<ol>
+            	<li title="点击插入本条记录"><span>5:</span>搜索结果1111</li>
+                <li title="点击插入本条记录"><span>15:</span>搜索结果2222fdsfsf21 21313213</li>
+                <li title="点击插入本条记录"><span>115:</span>搜索结果3333搜索结果3333搜索结果3333搜索结果3333搜索结果3333搜索结果3333搜索结果3333搜索结果3333</li>
+                <li title="点击插入本条记录"><span>52:</span>搜索结果444444444</li>
+                <li title="点击插入本条记录"><span>5244:</span>搜索结果5555555</li>
+                <li title="点击插入本条记录"><span>103:</span>搜索结果66666saf afa a 6666</li>
+                <li title="点击插入本条记录"><span>5:</span>搜索结果1111</li>
+                <li title="点击插入本条记录"><span>15:</span>搜索结果2222fdsfsf21 21313213</li>
+                <li title="点击插入本条记录"><span>115:</span>搜索结果3333搜索结果3333搜索结果3333搜索结果3333搜索结果3333搜索结果3333搜索结果3333搜索结果3333</li>
+                <li title="点击插入本条记录"><span>52:</span>搜索结果444444444</li>
+                <li title="点击插入本条记录"><span>5244:</span>搜索结果5555555</li>
+                <li title="点击插入本条记录"><span>103:</span>搜索结果66666saf afa a 6666</li>
+            </ol>
+            <div class="page clearfix">
+                <ul class="clearfix">
+                    <li><a href="#">上一页</a></li>
+                    <li><a class="current" href="#">1</a></li>
+                    <li><a href="#">2000</a></li>
+                    <li><a href="#">3000</a></li>
+                    <li>...</li>
+                    <li><a href="#">1000</a></li>
+                    <li><a href="#">下一页</a></li>
+                    <li><input type="text" class="int"><input type="button" value="GO" class="go"></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="img_upload">
+        	<div class="tab">
+            	<span class="current">图库</span>
+                <span>上传图片</span>
+                <span>网络文件</span>
+            </div>
+            
+            <div class="tabcont img_search" style="display:block">
+            	<p><label>搜索关键字：</label><input id="keyword" type="text" class="ipt"></p>
+                <p class="img_size"><label>图片尺寸：</label><input id="img_width" type="text" class="ipt">*<input id="img_height" type="text" class="ipt">(宽*高)</p>
+                <p><span class="btn_bg"><input id="img_search_ok" type="button" class="btn" value="确 定"></span></p>
+                <div class="img_search_results">
+                	<ul class="imglist clearfix">
+                    	<li><img src="../static/img/admin/hq.png" height="80" width="80" alt="暂无图片"></li>
+                        <li><img src="../static/img/admin/hq.png" height="80" width="80" alt="暂无图片"></li>
+                        <li><img src="../static/img/admin/hq.png" height="80" width="80" alt="暂无图片"></li>
+                        <li><img src="../static/img/admin/hq.png" height="80" width="80" alt="暂无图片"></li>
+                        <li><img src="../static/img/admin/hq.png" height="80" width="80" alt="暂无图片"></li>
+                        <li><img src="../static/img/admin/hq.png" height="80" width="80" alt="暂无图片"></li>
+                        <li><img src="../static/img/admin/hq.png" height="80" width="80" alt="暂无图片"></li>
+                    </ul>
+                	<div class="page clearfix">
+                        <ul class="clearfix">
+                            <li><a href="#">上一页</a></li>
+                            <li><a class="current" href="#">1</a></li>
+                            <li><a href="#">2000</a></li>
+                            <li><a href="#">3000</a></li>
+                            <li>...</li>
+                            <li><a href="#">1000</a></li>
+                            <li><a href="#">下一页</a></li>
+                            <li><input type="text" class="int"><input type="button" value="GO" class="go"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        	<div class="tabcont">
+                <div class="input_file">
+                    <label for="upLoad">上传文件：</label>
+                    <input type="file" class="upLoad" id="upLoad" size="23">
+                    <input type="text" class="up_txt"><input type="button" value="上传图片" class="up_btn"> 
+                </div>
+                <p><span class="btn_bg"><input id="img_upload_ok" type="button" class="btn" value="确 定"></span></p>
+            </div>
+            <div class="tabcont img_url">
+            	<p>请输入网络图片地址：</p>
+                <p><input id="img_url" type="text" class="ipt"></p>
+                <p><span class="btn_bg"><input id="img_url_ok" type="button" class="btn" value="确 定"></span></p>
+            </div>
+        </div>
+    </div>
+    <div class="pieces_right">
+        <div class="pieces_records">
+        	<table width="100%">
+            	<tr>
+                	<td width="30" align="center" valign="top">
+                    	<a class="btn_up" href="javascript:" title="上移">上移</a>
+                        <a class="btn_down" href="javascript:" title="下移">下移</a>
+                        <a class="btn_delete" href="javascript:" title="清空">清空</a>
+                    </td>
+                    <td width="100" align="center" valign="top"><img src="../static/img/admin/hq.png" height="80" width="80" alt="暂无图片"></td>
+                    <td valign="top" valign="top">
+                    	<div class="record_title">
+                        	<input type="text" id="" class="ipt" value="111"><span class="tips">0/12</span>
+                        </div>
+                        <div class="record_content">
+                        	<textarea class="textarea"></textarea><span class="tips">0/300</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                	<td width="30" align="center" valign="top">
+                    	<a class="btn_up" href="javascript:" title="上移">上移</a>
+                        <a class="btn_down" href="javascript:" title="下移">下移</a>
+                        <a class="btn_delete" href="javascript:" title="清空">清空</a>
+                    </td>
+                    <td width="100" align="center" valign="top"><img src="../static/img/admin/hq.png" height="80" width="80" alt="暂无图片"></td>
+                    <td valign="top" valign="top">
+                    	<div class="record_title">
+                        	<input type="text" class="ipt" value="222222222"><span class="tips">0/12</span>
+                        </div>
+                        <div class="record_content">
+                        	<textarea class="textarea">测试一下abc</textarea><span class="tips">0/300</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                	<td width="30" align="center" valign="top">
+                    	<a class="btn_up" href="javascript:" title="上移">上移</a>
+                        <a class="btn_down" href="javascript:" title="下移">下移</a>
+                        <a class="btn_delete" href="javascript:" title="清空">清空</a>
+                    </td>
+                    <td width="100" align="center" valign="top"><img src="../static/img/admin/hq.png" height="80" width="80" alt="暂无图片"></td>
+                    <td valign="top" valign="top">
+                    	<div class="record_title">
+                        	<input type="text" class="ipt" value="3333333"><span class="tips">0/12</span>
+                        </div>
+                        <div class="record_content">
+                        	<textarea class="textarea">测试111abc</textarea><span class="tips">0/300</span>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>

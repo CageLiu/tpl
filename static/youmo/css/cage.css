@@ -407,7 +407,7 @@ body{
 .tab2{
 	overflow:hidden;
 	position:relative;
-	/*zoom:1;*/
+	zoom:-1;
 }
 .tab2 li{
 	border-left:1px solid #7B7B7B;
@@ -462,6 +462,7 @@ body{
 }
 .tab4 li{
 	padding-left:10px;
+	text-align:center;
 }
 .tab4 a{
 	height:19px;
@@ -1051,6 +1052,13 @@ body{
 }
 
 /* scrollbox */
+.jslider_content{
+	position:relative;
+	zoom:1;
+}
+.jslider_handler{
+	zoom:-1;
+}
 .scroll,
 .scroll_box,
 .scroll .cont{
@@ -1076,23 +1084,29 @@ body{
 .scroll .next{
 	right:0;
 }
+.scroll1 .cont{
+	margin-left:-15px;
+}
+/*
+ *.scroll2 .cont{
+ *    margin-left:-12px;
+ *}
+ */
 .scroll1 .tab_item,
 .scroll2 .tab_item,
 .scroll3 .tab_item,
 .scroll5 .tab_item{
 	float:left;
 }
-.scroll1 .tab_item{
-	margin-left:-15px;
-	margin-right:1px;
-}
 .scroll1 .media{
 	margin-left:15px;
 }
-.scroll2 .tab_item{
-	margin-left:-12px;
-	margin-right:4px;
-}
+/*
+ *.scroll2 .tab_item{
+ *    margin-left:-12px;
+ *    margin-right:4px;
+ *}
+ */
 .scroll2 .media{
 	margin-left:12px;
 }

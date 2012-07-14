@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html class="login">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>测试登录页</title>
+<link rel="stylesheet" href="{%$STATIC_CSS_URL%}admin/admin.css" type="text/css" media="screen" />
+<script type="text/javascript" src="{%$STATIC_JS_URL%}public/jquery.min.js"></script>
+<script type="text/javascript" src="{%$STATIC_JS_URL%}public/jplugins/easing.js"></script>
+<script type="text/javascript">
+$(function(){
+	var perrow=5, //默认显示个数
+		cur_page=1,
+		tips=$(".tips"),
+		runOver=false,
+		h=document.documentElement.clientHeight,
+		w=document.documentElement.clientWidth,
+		Obj=$(".shortcut-button"),
+		len=Obj.length,
+		pages=Math.ceil(len/perrow),
+		aw=Obj.outerWidth(),
+		ah=Obj.outerHeight(),
+		bh=$(".login-top").outerHeight();
+	$("body").css("height",h);
+	$.each(Obj,function(i){
+		var k=2*i+1,
+			_left=k*w/perrow-aw;
+		$(this).css({"left":_left/2});
+	})
+	$("#login-wrapper").animate({paddingTop:[h-147,"easeInQuart"]},500,function(){
+		$("#login-form").remove();
+		$(".channel_box").css({"display":"block","height":h-147});
+		$.each(Obj,function(i){
+			$("#a"+i).delay(i*300).animate({top:[(h-ah-147)/2,"easeOutBounce"],opacity:1},800,function(){
+				if(i==len-1){
+					$(".login-top h1").animate({top:[-60,"easeInBack"]},500,function(){
+						$(".rights,.movebtn").fadeIn(1000);
+					})
+				}
+			});
+			runOver=true;
+		})
+	})
+
+	$(".next").live("click",function(){
+		var w=document.documentElement.clientWidth,
+			len=$(".shortcut-button").length,
+			pages=Math.ceil(len/perrow);
+		if(pages!=1 && cur_page!=pages){
+			$(".channel_box").stop().animate({marginLeft:[-w*cur_page,"easeOutExpo"]},1000);
+			cur_page++;
+		}
+	})
+	$(".prev").live("click",function(){
+		var w=document.documentElement.clientWidth;
+		if(cur_page!=1)cur_page--;
+		$(".channel_box").stop().animate({marginLeft:[-w*(cur_page-1),"easeOutExpo"]},1000);
+	})
+	$(window).resize(function(e){
+		var h=document.documentElement.clientHeight,
+			w=document.documentElement.clientWidth,
+			Obj=$(".shortcut-button"),
+			aw=Obj.outerWidth(),
+			ah=Obj.outerHeight();
+		$("body").css("height",h);
+		if(runOver){
+			$("#login-wrapper").css("padding-top",h-147);
+			$(".channel_box").css({"height":h-147});
+			$(".channel_box").stop().animate({marginLeft:-w*(cur_page-1)},800);
+		}
+		Obj.css({"top":(h-ah-147)/2});
+		$.each(Obj,function(i){
+			var k=2*i+1,
+				_left=k*w/perrow-aw;
+			$(this).css({"left":_left/2});
+		})
+	})
+})
+</script>
+</head>
+
+<body>
+<div id="login-wrapper">
+    <div class="login-top">
+        <h1><span title="Magic Box">Magic Box</span></h1>
+    </div>
+</div>
+<div class="channel_box" style="display: block; height: 387px; margin-left: 0px;">
+	<a class="shortcut-button" href="third.html" id="a0"><span><img height="48" width="48" alt="财经频道图标" src="{%$STATIC_IMG_URL%}admin/cj.png"><br>财经频道</span></a>
+    <a class="shortcut-button" href="third.html" id="a1"><span><img height="48" width="48" alt="理财频道图标" src="{%$STATIC_IMG_URL%}admin/lc.png"><br>理财频道</span></a>
+    <a class="shortcut-button" href="third.html" id="a2"><span><img height="48" width="48" alt="行情资讯图标" src="{%$STATIC_IMG_URL%}admin/hq.png"><br>行情资讯</span></a>
+    <a class="shortcut-button" href="third.html" id="a3"><span><img height="48" width="48" alt="股票频道图标" src="{%$STATIC_IMG_URL%}admin/gp.png"><br>股票频道</span></a>
+    <a class="shortcut-button" href="third.html" id="a4"><span><img height="48" width="48" alt="期货频道图标" src="{%$STATIC_IMG_URL%}admin/qh.png"><br>期货频道</span></a>
+    <a class="shortcut-button" href="third.html" id="a5"><span><img height="48" width="48" alt="基金频道图标" src="{%$STATIC_IMG_URL%}admin/jj.png"><br>基金频道</span></a>
+    <a class="shortcut-button" href="third.html" id="a6"><span><img height="48" width="48" alt="新闻源图标" src="{%$STATIC_IMG_URL%}admin/xw.png"><br>新闻源</span></a>
+    <a class="shortcut-button" href="third.html" id="a7"><span><img height="48" width="48" alt="视讯中心图标" src="{%$STATIC_IMG_URL%}admin/sx.png"><br>视讯中心</span></a>
+</div>
+<div class="movebtn">
+	<span title="Prev" class="prev">&lt;&lt;</span>
+    &lt;&lt;点击左边按钮向前翻 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 点击右边按钮向后翻&gt;&gt;
+    <span title="Next" class="next">&gt;&gt;</span>
+</div>
+<div class="rights"> Copyright&nbsp;&nbsp;&nbsp;&nbsp;2009-2011&nbsp;&nbsp;&copy; CCTV证券资讯&nbsp;&nbsp;&nbsp;&nbsp;All Rights Reserved </div>
+</body>
+</html>

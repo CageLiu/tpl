@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>添加单网页</title>
+	<meta charset="utf-8" />
+	<link type="text/css" rel="stylesheet" href="../static/css/admin/pop.css" />
+	<script type="text/javascript" src="../static/js/public/jquery.min.js"></script>
+	<script type="text/javascript" src="../static/js/public/jplugins/jquery.cookie.js"></script>
+	<script type="text/javascript" src="../static/js/admin/category.js"></script>
+	<script type="text/javascript" src="../static/js/admin/wwhong.js"></script>
+	<script type="text/javascript" src="../static/js/admin/base.js"></script>
+</head>
+
+<body>
+<div class="add_category">
+	<div class="tag_wrap">
+		<div class="tag" id="tag">
+			<a href="#" class="current">基本选项</a><a href="#">生成HTML模板</a><a href="#">模板设置</a><a href="#">SEO设置</a>
+		</div>
+		<div id="tag_cont_wrap">
+		<div class="tag_cont" style="display:block">
+			<p class="input_list"><label>添加方式：</label><input type="radio" checked="checked" name="sex" id="" /><label for="">单条添加</label>&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="sex" id="" /><label for="">批量添加</label></p>
+			<p class="input_list"><label for="">栏目名称：</label><input type="text" class="ipt" id="" />
+				<span class="ipt_tips">请输入栏目名称！</span>
+				<span class="ipt_error">请输入栏目名称！</span>
+			</p>
+			<p class="input_list"><label for="">英文目录：</label><input type="text" class="ipt" id="" />
+				<span class="ipt_tips">请输入目录名称！</span>
+				<span class="ipt_error">请输入目录名称！</span>
+			</p>
+			<p class="input_list"><label for="">栏目属性：</label><input type="text" class="ipt" id="" />
+				<span class="ipt_tips">请输入栏目属性，多个属性用空格或逗号分隔！</span>
+				<span class="ipt_error">请输入栏目属性，多个属性用空格或逗号分隔！</span>
+			</p>
+			<p class="input_list input_file"><label for="upLoad">栏目图片：</label><input type="file" id="upLoad" class="upLoad" /><input type="text" class="up_txt" /><input type="button" class="up_btn" value="上传图片" /> 
+			</p>
+			<p class="input_list"><label>描述：</label><textarea class="textarea"></textarea></p>
+			<p class="input_list"><label>请选择模型：</label>
+				<select>
+					<option>请选择模型</option>
+					<option>文章模型</option>
+					<option>下载模型</option>
+				<select/>
+			</p>
+			<p class="input_list"><label>是否在导航显示：</label><input type="radio" checked="checked" name="sex" id="" /><label for="">是</label>&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="sex" id="" /><label for="">否</label></p>
+			<p class="input_list"><span class="btn_bg"><input type="submit" value="提 交" class="btn" /></span></p>
+		</div>
+		<div class="tag_cont" style="display:none">
+			<p class="input_list"><label>栏目生成Html：</label><input type="radio" checked="checked" name="sex" id="" /><label for="">是</label>&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="sex" id="" /><label for="">否</label></p>
+			<p class="input_list"><label>栏目页URL规则：</label><select>
+					<option>news/index.shtml|news/index-1000.shtml</option>
+				<select/>
+			</p>
+			<p class="input_list"><span class="btn_bg"><input type="submit" value="提 交" class="btn" /></span></p>
+		</div>
+		<div class="tag_cont" style="display:none">
+			<p class="input_list"><label>可用风格：</label><select>
+					<option>请选择模板</option>
+					<option>财经模板</option>
+				<select/>
+				<span class="ipt_tips">请在【模板设置】选项中设置模板</span>
+				<span class="ipt_error">请在【模板设置】选项中设置模板</span>
+			</p>
+			<p class="input_list"><label>单网页模板：</label> </p>
+			<p class="input_list"><span class="btn_bg"><input type="submit" value="提 交" class="btn" /></span></p>
+		</div>
+		<div class="tag_cont" style="display:none">
+			<p class="input_list"><label><strong>META Title（栏目标题）</strong><br />针对搜索引擎设置的标题</label>&nbsp;<input type="text" class="ipt" id="" />	</p>
+			<p class="input_list"><label><strong>META Keywords（栏目关键词）</strong><br />关键字中间用半角逗号隔开</label>&nbsp;<textarea class="textarea"></textarea></p>
+			<p class="input_list"><label><strong>META Description（栏目描述）</strong><br />针对搜索引擎设置的网页描述</label>&nbsp;<textarea class="textarea"></textarea></p>
+			<p class="input_list"><span class="btn_bg"><input type="submit" value="提 交" class="btn" /></span></p>
+		</div>
+		</div>
+	</div>
+	<table class="table" id="table">
+			<thead>
+				<tr>
+					<th>标题标题</th>
+					<th>标题标题</th>
+					<th>标题标题</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>内容</td>
+					<td>内容</td>
+					<td><a href="#" class="edit">编辑</a><a href="#" class="revise">修改</a><a href="#" class="delete">删除</a></td>
+				</tr>
+				<tr>
+					<td>内容</td>
+					<td>内容</td>
+					<td><a href="#" class="edit">编辑</a><a href="#" class="revise">修改</a><a href="#" class="delete">删除</a></td>
+				</tr>
+				<tr>
+					<td>内容</td>
+					<td>内容</td>
+					<td><a href="#" class="edit">编辑</a><a href="#" class="revise">修改</a><a href="#" class="delete">删除</a></td>
+				</tr>
+				<tr>
+					<td>内容</td>
+					<td>内容</td>
+					<td><a href="#" class="edit">编辑</a><a href="#" class="revise">修改</a><a href="#" class="delete">删除</a></td>
+				</tr>
+				<tr>
+					<td>内容</td>
+					<td>内容</td>
+					<td><a href="#" class="edit">编辑</a><a href="#" class="revise">修改</a><a href="#" class="delete">删除</a></td>
+				</tr>
+				<tr>
+					<td>内容</td>
+					<td>内容</td>
+					<td><a href="#" class="edit">编辑</a><a href="#" class="revise">修改</a><a href="#" class="delete">删除</a></td>
+				</tr>
+				<tr>
+					<td>内容</td>
+					<td>内容</td>
+					<td><a href="#" class="edit">编辑</a><a href="#" class="revise">修改</a><a href="#" class="delete">删除</a></td>
+				</tr>
+				<tr>
+					<td>内容</td>
+					<td>内容</td>
+					<td><a href="#" class="edit">编辑</a><a href="#" class="revise">修改</a><a href="#" class="delete">删除</a></td>
+				</tr>
+				<tr>
+					<td>内容</td>
+					<td>内容</td>
+					<td><a href="#" class="edit">编辑</a><a href="#" class="revise">修改</a><a href="#" class="delete">删除</a></td>
+				</tr>
+				<tr>
+					<td>内容</td>
+					<td>内容</td>
+					<td><a href="#" class="edit">编辑</a><a href="#" class="revise">修改</a><a href="#" class="delete">删除</a></td>
+				</tr>
+				<tr>
+					<td>内容</td>
+					<td>内容</td>
+					<td><a href="#" class="edit">编辑</a><a href="#" class="revise">修改</a><a href="#" class="delete">删除</a></td>
+				</tr>
+				<tr>
+					<td>内容</td>
+					<td>内容</td>
+					<td><a href="#" class="edit">编辑</a><a href="#" class="revise">修改</a><a href="#" class="delete">删除</a></td>
+				</tr>
+				<tr>
+					<td>内容</td>
+					<td>内容</td>
+					<td><a href="#" class="edit">编辑</a><a href="#" class="revise">修改</a><a href="#" class="delete">删除</a></td>
+				</tr>
+			</tbody>
+		</table>
+	<div id="divmask"></div>
+	<div class="pop" id="pop" style="display:none">
+		<div class="pop_title">
+			<h2 class="pop_hd"><span>当前位置:</span><a href="#">首页</a><i class="arrow"></i><a href="#">管理</a><i class="arrow"></i><a href="#">标题</a></h2>
+			<span class="pr pop_button">
+				<a href="#" class="fullscreen" title="全屏"></a><a href="#" class="min" title="最小化"></a><a href="#" class="max" title="最大化"></a><a href="#" id="pop_close" class="close" title="关闭"></a>
+			</span>
+		</div>
+		<div class="pop_cont">
+			<div class="pop_cont_c">
+					<p class="input_list"><label for="userName">用户名：</label><input type="text" class="ipt" id="userName" />
+					<p class="input_list"><label>性别：</label><input type="radio" checked="checked" name="sex" id="male" /><label for="male">男</label>&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="sex" id="female" /><label for="female">女</label></p>
+					<p class="input_list"><input type="checkbox" checked="checked" /><label>记住登录状态</label></p>
+					<p class="input_list input_file"><label for="upLoad">上传文件：</label><input type="file" id="upLoad" class="upLoad" />
+					<input type="text" class="up_txt" /><input type="button" class="up_btn" value="上传" /> 
+					</p>
+					<p class="input_list"><label>备注：</label><textarea class="textarea"></textarea></p>
+				<div class="tag_wrap">
+					<div class="tag">
+						<a href="#" class="current">选项卡</a><a href="#">切 换</a><a href="#">切 换</a>
+					</div>
+				</div><br /><br /><br />
+				<div class="page">
+					<ul>
+						<li><a href="#">上一页</a></li>
+						<li><a href="#" class="current">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li>...</li>
+						<li><a href="#">10</a></li>
+						<li><a href="#">下一页</a></li>
+						<li><input type="text" class="int" /><input type="submit" class="go" value="GO" /></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

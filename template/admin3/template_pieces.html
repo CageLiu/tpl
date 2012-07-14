@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link type="text/css" rel="stylesheet" href="{%$STATIC_CSS_URL%}admin/pop.css" />
+<script charset="utf-8" src="{%$STATIC_JS_URL%}public/kindeditor.min.js"></script>
+<script>
+	KE.show({
+		id : 'content1',
+		cssPath : './index.css',
+		afterCreate : function(id) {
+			KE.event.ctrl(document, 13, function() {
+				KE.sync(id);
+				document.forms['example'].submit();
+			});
+			KE.event.ctrl(KE.g[id].iframeDoc, 13, function() {
+				KE.sync(id);
+				document.forms['example'].submit();
+			});
+		}
+	});
+</script>
+<title>碎片编辑 - 模板编辑器</title>
+</head>
+
+<body>
+<div class="template_pieces">
+    <div id="tag" class="tag">
+        <a class="current" href="javascript:">编辑</a><a href="javascript:">模板</a>
+    </div>
+    <div class="tabcont" style="display:block">
+        <form name="example" method="post" action="">
+            <textarea id="content1" name="content1" style="width:700px;height:300px;visibility:hidden;">
+                </p>
+                KindEditor是一套开源的HTML可视化编辑器，主要用于让用户在网站上获得所见即所得编辑效果，兼容IE、Firefox、Chrome、Safari、Opera等主流浏览器。<br />
+                KindEditor使用JavaScript编写，可以无缝的与Java、.NET、PHP、ASP等程序接合。
+                KindEditor非常适合在CMS、商城、论坛、博客、Wiki、电子邮件等互联网应用上使用，2006年7月首次发布2.0以来，KindEditor依靠出色的用户体验和领先的技术不断扩大编辑器市场占有率，目前在国内已经成为最受欢迎的编辑器之一。 
+                </p>
+            </textarea>
+            <!--<input type="submit" name="button" value="提交内容" /> (提交快捷键: Ctrl + Enter)-->
+        </form>
+        <div class="btn_bar">
+            <span class="btn_bg"><input id="past_btn" type="button" class="btn" value="粘 贴"></span>
+            <span class="btn_bg"><input id="view_btn" type="button" class="btn" value="预 览"></span>
+        </div>
+    </div>
+    <div class="tabcont template_edit">
+        <textarea id="template_html" class="textarea" readonly>
+    <ul>
+        <li>fdsaf</li>
+        <li>sfad</li>
+        <li>2131321</li>
+    </ul>
+    <ul>
+        <li>fdsaf</li>
+        <li>sfad</li>
+        <li>2131321</li>
+    </ul>
+    <ul>
+        <li>fdsaf</li>
+        <li>sfad</li>
+        <li>2131321</li>
+    </ul>
+    <ul>
+        <li>fdsaf</li>
+        <li>sfad</li>
+        <li>2131321</li>
+    </ul>
+    <ul>
+        <li>fdsaf</li>
+        <li>sfad</li>
+        <li>2131321</li>
+    </ul>
+    <ul>
+        <li>fdsaf</li>
+        <li>sfad</li>
+        <li>2131321</li>
+    </ul>
+    <ul>
+        <li>fdsaf</li>
+        <li>sfad</li>
+        <li>2131321</li>
+    </ul>
+    <ul>
+        <li>fdsaf</li>
+        <li>sfad</li>
+        <li>2131321</li>
+    </ul>
+        </textarea>
+        <div class="btn_bar">
+            提示：在文本域中按 Ctrl+A 全选，Ctrl+C 复制
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="{%$STATIC_JS_URL%}public/jquery.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	$("#tag a").click(function(){
+		var _index=$(this).index();
+		$(this).addClass("current").siblings().removeClass("current");
+		$(".tabcont").hide().eq(_index).show();
+	});
+})
+
+function getFieldSelection(id)
+{
+	var select_field = document.getElementById(id),
+    	word='';
+    if (document.selection) {
+        var sel = document.selection.createRange();
+        if (sel.text.length > 0) {
+            word = sel.text;
+        }
+    }    /*ie浏览器*/
+    else if (select_field.selectionStart || select_field.selectionStart == '0') {
+        var startP = select_field.selectionStart;
+        var endP = select_field.selectionEnd;
+        if (startP != endP) {
+            word = select_field.value.substring(startP, endP);
+        }
+    }   /*标准浏览器*/
+    return word;
+}
+</script>
+</body>
+</html>

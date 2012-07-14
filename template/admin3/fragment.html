@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>
+			碎片示例页面
+		</title>
+		<link type="text/css" rel="stylesheet" href="{%$STATIC_CSS_URL%}admin/fragment.css" />
+		<link type="text/css" rel="stylesheet" href="{%$STATIC_CSS_URL%}admin/pop.css" />
+		<script type="text/javascript" src="{%$STATIC_JS_URL%}public/jquery.min.js"></script>
+		<script type="text/javascript" src="{%$STATIC_JS_URL%}public/jplugins/ui/js/jquery-ui.js"></script>
+		<script type="text/javascript" src="{%$STATIC_JS_URL%}admin/mb_pop.js"></script>
+	</head>
+
+	<body>
+		<div style="width:300px;margin:100px auto 0">
+			<div id="p1" class="fragment">
+				<div class="fragment_info modified">
+					<div class="fragment_remarks">
+						编号：0000001</br>
+						修改时间：2011-11-11 11:11:11<br/>
+						修改人：刘锋<br/>
+						超链接：<a href="http://www.google.com.hk">http://www.google.com.hk</a>
+					</div>
+				</div>
+				<ul>
+					<li><a href="http://www.google.com.hk">跳转到Google</a></li>
+					<li><a href="http://www.google.com.hk">跳转到Google</a></li>
+					<li><a href="http://www.google.com.hk">跳转到Google</a></li>
+					<li><a href="http://www.google.com.hk">跳转到Google</a></li>
+					<li><a href="http://www.google.com.hk">跳转到Google</a></li>
+					<li><a href="http://www.google.com.hk">跳转到Google</a></li>
+					<li><a href="http://www.google.com.hk">跳转到Google</a></li>
+					<li><a href="http://www.google.com.hk">跳转到Google</a></li>
+					<li><a href="http://www.google.com.hk">跳转到Google</a></li>
+					<li><a href="http://www.google.com.hk">跳转到Google</a></li>
+					<li><a href="http://www.google.com.hk">跳转到Google</a></li>
+				</ul>
+			</div>
+		</div>
+        <div style="width:300px;margin:100px auto 0">
+			<div id="p2" class="fragment">
+				<div class="fragment_info modified">
+					<div class="fragment_remarks">
+						编号：0000001</br>
+						修改时间：2011-11-11 11:11:11<br/>
+						修改人：刘锋<br/>
+						超链接：<a href="http://www.google.com.hk">http://www.google.com.hk</a>
+					</div>
+				</div>
+				<ul>
+					<li><a href="http://www.google.com.hk">跳转到Google</a></li>
+					<li><a href="http://www.google.com.hk">跳转到Google</a></li>
+					<li><a href="http://www.google.com.hk">跳转到Google</a></li>
+					<li><a href="http://www.google.com.hk">跳转到Google</a></li>
+					<li><a href="http://www.google.com.hk">跳转到Google</a></li>
+					<li><a href="http://www.google.com.hk">跳转到Google</a></li>
+					<li><a href="http://www.google.com.hk">跳转到Google</a></li>
+					<li><a href="http://www.google.com.hk">跳转到Google</a></li>
+					<li><a href="http://www.google.com.hk">跳转到Google</a></li>
+					<li><a href="http://www.google.com.hk">跳转到Google</a></li>
+					<li><a href="http://www.google.com.hk">跳转到Google</a></li>
+				</ul>
+			</div>
+		</div>
+        <script type="text/javascript">
+		$(function(){
+			$("#p1").click(function(){
+				sharkDialog.getInstance({
+					title:"编辑碎片",
+					height:600,
+					width:1200,
+					allowmax:true,
+					url:"/page.php?p=admin/edit_pieces"
+				})
+				
+			});
+			
+			$("#p2").click(function(){
+				sharkDialog.getInstance({
+					title:"编辑碎片",
+					height:600,
+					width:730,
+					allowmax:true,
+					url:"/page.php?p=admin/template_pieces"
+				})
+			});
+		})
+		</script>
+	</body>
+</html>

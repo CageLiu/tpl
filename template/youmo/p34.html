@@ -746,10 +746,10 @@ $(document).ready(function(){
 		var target = $(e.target);
 		var url = target.attr("data_children");
 		var _this = $(this);
-		target.addClass("checked").siblings().removeClass("checked");
+		target.get(0).nodeName.toLowerCase() === "span" && target.addClass("checked").siblings().removeClass("checked");
 		$(".selector .sublist").css("display","none");
 		target.siblings(".sublist").css("display","block");
-		target.parent().siblings().children().removeClass("checked");
+		target.get(0).nodeName.toLowerCase() === "span" && target.parent().siblings().children().removeClass("checked");
 		$.ajax({
 			url : "/",
 			type : "get",
@@ -757,7 +757,7 @@ $(document).ready(function(){
 				target.siblings(".sublist").html(data);
 				$(".selector .sublist").click(function(e){
 					var tar = $(e.target);
-					tar.addClass("checked").siblings().removeClass("checked");
+					tar.get(0).nodeName.toLowerCase() === "span" && tar.addClass("checked").siblings().removeClass("checked");
 					$(this).parents(".sitem").children("input").val(target.siblings("strong").html() + "," + target.html() + "," + tar.html());
 					_this.parents(".sitem").children(".cur").html(tar.html());
 					tar.parents(".sitem").addClass("close");

@@ -9,15 +9,15 @@
 				</div>
 				<div class="box_inner">
 					<div class="bc">
-						<div class="slider slider2">
-							<ul>
+						<div class="slider slider2" id="focus">
+							<ul class="jslider_content">
 								<li><a href="#"><img width="748" height="252" alt="" src="static/youmo/img/img1.jpg"></a></li>
 								<li><a href="#"><img width="748" height="252" alt="" src="static/youmo/img/img1.jpg"></a></li>
 								<li><a href="#"><img width="748" height="252" alt="" src="static/youmo/img/img1.jpg"></a></li>
 								<li><a href="#"><img width="748" height="252" alt="" src="static/youmo/img/img1.jpg"></a></li>
 								<li><a href="#"><img width="748" height="252" alt="" src="static/youmo/img/img1.jpg"></a></li>
 							</ul>
-							<span class="toggle">
+							<span class="toggle jslider_handler">
 								<i class="current">1</i>
 								<i>2</i>
 								<i>3</i>
@@ -1255,10 +1255,10 @@
 					</span>
 				</h2>
 			</div>
-			<div class="bc m_tb_11 scroll scroll4 clearfix">
+			<div class="bc m_tb_11 scroll scroll4 clearfix" id="guessyoulike">
 				<div class="scroll_box">
 					<div class="cont clearfix">
-						<ul class="tab_item hor_list pic_list pic_list3">
+						<ul class="tab_item hor_list pic_list pic_list3 jslider_content">
 							<li>
 								<div class="media media6 hor_item">
 									<div class="pic">
@@ -1332,8 +1332,10 @@
 						</ul>
 					</div>
 				</div>
-				<span class="tbtn tbtn1 prev">前翻</span>
-				<span class="tbtn tbtn1 next">后翻</span>
+				<div class="jslider_handler">
+					<span class="tbtn tbtn1 prev">前翻</span>
+					<span class="tbtn tbtn1 next">后翻</span>
+				</div>
 			</div>
 		</div>
 		<div class="radius radius_btm">
@@ -1346,4 +1348,58 @@
 		</div>
 	</div>
 </div>
+<script type="text/javascript">
+	$("#focus").jSlider({
+		effect : "DirY",
+		speed : "normal",
+		timer : 5000
+	});	
+	$("#guessyoulike").jSlider({
+		effect : "DirX",
+		autoPlay:true,
+		speed : "normal",
+		timer : 3000,
+		steps:3
+	});
+	$(".selector .sitem").click(function(e){
+		$(".selector .sitem").addClass("close");
+		$(this).removeClass("close");
+		e.stopPropagation();
+	});
+	$(".selector .sort_type").click(function(e){
+		var target = $(e.target);
+		$(this).parents(".sitem").children("input").val(target.html());
+		$(this).parents(".sitem").addClass("close");
+		$(this).parents(".sitem").children(".cur").html(target.html());
+		e.stopPropagation();
+	});
+	$(".selector .citylist").click(function(e){
+		var target = $(e.target);
+		var url = target.attr("data_children");
+		var _this = $(this);
+		target.addClass("checked").siblings().removeClass("checked");
+		$(".selector .sublist").css("display","none");
+		target.siblings(".sublist").css("display","block");
+		target.parent().siblings().children().removeClass("checked");
+		$.ajax({
+			url : "/",
+			type : "get",
+			success : function(data){
+				target.siblings(".sublist").html(data);
+				$(".selector .sublist").click(function(e){
+					var tar = $(e.target);
+					tar.addClass("checked").siblings().removeClass("checked");
+					$(this).parents(".sitem").children("input").val(target.siblings("strong").html() + "," + target.html() + "," + tar.html());
+					_this.parents(".sitem").children(".cur").html(tar.html());
+					tar.parents(".sitem").addClass("close");
+					e.stopPropagation();
+				});
+			}	
+		});
+			
+	});
+	$(document).click(function(){
+		$(".selector .sitem").addClass("close");
+	});
+</script>
 <{include file="youmo/footer.html"}>

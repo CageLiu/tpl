@@ -109,10 +109,10 @@
 			<div>radius top</div>
 		</div>
 		<div class="box_inner p_lr_20">
-			<div class="bc scroll scroll6 clearfix">
+			<div class="bc scroll scroll6 clearfix" id="scroll1">
 				<div class="scroll_box">
 					<div class="cont clearfix">
-						<ul class="hor_list pic_list pic_list5">
+						<ul class="hor_list pic_list pic_list5 jslider_content">
 							<li>
 							<a href="#" class="picture">
 								<img src="static/youmo/img/img1.jpg" alt="" width="140" height="177" />
@@ -158,8 +158,10 @@
 						</ul>
 					</div>
 				</div>
-				<span class="tbtn tbtn1 prev">前翻</span>
-				<span class="tbtn tbtn1 next">后翻</span>
+				<div class="jslider_handler">
+					<span class="tbtn tbtn1 prev">前翻</span>
+					<span class="tbtn tbtn1 next">后翻</span>
+				</div>
 			</div>
 		</div>
 		<div class="radius radius_btm">
@@ -386,10 +388,10 @@
 					</span>
 				</h2>
 			</div>
-			<div class="bc m_tb_11 scroll scroll4 clearfix">
+			<div class="bc m_tb_11 scroll scroll4 clearfix" id="guessyoulike">
 				<div class="scroll_box">
 					<div class="cont clearfix">
-						<ul class="tab_item hor_list pic_list pic_list3">
+						<ul class="tab_item hor_list pic_list pic_list3 jslider_content">
 							<li>
 								<div class="media media6 hor_item">
 									<div class="pic">
@@ -463,8 +465,10 @@
 						</ul>
 					</div>
 				</div>
-				<span class="tbtn tbtn1 prev">前翻</span>
-				<span class="tbtn tbtn1 next">后翻</span>
+				<div class="jslider_handler">
+					<span class="tbtn tbtn1 prev">前翻</span>
+					<span class="tbtn tbtn1 next">后翻</span>
+				</div>
 			</div>
 		</div>
 		<div class="radius radius_btm">
@@ -477,4 +481,20 @@
 		</div>
 	</div>
 </div>
+<script type="text/javascript">
+	$("#scroll1").jSlider({
+		effect : "DirX",
+		autoPlay:true,
+		speed : "normal",
+		timer : 3000,
+		steps:3
+	});
+	$("#guessyoulike").jSlider({
+		effect : "DirX",
+		autoPlay:true,
+		speed : "normal",
+		timer : 3000,
+		steps:3
+	});
+</script>
 <{include file="youmo/footer.html"}>

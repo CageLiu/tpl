@@ -9,15 +9,15 @@
 				</div>
 				<div class="box_inner">
 					<div class="bc">
-						<div class="slider slider2">
-							<ul>
+						<div class="slider slider2" id="focus">
+							<ul class="jslider_content">
 								<li><a href="#"><img src="static/youmo/img/img1.jpg" alt="" width="748" height="252"></a></li>
 								<li><a href="#"><img src="static/youmo/img/img1.jpg" alt="" width="748" height="252"></a></li>
 								<li><a href="#"><img src="static/youmo/img/img1.jpg" alt="" width="748" height="252"></a></li>
 								<li><a href="#"><img src="static/youmo/img/img1.jpg" alt="" width="748" height="252"></a></li>
 								<li><a href="#"><img src="static/youmo/img/img1.jpg" alt="" width="748" height="252"></a></li>
 							</ul>
-							<span class="toggle">
+							<span class="toggle jslider_handler">
 								<i class="current">1</i>
 								<i>2</i>
 								<i>3</i>
@@ -666,4 +666,11 @@
 		</div>
 	</div>
 </div>
+<script type="text/javascript">
+	$("#focus").jSlider({
+		effect : "DirY",
+		speed : "normal",
+		timer : 3000
+	});	
+</script>
 <{include file="youmo/footer.html"}>

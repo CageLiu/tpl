@@ -10,6 +10,12 @@
 			<link type="text/css" rel="stylesheet" href="static/youmo/css/ie.css" />
 			<link type="text/css" rel="stylesheet" href="static/youmo/css/fan_ie.css" />
 		<![endif]-->
+		<!--[if IE 6]>
+			<script src="static/youmo/js/DD_belatedPNG.js" type="text/javascript"></script>
+			<script type="text/javascript">
+				DD_belatedPNG.fix('.subnav_inner');
+			</script>
+		<![endif]-->
 		<script src="static/youmo/js/jquery.js" type="text/javascript"></script>
 		<script src="static/youmo/js/cage.js" type="text/javascript"></script>
 		<script src="static/youmo/js/jq.jslider.js" type="text/javascript"></script>
@@ -27,15 +33,19 @@
 					<a href="#" class="reg">注册</a>
 					<a href="#" class="favorites">加入收藏</a>
 				</div>
-				<ul class="hor_list nav">
+				<ul class="hor_list nav" id="nav">
 					<li class="home"><a href="#">首页</a></li>
 					<li class="item">
-					<a href="#">艺人</a>
-					<ul class="subnav">
-						<li><a href="#">模特</a></li>
-						<li><a href="#">艺人库</a></li>
-						<li><a href="#">达人</a></li>
-					</ul>
+						<a href="#">艺人</a>
+						<div class="subnav">
+							<div class="subnav_inner">
+								<ul>
+									<li><a href="#"><span>艺人库</span></a></li>
+									<li><a href="#"><span>达人秀</span></a></li>
+									<li><a href="#"><span>图库</span></a></li>
+								</ul>
+							</div>
+						</div>
 					</li>
 					<li class="item"><a href="#">图库</a></li>
 					<li class="item"><a href="#">商机</a></li>
@@ -53,5 +63,25 @@
 					</div>
 				</form>
 			</div>
+			<script type="text/javascript">
+				$(document).ready(function(){
+					var timer = null;
+					$("#nav").children().hover(function(){
+						$(this).children(".subnav").css("display","block");
+					},function(){
+						var _this = $(this);
+						timer = setTimeout(function(){
+							_this.children(".subnav").css("display","none");
+						},300);
+					});
+					$(".subnav").hover(function(e){
+						$(this).css("display","block");
+						clearTimeout(timer);
+						//e.stopPropagation();
+					},function(){
+						$(this).css("display","none");
+					});
+				});
+			</script>
 		</div>
 		<div class="wp">

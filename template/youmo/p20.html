@@ -151,7 +151,7 @@
 							<div class="hor_item sitem close">
 								<span class="cur">过期与否</span>
 								<i class="arrow">arrow</i>
-								<ul class="slist">
+								<ul class="slist time_limit">
 									<li>已过期</li>
 									<li>未过期</li>
 								</ul>
@@ -218,7 +218,7 @@
 							<div class="hor_item sitem close">
 								<span class="cur">分类</span>
 								<i class="arrow">arrow</i>
-								<ul class="slist">
+								<ul class="slist s_assort">
 									<li>分类</li>
 									<li>分类</li>
 								</ul>
@@ -403,4 +403,48 @@
 	</div>
 </div>
 
+<script type="text/javascript">
+$(document).ready(function(){
+	$(".selector .sitem").click(function(e){
+		$(".selector .sitem").addClass("close");
+		$(this).removeClass("close");
+		e.stopPropagation();
+	});
+	$(".selector .sort_type,.selector .s_assort,.selector .time_limit").click(function(e){
+		var target = $(e.target);
+		$(this).parents(".sitem").children("input").val(target.html());
+		$(this).parents(".sitem").addClass("close");
+		$(this).parents(".sitem").children(".cur").html(target.html());
+		e.stopPropagation();
+	});
+	$(".selector .citylist").click(function(e){
+		var target = $(e.target);
+		var url = target.attr("data_children");
+		var _this = $(this);
+		target.addClass("checked").siblings().removeClass("checked");
+		$(".selector .sublist").css("display","none");
+		target.siblings(".sublist").css("display","block");
+		target.parent().siblings().children().removeClass("checked");
+		$.ajax({
+			url : "/",
+			type : "get",
+			success : function(data){
+				target.siblings(".sublist").html(data);
+				$(".selector .sublist").click(function(e){
+					var tar = $(e.target);
+					tar.addClass("checked").siblings().removeClass("checked");
+					$(this).parents(".sitem").children("input").val(target.siblings("strong").html() + "," + target.html() + "," + tar.html());
+					_this.parents(".sitem").children(".cur").html(tar.html());
+					tar.parents(".sitem").addClass("close");
+					e.stopPropagation();
+				});
+			}	
+		});
+			
+	});
+	$(document).click(function(){
+		$(".selector .sitem").addClass("close");
+	});
+});
+</script>
 <{include file="youmo/footer.html"}>

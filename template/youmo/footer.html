@@ -1,9 +1,16 @@
 		</div>
 		<div class="ft">
 			<div class="ft_inner">
-				<h2>
-					<a href="#" class="logo">优模网</a>
-				</h2>
+				<div class="ft_main_box">
+					<h2>
+						<a href="#" class="logo">优模网</a>
+					</h2>
+					<div class="ft_relation">
+						<span>电子邮箱：ym@um0001.com</span>
+						<span>在线管理QQ号：1384095</span>
+						<span>投诉与建议QQ号：4566777</span>
+					</div>
+				</div>
 				<div class="ft_nav">
 					<a href="#" class="safe_guide">这里查看</a>
 					<p>
@@ -25,5 +32,28 @@
 				</div>
 			</div>
 		</div>
+		<div class="rb_f" id="rb_f">
+			<ul>
+				<li><a href="#">联系管理</a></li>
+				<li><a href="#">管理员QQ</a></li>
+				<li><a href="#">站内消息</a></li>
+				<li><a href="#">申请权利</a></li>
+				<li><a href="#">推广自己</a></li>
+				<li><a href="#">个人主页</a></li>
+				<li><a href="#">收藏夹</a></li>
+				<li><a href="#">我的设置</a></li>
+			</ul>
+		</div>
+
+		<!--[if IE 6]>
+			<script type="text/javascript">
+				(function(){
+					$(window).scroll(function(){
+						var sTop = document.documentElement.scrollTop || document.body.scrollTop;
+						$("#rb_f").css("top",document.documentElement.clientHeight - $("#rb_f").outerHeight() + sTop + "px");
+					});
+				}());
+			</script>
+		<![endif]-->
 	</body>
 </html>

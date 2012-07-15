@@ -2,6 +2,26 @@
 .mb15{
 	margin-bottom:15px;
 }
+.hd .logo{
+	background:url(../img/bg.png) no-repeat -430px 0;
+	width:121px;
+	height:59px;
+	display:inline-block;
+	font-size:0;
+	vertical-align:top;
+	margin-top:5px;
+}
+.ft_main_box{
+	height:140px;
+}
+.ft_relation{
+	margin-right:-22px;
+	margin-top:-57px;
+	padding-left:390px;
+}
+.ft_relation span{
+	padding-right:22px;
+}
 .f14{
 	font-size:14px;
 }
@@ -28,6 +48,8 @@
 	font-family:"宋体";
 	font-size:16px;
 	font-weight:700;
+	padding:0 5px;
+	cursor:pointer;
 }
 /*resect style end*/
 /*base style start*/
@@ -1689,6 +1711,7 @@ a.moder{
 .view_box{
 	padding-top:10px;
 	margin-right:26px;
+	display:none;
 }
 .view_item{
 	border:4px solid #587eff;
@@ -1970,6 +1993,8 @@ a.moder{
 	line-height:49px;
 	color:#f93b9e;
 	font-size:24px;
+	font-family:"宋体";
+	font-weight:700;
 	background-position:right -168px;
 	text-align:center;
 	padding-left:0;

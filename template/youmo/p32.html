@@ -37,10 +37,10 @@
 						<div>radius top</div>
 					</div>
 					<div class="box_inner p_lr_20">
-						<div class="bc scroll scroll9 clearfix">
+						<div class="bc scroll scroll9 clearfix" id="show_pic">
 							<div class="scroll_box">
 								<div class="cont clearfix">
-									<ul class="hor_list pic_list pic_list2">
+									<ul class="hor_list pic_list pic_list2 jslider_content">
 										<li>
 											<a href="#" class="picture">
 												<img src="static/youmo/img/img1.jpg" alt="" width="697" height="447">
@@ -94,8 +94,10 @@
 									</ul>
 								</div>
 							</div>
-							<span class="tbtn tbtn1 prev">前翻</span>
-							<span class="tbtn tbtn1 next">后翻</span>
+							<div class="jslider_handler">
+								<span class="tbtn tbtn1 prev">前翻</span>
+								<span class="tbtn tbtn1 next">后翻</span>
+							</div>
 							<span class="tips">
 								*请在图片上按右键使用"设置为背景"菜单
 							</span>
@@ -167,4 +169,13 @@
 		</div>
 	</div>
 </div>
+<script type="text/javascript">
+	$("#show_pic").jSlider({
+		effect : "DirX",
+		autoPlay:true,
+		speed : "normal",
+		timer : 3000,
+		steps:1
+	});
+</script>
 <{include file="youmo/footer.html"}>

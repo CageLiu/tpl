@@ -172,6 +172,10 @@
 				<strong>网站公告：</strong>
 				<a href="#">网站公告网站公告网站公告1...</a>
 				<a href="#">网站公告网站公告网站公告2...</a>
+				<a href="#">网站公告网站公告网站公告3...</a>
+				<a href="#">网站公告网站公告网站公告4...</a>
+				<a href="#">网站公告网站公告网站公告5...</a>
+				<a href="#">网站公告网站公告网站公告6...</a>
 			</li>
 		</ul>
 	</div>
@@ -2546,6 +2550,20 @@
 </div>
 <script type="text/javascript">
 	$(document).ready(function(){
+		var timer = null;
+		function scrollTxt(){
+			timer = setInterval(function(){
+				$(".sitenote a:first").animate({"margin-top":"-38px"},200,function(){
+					$(this).appendTo($(".sitenote")).css("margin-top","0");
+				});
+			},3000);
+		}
+		scrollTxt();
+		$(".sitenote a").hover(function(){
+			clearInterval(timer);
+		},function(){
+			timer = setInterval(scrollTxt,3000);
+		});
 		$("#liangzhao").jSlider({
 			effect : "DirX",
 			speed : "normal",

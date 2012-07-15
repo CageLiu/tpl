@@ -832,5 +832,8 @@
 		timer : 3000,
 		steps:3
 	});
+	$(".actor_vip_dl dd").click(function(){
+		$(this).addClass("current").siblings("dd").removeClass("current");
+	});
 </script>
 <{include file="youmo/footer.html"}>

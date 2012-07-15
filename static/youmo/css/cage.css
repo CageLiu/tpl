@@ -2105,10 +2105,12 @@ body{
 	line-height:30px;
 	background:url(../img/icon.png) no-repeat 10px -1487px #F7F7F7;
 	margin-bottom:10px;
+	cursor:pointer;
 }
 .help_cont dd{
 	line-height:23px;
 	margin-bottom:16px;
+	display:none;
 }
 .rb_f{
 	width:112px;

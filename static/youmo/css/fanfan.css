@@ -497,8 +497,10 @@
 }
 .vip_statistics_list .sitenote a{
 	display:block;
-	/*height:38px;*/
+	height:38px;
 	line-height:38px;
+	width:230px;
+	overflow:hidden;
 }
 .vip_statistics_list .sitenote a:hover{
 	color:#F64141;
@@ -630,6 +632,9 @@
 .reserve_model a{
 	color:#ff675e;
 	margin-right:5px;
+}
+.reserve_model a:hover{
+	color:#333;
 }
 a.moder{
 	background-color:#ff675e;
@@ -1822,6 +1827,7 @@ a.moder{
 .actor_vip_dl dd{
 	background-position:-58px -1197px;
 	padding-bottom:10px;
+	cursor:pointer;
 }
 .actor_vip_dl .current{
 	background-position:0 -1229px;

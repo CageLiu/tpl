@@ -2134,3 +2134,6 @@ body{
 	height:28px;
 	line-height:28px;
 }
+.rb_f a:hover{
+	color:#F64141;
+}

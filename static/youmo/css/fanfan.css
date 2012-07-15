@@ -500,6 +500,9 @@
 	/*height:38px;*/
 	line-height:38px;
 }
+.vip_statistics_list .sitenote a:hover{
+	color:#F64141;
+}
 /*vip_statistics style end*/
 /*model_nav style start*/
 .model_nav{

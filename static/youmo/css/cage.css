@@ -1937,6 +1937,9 @@ body{
 	margin-left:1em;
 	font-size:18px;
 }
+.uside_nav a:hover{
+	color:#F64141;
+}
 .umain{
 	width:744px;
 	margin-left:14px;

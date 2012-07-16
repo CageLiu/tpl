@@ -275,7 +275,7 @@ var youmo = {
 
 $(window).scroll(function(){
 	var sTop = document.documentElement.scrollTop || document.body.scrollTop;
-	if(document.body.clientHeight - document.documentElement.clientHeight - sTop < 100){
+	if(document.body.clientHeight - document.documentElement.clientHeight - sTop < document.body.clientHeight - ($("#waterfall").offset().top + $("#waterfall").outerHeight(true))){
 		youmo.waterfall.load(str);
 	}
 });

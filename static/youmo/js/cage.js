@@ -273,6 +273,13 @@ var youmo = {
 	}
 };
 
+$(window).scroll(function(){
+	var sTop = document.documentElement.scrollTop || document.body.scrollTop;
+	if(document.body.clientHeight - document.documentElement.clientHeight - sTop < 100){
+		youmo.waterfall.load(str);
+	}
+});
+
 
 $(document).ready(function(){
 	$(".J_add_reply").click(function(){

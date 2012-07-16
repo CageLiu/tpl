@@ -272,3 +272,92 @@ var youmo = {
 		}		
 	}
 };
+
+
+$(document).ready(function(){
+	$(".J_add_reply").click(function(){
+		art.dialog({
+			id : "J_reply_form",
+			title: '回复',
+			content: document.getElementById("J_reply_form"),
+			lock : true
+		});
+		art.dialog({id: 'J_reply_form'});
+	});
+
+	$(".J_jubao_tousu").click(function(){
+		art.dialog({
+			id : "J_jubao_form",
+			title: '举报投诉',
+			content: document.getElementById("J_jubao_form"),
+			lock : true
+		});
+		art.dialog({id: 'J_jubao_form'});
+	});
+
+	$(".view_more").click(function(){
+		var url = $(this).attr("data");
+		var box = $(this).siblings(".said_list_box .said_list");
+		$.ajax({
+			url:url,			
+			type:"get",
+			success:function(data){
+				box.append(data);
+				},
+			error:function(){
+				alert(404);
+			}
+		});
+	});
+	
+	$(".J_guanzhu").click(function(){
+		var url = $(this).attr("data");
+		$.ajax({
+			url : url,
+			type:"post",
+			success:function(){
+				art.dialog({
+					content: '加关注成功',
+					time : 2
+				});	
+			},
+			error:function(){
+				alert(404);
+			}
+		});
+	});
+	$(".J_shoucang").click(function(){
+		var url = $(this).attr("data");
+		$.ajax({
+			url : url,
+			type:"post",
+			success:function(){
+				art.dialog({
+					content: '收藏成功',
+					time : 2
+				});	
+			},
+			error:function(){
+				alert(404);
+			}
+		});
+	});
+	$(".J_xihuan").click(function(){
+		var url = $(this).attr("data");
+		$.ajax({
+			url : url,
+			type:"post",
+			success:function(){
+				art.dialog({
+					content: '加喜欢成功',
+					time : 2
+				});	
+			},
+			error:function(){
+				alert(404);
+			}
+		});
+	});
+});
+
+

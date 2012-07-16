@@ -25,8 +25,8 @@
 		var opts = $.extend({}, dd, options);
 		var index = 1;
 		var targetLi = $("." + opts.claNav,$(this).parents("." + opts.parentBox).eq(0)).children(); //目标对象
-		var clickNext = $("." + opts.claNav + " .next", $(this)); //点击下一个按钮
-		var clickPrev = $("." + opts.claNav + " .prev", $(this)); //点击上一个按钮
+		var clickNext = $("." + opts.claNav + " .next", $(this).parents("." + opts.parentBox).eq(0)); //点击下一个按钮
+		var clickPrev = $("." + opts.claNav + " .prev", $(this).parents("." + opts.parentBox).eq(0)); //点击上一个按钮
 		var ContentBox = $("." + opts.claCon, $(this)); //滚动的对象
 		var ContentBoxNum = ContentBox.children().size(); //滚动对象的子元素个数
 		var slideH = ContentBox.children().first().outerHeight(true); //滚动对象的子元素个数高度，相当于滚动的高度
@@ -54,9 +54,10 @@
 				}
 			};
 			clickNext.click(function(event) {
+				//alert(1);
 				$.fn.jSlider.effectLoop.scrollLeft(ContentBox, targetLi, index, slideWH, opts, function() {
 					for (var i = 0; i < opts.steps; i++) {
-						ContentBox.find("li:first", $this).appendTo(ContentBox);
+						ContentBox.children().first().appendTo(ContentBox);
 					}
 					ContentBox.css({"left": "0"});
 				});
@@ -66,7 +67,7 @@
 				ContentBox.css({"left": -opts.steps * slideW});
 				$.fn.jSlider.effectLoop.scrollRight(ContentBox, targetLi, index, slideWH, opts, function() {
 					for (var i = 0; i < opts.steps; i++) {
-						ContentBox.find("li:last", $this).prependTo(ContentBox);
+						ContentBox.children().last().prependTo(ContentBox);
 					}
 				});
 				event.preventDefault();
@@ -93,6 +94,8 @@
 				if (autoPlay) { clearInterval(autoPlay); }
 				autoPlay = setInterval(doPlay, opts.timer);
 			});
+			clickNext.unbind("hover");
+			clickPrev.unbind("hover");
 		});
 	};
 	$.fn.jSlider.effectLoop = {
@@ -180,7 +183,8 @@ function cur(ele,currentClass,tag){
 		effact:   null,
 		auto:     false,
 		autotime: 3000,
-		aniSpeed: 500
+		aniSpeed: 500,
+		visible : false
 		}	
 		
 	$.extend(org,options);
@@ -199,7 +203,11 @@ function cur(ele,currentClass,tag){
 	var curtag=tag.eq(org.dft);
 	//prepare
 	cur(curtag,org.curClass);
-	con.eq(org.dft).show().siblings(org.conTag).hide();
+	if(org.visible){
+		con.eq(org.dft).css({"visibility":"visible","height":"auto","overflow":"visible","margin":"11px 0"}).siblings(org.conTag).css({"visibility":"hidden","height":"0","overflow":"hidden","margin":"0"});
+	}else{
+		con.eq(org.dft).show().siblings(org.conTag).hide();
+	}
 	
 	if(org.effact=="scrollx"){
 		var padding=parseInt(con.css("padding-left"))+parseInt(con.css("padding-right"));										
@@ -260,7 +268,12 @@ function cur(ele,currentClass,tag){
 					break;
 					case "scrolly" : conwrp.animate({top:-i*conht+taght+"px"},org.aniSpeed);
 					break;
-					default        : con.eq(i).show().siblings(org.conTag).hide();
+					default: 
+						if(org.visible){
+							con.eq(i).css({"visibility":"visible","height":"auto","overflow":"visible","margin":"11px 0"}).siblings(org.conTag).css({"visibility":"hidden","height":"0","overflow":"hidden","margin":"0"});
+						}else{
+							con.eq(i).show().siblings(org.conTag).hide();
+						}
 					break;
 					}			
 				}		

@@ -1860,6 +1860,9 @@ body{
 	height:51px;
 	line-height:58px;
 }
+.dr_nav li a:hover{
+	color:#FF2955;
+}
 .dr_nav li a.current{
 	color:#FF2955;
 }
@@ -1982,6 +1985,9 @@ body{
 .sform .txt{
 	vertical-align:middle;
 }
+.sform .vtop{
+	vertical-align:top;
+}
 .sform .txt{
 	height:26px;
 	line-height:26px;
@@ -1989,7 +1995,13 @@ body{
 	width:220px;
 	margin-left:5px;
 }
-#online_registration{
+.sform textarea{
+	width:480px;
+	height:90px;
+	border:1px solid #888;
+}
+#online_registration,
+.J_reply_form{
 	display:none;
 }
 .desktop .main{
@@ -2145,4 +2157,11 @@ body{
 }
 .rb_f a:hover{
 	color:#F64141;
+}
+#elibrary{
+	height:264px;
+	overflow:hidden;
+}
+.view_more{
+	cursor:pointer;
 }

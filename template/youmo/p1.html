@@ -499,10 +499,10 @@
 		</div>
 		<div class="extra">
 			<ul class="hor_list tab tab1 jslider_handler">
-				<li class="current"><a href="#">最新照片</a></li>
-				<li><a href="#">今日之星</a></li>
-				<li><a href="#">火爆模特</a></li>
-				<li><a href="#">推荐企业</a></li>
+				<li class="current"><a href="javascript:;">最新照片</a></li>
+				<li><a href="javascript:;">今日之星</a></li>
+				<li><a href="javascript:;">火爆模特</a></li>
+				<li><a href="javascript:;">推荐企业</a></li>
 				<li><a href="#">查看更多</a></li>
 			</ul>
 		</div>
@@ -1292,11 +1292,11 @@
 </div>
 
 <div class="column">
-	<div class="box">
+	<div class="box" id="elibrary_tab">
 		<div class="radius radius_top">
 			<div>radius top</div>
 		</div>
-		<div class="box_inner p_lr_20">
+		<div class="box_inner p_lr_20" id="elibrary">
 			<div class="bt">
 				<h2>
 					<strong class="title">
@@ -1307,93 +1307,459 @@
 					</span>
 				</h2>
 			</div>
-			<div class="bc m_tb_11 scroll scroll3 clearfix" id="elibrary">
+			<div class="bc m_tb_11 scroll scroll3 clearfix elibrary" style="display:block">
 				<div class="scroll_box">
 					<div class="cont clearfix">
-						<!--<div class="jslider_content">-->
-							<ul class="tab_item hor_list pic_list pic_list3 jslider_content">
-								<li>
-									<a href="#" class="picture">
-										<img src="static/youmo/img/img1.jpg" alt="" width="130" height="140">
-									</a>
-									<a href="#" class="name">&gt; 北京老屋1</a>
-									<p class="info">人像摄影</p>
-									<p class="info">粉丝数量 549</p>
-								</li>
-								<li>
-									<a href="#" class="picture">
-										<img src="static/youmo/img/img1.jpg" alt="" width="130" height="140">
-									</a>
-									<a href="#" class="name">&gt; 北京老屋2</a>
-									<p class="info">人像摄影</p>
-									<p class="info">粉丝数量 549</p>
-								</li>
-								<li>
-									<a href="#" class="picture">
-										<img src="static/youmo/img/img1.jpg" alt="" width="130" height="140">
-									</a>
-									<a href="#" class="name">&gt; 北京老屋3</a>
-									<p class="info">人像摄影</p>
-									<p class="info">粉丝数量 549</p>
-								</li>
-								<li>
-									<a href="#" class="picture">
-										<img src="static/youmo/img/img1.jpg" alt="" width="130" height="140">
-									</a>
-									<a href="#" class="name">&gt; 北京老屋4</a>
-									<p class="info">人像摄影</p>
-									<p class="info">粉丝数量 549</p>
-								</li>
-								<li>
-									<a href="#" class="picture">
-										<img src="static/youmo/img/img1.jpg" alt="" width="130" height="140">
-									</a>
-									<a href="#" class="name">&gt; 北京老屋5</a>
-									<p class="info">人像摄影</p>
-									<p class="info">粉丝数量 549</p>
-								</li>
-								<li>
-									<a href="#" class="picture">
-										<img src="static/youmo/img/img1.jpg" alt="" width="130" height="140">
-									</a>
-									<a href="#" class="name">&gt; 北京老屋6</a>
-									<p class="info">人像摄影</p>
-									<p class="info">粉丝数量 549</p>
-								</li>
-								<li>
-									<a href="#" class="picture">
-										<img src="static/youmo/img/img1.jpg" alt="" width="130" height="140">
-									</a>
-									<a href="#" class="name">&gt; 北京老屋7</a>
-									<p class="info">人像摄影</p>
-									<p class="info">粉丝数量 549</p>
-								</li>
-								<li>
-									<a href="#" class="picture">
-										<img src="static/youmo/img/img1.jpg" alt="" width="130" height="140">
-									</a>
-									<a href="#" class="name">&gt; 北京老屋8</a>
-									<p class="info">人像摄影</p>
-									<p class="info">粉丝数量 549</p>
-								</li>
-								<li>
-									<a href="#" class="picture">
-										<img src="static/youmo/img/img1.jpg" alt="" width="130" height="140">
-									</a>
-									<a href="#" class="name">&gt; 北京老屋9</a>
-									<p class="info">人像摄影</p>
-									<p class="info">粉丝数量 549</p>
-								</li>
-								<li>
-									<a href="#" class="picture">
-										<img src="static/youmo/img/img1.jpg" alt="" width="130" height="140">
-									</a>
-									<a href="#" class="name">&gt; 北京老屋10</a>
-									<p class="info">人像摄影</p>
-									<p class="info">粉丝数量 549</p>
-								</li>
-							</ul>
-						<!--</div>-->
+						<ul class="tab_item hor_list pic_list pic_list3 jslider_content">
+							<li>
+								<a href="#" class="picture">
+									<img src="static/youmo/img/img1.jpg" alt="" width="130" height="140">
+								</a>
+								<a href="#" class="name">&gt; 北京老屋111</a>
+								<p class="info">人像摄影</p>
+								<p class="info">粉丝数量 549</p>
+							</li>
+							<li>
+								<a href="#" class="picture">
+									<img src="static/youmo/img/img1.jpg" alt="" width="130" height="140">
+								</a>
+								<a href="#" class="name">&gt; 北京老屋2</a>
+								<p class="info">人像摄影</p>
+								<p class="info">粉丝数量 549</p>
+							</li>
+							<li>
+								<a href="#" class="picture">
+									<img src="static/youmo/img/img1.jpg" alt="" width="130" height="140">
+								</a>
+								<a href="#" class="name">&gt; 北京老屋3</a>
+								<p class="info">人像摄影</p>
+								<p class="info">粉丝数量 549</p>
+							</li>
+							<li>
+								<a href="#" class="picture">
+									<img src="static/youmo/img/img1.jpg" alt="" width="130" height="140">
+								</a>
+								<a href="#" class="name">&gt; 北京老屋4</a>
+								<p class="info">人像摄影</p>
+								<p class="info">粉丝数量 549</p>
+							</li>
+							<li>
+								<a href="#" class="picture">
+									<img src="static/youmo/img/img1.jpg" alt="" width="130" height="140">
+								</a>
+								<a href="#" class="name">&gt; 北京老屋5</a>
+								<p class="info">人像摄影</p>
+								<p class="info">粉丝数量 549</p>
+							</li>
+							<li>
+								<a href="#" class="picture">
+									<img src="static/youmo/img/img1.jpg" alt="" width="130" height="140">
+								</a>
+								<a href="#" class="name">&gt; 北京老屋6</a>
+								<p class="info">人像摄影</p>
+								<p class="info">粉丝数量 549</p>
+							</li>
+							<li>
+								<a href="#" class="picture">
+									<img src="static/youmo/img/img1.jpg" alt="" width="130" height="140">
+								</a>
+								<a href="#" class="name">&gt; 北京老屋7</a>
+								<p class="info">人像摄影</p>
+								<p class="info">粉丝数量 549</p>
+							</li>
+							<li>
+								<a href="#" class="picture">
+									<img src="static/youmo/img/img1.jpg" alt="" width="130" height="140">
+								</a>
+								<a href="#" class="name">&gt; 北京老屋8</a>
+								<p class="info">人像摄影</p>
+								<p class="info">粉丝数量 549</p>
+							</li>
+							<li>
+								<a href="#" class="picture">
+									<img src="static/youmo/img/img1.jpg" alt="" width="130" height="140">
+								</a>
+								<a href="#" class="name">&gt; 北京老屋9</a>
+								<p class="info">人像摄影</p>
+								<p class="info">粉丝数量 549</p>
+							</li>
+							<li>
+								<a href="#" class="picture">
+									<img src="static/youmo/img/img1.jpg" alt="" width="130" height="140">
+								</a>
+								<a href="#" class="name">&gt; 北京老屋10</a>
+								<p class="info">人像摄影</p>
+								<p class="info">粉丝数量 549</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="jslider_handler">
+					<span class="tbtn tbtn1 prev">前翻</span>
+					<span class="tbtn tbtn1 next">后翻</span>
+				</div>
+			</div>
+			<div class="bc m_tb_11 scroll scroll3 clearfix elibrary">
+				<div class="scroll_box">
+					<div class="cont clearfix">
+						<ul class="tab_item hor_list pic_list pic_list3 jslider_content">
+							<li>
+								<a href="#" class="picture">
+									<img src="static/youmo/img/img1.jpg" alt="" width="130" height="140">
+								</a>
+								<a href="#" class="name">&gt; 北京老屋222</a>
+								<p class="info">人像摄影</p>
+								<p class="info">粉丝数量 549</p>
+							</li>
+							<li>
+								<a href="#" class="picture">
+									<img src="static/youmo/img/img1.jpg" alt="" width="130" height="140">
+								</a>
+								<a href="#" class="name">&gt; 北京老屋2</a>
+								<p class="info">人像摄影</p>
+								<p class="info">粉丝数量 549</p>
+							</li>
+							<li>
+								<a href="#" class="picture">
+									<img src="static/youmo/img/img1.jpg" alt="" width="130" height="140">
+								</a>
+								<a href="#" class="name">&gt; 北京老屋3</a>
+								<p class="info">人像摄影</p>
+								<p class="info">粉丝数量 549</p>
+							</li>
+							<li>
+								<a href="#" class="picture">
+									<img src="static/youmo/img/img1.jpg" alt="" width="130" height="140">
+								</a>
+								<a href="#" class="name">&gt; 北京老屋4</a>
+								<p class="info">人像摄影</p>
+								<p class="info">粉丝数量 549</p>
+							</li>
+							<li>
+								<a href="#" class="picture">
+									<img src="static/youmo/img/img1.jpg" alt="" width="130" height="140">
+								</a>
+								<a href="#" class="name">&gt; 北京老屋5</a>
+								<p class="info">人像摄影</p>
+								<p class="info">粉丝数量 549</p>
+							</li>
+							<li>
+								<a href="#" class="picture">
+									<img src="static/youmo/img/img1.jpg" alt="" width="130" height="140">
+								</a>
+								<a href="#" class="name">&gt; 北京老屋6</a>
+								<p class="info">人像摄影</p>
+								<p class="info">粉丝数量 549</p>
+							</li>
+							<li>
+								<a href="#" class="picture">
+									<img src="static/youmo/img/img1.jpg" alt="" width="130" height="140">
+								</a>
+								<a href="#" class="name">&gt; 北京老屋7</a>
+								<p class="info">人像摄影</p>
+								<p class="info">粉丝数量 549</p>
+							</li>
+							<li>
+								<a href="#" class="picture">
+									<img src="static/youmo/img/img1.jpg" alt="" width="130" height="140">
+								</a>
+								<a href="#" class="name">&gt; 北京老屋8</a>
+								<p class="info">人像摄影</p>
+								<p class="info">粉丝数量 549</p>
+							</li>
+							<li>
+								<a href="#" class="picture">
+									<img src="static/youmo/img/img1.jpg" alt="" width="130" height="140">
+								</a>
+								<a href="#" class="name">&gt; 北京老屋9</a>
+								<p class="info">人像摄影</p>
+								<p class="info">粉丝数量 549</p>
+							</li>
+							<li>
+								<a href="#" class="picture">
+									<img src="static/youmo/img/img1.jpg" alt="" width="130" height="140">
+								</a>
+								<a href="#" class="name">&gt; 北京老屋10</a>
+								<p class="info">人像摄影</p>
+								<p class="info">粉丝数量 549</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="jslider_handler">
+					<span class="tbtn tbtn1 prev">前翻</span>
+					<span class="tbtn tbtn1 next">后翻</span>
+				</div>
+			</div>
+			<div class="bc m_tb_11 scroll scroll3 clearfix elibrary">
+				<div class="scroll_box">
+					<div class="cont clearfix">
+						<ul class="tab_item hor_list pic_list pic_list3 jslider_content">
+							<li>
+								<a href="#" class="picture">
+									<img src="static/youmo/img/img1.jpg" alt="" width="130" height="140">
+								</a>
+								<a href="#" class="name">&gt; 北京老屋333</a>
+								<p class="info">人像摄影</p>
+								<p class="info">粉丝数量 549</p>
+							</li>
+							<li>
+								<a href="#" class="picture">
+									<img src="static/youmo/img/img1.jpg" alt="" width="130" height="140">
+								</a>
+								<a href="#" class="name">&gt; 北京老屋2</a>
+								<p class="info">人像摄影</p>
+								<p class="info">粉丝数量 549</p>
+							</li>
+							<li>
+								<a href="#" class="picture">
+									<img src="static/youmo/img/img1.jpg" alt="" width="130" height="140">
+								</a>
+								<a href="#" class="name">&gt; 北京老屋3</a>
+								<p class="info">人像摄影</p>
+								<p class="info">粉丝数量 549</p>
+							</li>
+							<li>
+								<a href="#" class="picture">
+									<img src="static/youmo/img/img1.jpg" alt="" width="130" height="140">
+								</a>
+								<a href="#" class="name">&gt; 北京老屋4</a>
+								<p class="info">人像摄影</p>
+								<p class="info">粉丝数量 549</p>
+							</li>
+							<li>
+								<a href="#" class="picture">
+									<img src="static/youmo/img/img1.jpg" alt="" width="130" height="140">
+								</a>
+								<a href="#" class="name">&gt; 北京老屋5</a>
+								<p class="info">人像摄影</p>
+								<p class="info">粉丝数量 549</p>
+							</li>
+							<li>
+								<a href="#" class="picture">
+									<img src="static/youmo/img/img1.jpg" alt="" width="130" height="140">
+								</a>
+								<a href="#" class="name">&gt; 北京老屋6</a>
+								<p class="info">人像摄影</p>
+								<p class="info">粉丝数量 549</p>
+							</li>
+							<li>
+								<a href="#" class="picture">
+									<img src="static/youmo/img/img1.jpg" alt="" width="130" height="140">
+								</a>
+								<a href="#" class="name">&gt; 北京老屋7</a>
+								<p class="info">人像摄影</p>
+								<p class="info">粉丝数量 549</p>
+							</li>
+							<li>
+								<a href="#" class="picture">
+									<img src="static/youmo/img/img1.jpg" alt="" width="130" height="140">
+								</a>
+								<a href="#" class="name">&gt; 北京老屋8</a>
+								<p class="info">人像摄影</p>
+								<p class="info">粉丝数量 549</p>
+							</li>
+							<li>
+								<a href="#" class="picture">
+									<img src="static/youmo/img/img1.jpg" alt="" width="130" height="140">
+								</a>
+								<a href="#" class="name">&gt; 北京老屋9</a>
+								<p class="info">人像摄影</p>
+								<p class="info">粉丝数量 549</p>
+							</li>
+							<li>
+								<a href="#" class="picture">
+									<img src="static/youmo/img/img1.jpg" alt="" width="130" height="140">
+								</a>
+								<a href="#" class="name">&gt; 北京老屋10</a>
+								<p class="info">人像摄影</p>
+								<p class="info">粉丝数量 549</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="jslider_handler">
+					<span class="tbtn tbtn1 prev">前翻</span>
+					<span class="tbtn tbtn1 next">后翻</span>
+				</div>
+			</div>
+			<div class="bc m_tb_11 scroll scroll3 clearfix elibrary">
+				<div class="scroll_box">
+					<div class="cont clearfix">
+						<ul class="tab_item hor_list pic_list pic_list3 jslider_content">
+							<li>
+								<a href="#" class="picture">
+									<img src="static/youmo/img/img1.jpg" alt="" width="130" height="140">
+								</a>
+								<a href="#" class="name">&gt; 北京老屋444</a>
+								<p class="info">人像摄影</p>
+								<p class="info">粉丝数量 549</p>
+							</li>
+							<li>
+								<a href="#" class="picture">
+									<img src="static/youmo/img/img1.jpg" alt="" width="130" height="140">
+								</a>
+								<a href="#" class="name">&gt; 北京老屋2</a>
+								<p class="info">人像摄影</p>
+								<p class="info">粉丝数量 549</p>
+							</li>
+							<li>
+								<a href="#" class="picture">
+									<img src="static/youmo/img/img1.jpg" alt="" width="130" height="140">
+								</a>
+								<a href="#" class="name">&gt; 北京老屋3</a>
+								<p class="info">人像摄影</p>
+								<p class="info">粉丝数量 549</p>
+							</li>
+							<li>
+								<a href="#" class="picture">
+									<img src="static/youmo/img/img1.jpg" alt="" width="130" height="140">
+								</a>
+								<a href="#" class="name">&gt; 北京老屋4</a>
+								<p class="info">人像摄影</p>
+								<p class="info">粉丝数量 549</p>
+							</li>
+							<li>
+								<a href="#" class="picture">
+									<img src="static/youmo/img/img1.jpg" alt="" width="130" height="140">
+								</a>
+								<a href="#" class="name">&gt; 北京老屋5</a>
+								<p class="info">人像摄影</p>
+								<p class="info">粉丝数量 549</p>
+							</li>
+							<li>
+								<a href="#" class="picture">
+									<img src="static/youmo/img/img1.jpg" alt="" width="130" height="140">
+								</a>
+								<a href="#" class="name">&gt; 北京老屋6</a>
+								<p class="info">人像摄影</p>
+								<p class="info">粉丝数量 549</p>
+							</li>
+							<li>
+								<a href="#" class="picture">
+									<img src="static/youmo/img/img1.jpg" alt="" width="130" height="140">
+								</a>
+								<a href="#" class="name">&gt; 北京老屋7</a>
+								<p class="info">人像摄影</p>
+								<p class="info">粉丝数量 549</p>
+							</li>
+							<li>
+								<a href="#" class="picture">
+									<img src="static/youmo/img/img1.jpg" alt="" width="130" height="140">
+								</a>
+								<a href="#" class="name">&gt; 北京老屋8</a>
+								<p class="info">人像摄影</p>
+								<p class="info">粉丝数量 549</p>
+							</li>
+							<li>
+								<a href="#" class="picture">
+									<img src="static/youmo/img/img1.jpg" alt="" width="130" height="140">
+								</a>
+								<a href="#" class="name">&gt; 北京老屋9</a>
+								<p class="info">人像摄影</p>
+								<p class="info">粉丝数量 549</p>
+							</li>
+							<li>
+								<a href="#" class="picture">
+									<img src="static/youmo/img/img1.jpg" alt="" width="130" height="140">
+								</a>
+								<a href="#" class="name">&gt; 北京老屋10</a>
+								<p class="info">人像摄影</p>
+								<p class="info">粉丝数量 549</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="jslider_handler">
+					<span class="tbtn tbtn1 prev">前翻</span>
+					<span class="tbtn tbtn1 next">后翻</span>
+				</div>
+			</div>
+			<div class="bc m_tb_11 scroll scroll3 clearfix elibrary">
+				<div class="scroll_box">
+					<div class="cont clearfix">
+						<ul class="tab_item hor_list pic_list pic_list3 jslider_content">
+							<li>
+								<a href="#" class="picture">
+									<img src="static/youmo/img/img1.jpg" alt="" width="130" height="140">
+								</a>
+								<a href="#" class="name">&gt; 北京老屋555</a>
+								<p class="info">人像摄影</p>
+								<p class="info">粉丝数量 549</p>
+							</li>
+							<li>
+								<a href="#" class="picture">
+									<img src="static/youmo/img/img1.jpg" alt="" width="130" height="140">
+								</a>
+								<a href="#" class="name">&gt; 北京老屋2</a>
+								<p class="info">人像摄影</p>
+								<p class="info">粉丝数量 549</p>
+							</li>
+							<li>
+								<a href="#" class="picture">
+									<img src="static/youmo/img/img1.jpg" alt="" width="130" height="140">
+								</a>
+								<a href="#" class="name">&gt; 北京老屋3</a>
+								<p class="info">人像摄影</p>
+								<p class="info">粉丝数量 549</p>
+							</li>
+							<li>
+								<a href="#" class="picture">
+									<img src="static/youmo/img/img1.jpg" alt="" width="130" height="140">
+								</a>
+								<a href="#" class="name">&gt; 北京老屋4</a>
+								<p class="info">人像摄影</p>
+								<p class="info">粉丝数量 549</p>
+							</li>
+							<li>
+								<a href="#" class="picture">
+									<img src="static/youmo/img/img1.jpg" alt="" width="130" height="140">
+								</a>
+								<a href="#" class="name">&gt; 北京老屋5</a>
+								<p class="info">人像摄影</p>
+								<p class="info">粉丝数量 549</p>
+							</li>
+							<li>
+								<a href="#" class="picture">
+									<img src="static/youmo/img/img1.jpg" alt="" width="130" height="140">
+								</a>
+								<a href="#" class="name">&gt; 北京老屋6</a>
+								<p class="info">人像摄影</p>
+								<p class="info">粉丝数量 549</p>
+							</li>
+							<li>
+								<a href="#" class="picture">
+									<img src="static/youmo/img/img1.jpg" alt="" width="130" height="140">
+								</a>
+								<a href="#" class="name">&gt; 北京老屋7</a>
+								<p class="info">人像摄影</p>
+								<p class="info">粉丝数量 549</p>
+							</li>
+							<li>
+								<a href="#" class="picture">
+									<img src="static/youmo/img/img1.jpg" alt="" width="130" height="140">
+								</a>
+								<a href="#" class="name">&gt; 北京老屋8</a>
+								<p class="info">人像摄影</p>
+								<p class="info">粉丝数量 549</p>
+							</li>
+							<li>
+								<a href="#" class="picture">
+									<img src="static/youmo/img/img1.jpg" alt="" width="130" height="140">
+								</a>
+								<a href="#" class="name">&gt; 北京老屋9</a>
+								<p class="info">人像摄影</p>
+								<p class="info">粉丝数量 549</p>
+							</li>
+							<li>
+								<a href="#" class="picture">
+									<img src="static/youmo/img/img1.jpg" alt="" width="130" height="140">
+								</a>
+								<a href="#" class="name">&gt; 北京老屋10</a>
+								<p class="info">人像摄影</p>
+								<p class="info">粉丝数量 549</p>
+							</li>
+						</ul>
 					</div>
 				</div>
 				<div class="jslider_handler">
@@ -1407,10 +1773,10 @@
 		</div>
 		<div class="extra">
 			<ul class="hor_list tab tab2">
-				<li class="current"><a href="#">最新照片</a></li>
-				<li><a href="#">今日之星</a></li>
-				<li><a href="#">火爆模特</a></li>
-				<li><a href="#">推荐企业</a></li>
+				<li class="current"><a href="javascript:;">最新照片</a></li>
+				<li><a href="javascript:;">今日之星</a></li>
+				<li><a href="javascript:;">火爆模特</a></li>
+				<li><a href="javascript:;">推荐企业</a></li>
 				<li><a href="#">查看更多</a></li>
 			</ul>
 		</div>
@@ -1420,9 +1786,9 @@
 <div class="hor_box column tg1">
 	<div class="hor_item tab_group" id="tab_two">
 		<ul class="hor_list tab tab3">
-			<li class="current"><a href="javascript:;">工作机会</a></li>
-			<li><a href="javascript:;">求职信息</a></li>
-			<li><a href="javascript:;">商演机会</a></li>
+			<li class="current" rel="a1.html"><a href="javascript:;">工作机会</a></li>
+			<li rel="a2.html"><a href="javascript:;">求职信息</a></li>
+			<li rel="a3.html"><a href="javascript:;">商演机会</a></li>
 			<li class="more"><a href="#" class="btn">more</a></li>
 		</ul>
 		<div class="box">
@@ -1698,8 +2064,8 @@
 	</div>
 	<div class="hor_item tab_group" id="tab_three">
 		<ul class="hor_list tab tab3">
-			<li class="current"><a href="javascript:;">培训信息</a></li>
-			<li><a href="javascript:;">业界动态</a></li>
+			<li rel="b1.html" class="current"><a href="javascript:;">培训信息</a></li>
+			<li rel="b2.html"><a href="javascript:;">业界动态</a></li>
 			<li class="more"><a href="#" class="btn">more</a></li>
 		</ul>
 		<div class="box">
@@ -2103,8 +2469,8 @@
 	</div>
 	<div class="hor_item tab_group" id="tab_five">
 		<ul class="hor_list tab tab3">
-			<li class="current"><a href="javascript:;">品牌库</a></li>
-			<li><a href="javascript:;">品牌图库</a></li>
+			<li rel="c1.html" class="current"><a href="javascript:;">品牌库</a></li>
+			<li rel="c2.html"><a href="javascript:;">品牌图库</a></li>
 			<li class="more"><a href="#" class="btn">more</a></li>
 		</ul>
 		<div class="box">
@@ -2584,12 +2950,15 @@
 			speed : "normal",
 			timer : 3000
 		});	
-		$("#elibrary").jSlider({
-			effect : "DirX",
-			autoPlay:true,
-			speed : "normal",
-			timer : 3000,
-			steps:3
+		$(".elibrary .scroll_box").each(function(){
+			$(this).jSlider({
+				effect : "DirX",
+				autoPlay:true,
+				speed : "normal",
+				timer : 3000,
+				steps:3,
+				parentBox : "elibrary"
+			});
 		});
 		$("#memberonline").jSlider({
 			effect : "DirX",
@@ -2624,7 +2993,7 @@
 	});
 	$("#tab_two").tab({
 		tabId:$("#tab_two .tab").eq(0),
-		tabTag:"li",
+		tabTag:"li[rel]",
 		conId:"#tab_two_con",
 		conTag:"ul.tab_item",
 		auto:false,
@@ -2632,7 +3001,7 @@
 	});
 	$("#tab_three").tab({
 		tabId:$("#tab_three .tab").eq(0),
-		tabTag:"li",
+		tabTag:"li[rel]",
 		conId:"#tab_three_con",
 		conTag:"ul.tab_item",
 		auto:false,
@@ -2648,11 +3017,23 @@
 	});
 	$("#tab_five").tab({
 		tabId:$("#tab_five .tab").eq(0),
-		tabTag:"li",
+		tabTag:"li[rel]",
 		conId:"#tab_five_con",
 		conTag:"ul.tab_item",
 		auto:false,
 		act:"click"
+	});
+	$("#elibrary_tab").tab({
+		tabId:$("#elibrary_tab .tab").eq(0),
+		tabTag:"li",
+		conId:"#elibrary",
+		conTag:"div.bc",
+		auto:false,
+		act:"click",
+		visible:true
+	});
+	$(".tab_group .tab li").click(function(){
+		$(this).siblings(".more").children().attr("href",$(this).attr("rel"));
 	});
 </script>
 <{include file="youmo/footer.html"}>

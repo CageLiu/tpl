@@ -9,7 +9,7 @@
 				</div>
 				<div class="box_inner p_lr_20">
 					<div class="bc">
-					<div class="actor_box clearfix">
+					<div class="actor_box clearfix" id="actor_box">
 						<ul class="actor_list justify_list">
 							<li>
 								<div class="media media6">
@@ -530,18 +530,18 @@
 					<div class="vip_sort_inner">
 						<dl class="actor_vip_dl">
 							<dt>表演者</dt>
-							<dd>模特</dd>
-							<dd>主持人</dd>
-							<dd>演员</dd>
+							<dd data="url">模特</dd>
+							<dd data="url">主持人</dd>
+							<dd data="url">演员</dd>
 							<dt>从业者</dt>
-							<dd>摄影师</dd>
-							<dd class="current">经纪人</dd>
-							<dd>化妆师</dd>
+							<dd data="url">摄影师</dd>
+							<dd data="url" class="current">经纪人</dd>
+							<dd data="url">化妆师</dd>
 							<dt>企业会员</dt>
-							<dd>经纪公司</dd>
-							<dd>培训公司</dd>
-							<dd>传媒企业</dd>
-							<dd>其他企业</dd>
+							<dd data="url">经纪公司</dd>
+							<dd data="url">培训公司</dd>
+							<dd data="url">传媒企业</dd>
+							<dd data="url">其他企业</dd>
 						</dl>
 					</div>
 				</div>
@@ -834,6 +834,17 @@
 	});
 	$(".actor_vip_dl dd").click(function(){
 		$(this).addClass("current").siblings("dd").removeClass("current");
+		var url = $(this).attr("data");
+		$.ajax({
+			url:url,
+			type:"get",
+			success:function(data){
+				$("#actor_box").empty().append(data);
+			},
+			error:function(){
+				alert(404);
+			}
+		});
 	});
 </script>
 <{include file="youmo/footer.html"}>

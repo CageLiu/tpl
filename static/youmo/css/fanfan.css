@@ -2054,3 +2054,69 @@ a.moder{
 	background-position:right -321px;
 }
 /*p40 style end*/
+/*p41 style start*/
+.login_box2_extra{
+	height:auto;
+	padding-bottom:20px;
+}
+.login3_form{
+	padding:20px;
+}
+.login3_form .item{
+	margin-bottom:10px;
+}
+.login3_form .field{
+	top:-3px;
+	*top:0;
+}
+.item .check_box,
+.item .check_sp,
+.item .check_txt{
+	vertical-align:middle;
+}
+.check_item{
+	margin-right:-10px;
+}
+.item .check_box{
+	margin-right:10px;
+}
+.item .check_txt{
+	*margin-left:-7px;
+}
+.true_file {
+	position: relative;
+	z-index: 9;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	height: 31px;
+	width: 255px;
+	vertical-align: middle;
+}
+span.imitatefile {
+	position: absolute;
+	top: 0;
+	left: 112px;
+	z-index: 1;
+}
+input.btn{
+	height:22px;
+	padding:0 7px;
+	border:0 none;
+	line-height:22px;
+	color:#fff;
+	background-color:#f3198a;
+	border-radius:3px;
+}
+.w70{
+	width:70px;
+}
+.item .ntext{
+	height:21px;
+	line-height:21px;
+	border:1px solid #cdcdcd;
+}
+.login3_form .pink{
+	color:#E7588D;
+	padding-left:7px;
+}
+/*p41 style end*/

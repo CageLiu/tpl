@@ -19,21 +19,17 @@
 			defIndex: 0,
 			claNav: "jslider_handler",
 			claCon: "jslider_content",
-			steps: 1,
-			slideH : 0,
-			slideW : 0,
-			goTop : false,
-			eventType : "hover"
+			steps: 1
 		};
 		var opts = $.extend({}, dd, options);
 		var index = 1;
-		var targetLi = typeof opts.claNav === "string" ? $("." + opts.claNav + " span",$(this)) : opts.claNav; //目标对象
+		var targetLi = $("." + opts.claNav + " span",$(this)); //目标对象
 		var clickNext = $("." + opts.claNav + " .next", $(this)); //点击下一个按钮
 		var clickPrev = $("." + opts.claNav + " .prev", $(this)); //点击上一个按钮
 		var ContentBox = $("." + opts.claCon, $(this)); //滚动的对象
 		var ContentBoxNum = ContentBox.children().size(); //滚动对象的子元素个数
-		var slideH = opts.slideH ||  ContentBox.children().first().height(); //滚动对象的子元素个数高度，相当于滚动的高度
-		var slideW =  opts.slideW || ContentBox.children().first().width(); //滚动对象的子元素宽度，相当于滚动的宽度
+		var slideH = ContentBox.children().first().height(); //滚动对象的子元素个数高度，相当于滚动的高度
+		var slideW = ContentBox.children().first().width(); //滚动对象的子元素宽度，相当于滚动的宽度
 		var autoPlay;
 		var slideWH;
 		if (opts.effect == "DirY" || opts.effect == "Txt") {
@@ -86,25 +82,15 @@
 			}
 
 			//目标事件
-			if(opts.eventType === "hover"){
-				targetLi.hover(function() {
-					if (autoPlay) { clearInterval(autoPlay); }
-					index = targetLi.index(this);
-					window.setTimeout(function() {
-						$.fn.jSlider.effect[opts.effect](ContentBox, targetLi, index, slideWH, opts);
-					}, 200);
-				}, function() {
-					if (autoPlay) { clearInterval(autoPlay); }
-					autoPlay = setInterval(doPlay, opts.timer);
-				});
-			}
-
-			targetLi.click(function() {
+			targetLi.hover(function() {
 				if (autoPlay) { clearInterval(autoPlay); }
 				index = targetLi.index(this);
 				window.setTimeout(function() {
 					$.fn.jSlider.effect[opts.effect](ContentBox, targetLi, index, slideWH, opts);
 				}, 200);
+			}, function() {
+				if (autoPlay) { clearInterval(autoPlay); }
+				autoPlay = setInterval(doPlay, opts.timer);
 			});
 		});
 	};
